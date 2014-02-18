@@ -1,0 +1,171 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+$btn_size: 80px;
+
+/*************** Play Button ***************/
+.container_button {
+    display: inline-block;
+    background-color: #252525;
+    width: $btn_size;
+    height: $btn_size;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    -webkit-border-radius: $btn_size/2;
+    -moz-border-radius: $btn_size/2;
+    border-radius: $btn_size/2;
+    -webkit-box-shadow: inset 0px 2px 0px #585858, 1px 1px 0px #000, 2px 2px 5px #000;
+    -moz-box-shadow: inset 0px 2px 0px #585858, 1px 1px 0px #000, 2px 2px 5px #000;
+    box-shadow: inset 0px 2px 0px #585858, 1px 1px 0px #000, 2px 2px 5px #000;
+}
+
+.hole {
+    background-color: #151515;
+    width: $btn_size*31/40;
+    height: $btn_size*31/40;
+    margin-left: auto;
+    margin-right: auto;
+    top: $btn_size/8;
+    position: relative;
+    -webkit-border-radius: $btn_size*31/80;
+    -moz-border-radius: $btn_size*31/80;
+    border-radius: $btn_size*31/80;
+    -webkit-box-shadow: 1px 1px 0px #5d5d5d;
+    -moz-box-shadow: 1px 1px 0px #5d5d5d;
+    box-shadow: 1px 1px 0px #5d5d5d;
+}
+.play_button {
+    width: $btn_size*0.75;
+    height: $btn_size*0.75;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    cursor: pointer;
+    top: -$btn_size/80;
+    position: relative;
+    background-color: rgb(134,134,134);
+    background-image: linear-gradient(bottom, rgb(82,79,82) 0%, rgb(134,134,134) 57%);
+    background-image: -o-linear-gradient(bottom, rgb(82,79,82) 0%, rgb(134,134,134) 57%);
+    background-image: -moz-linear-gradient(bottom, rgb(82,79,82) 0%, rgb(134,134,134) 57%);
+    background-image: -webkit-linear-gradient(bottom, rgb(82,79,82) 0%, rgb(134,134,134) 57%);
+    background-image: -ms-linear-gradient(bottom, rgb(82,79,82) 0%, rgb(134,134,134) 57%);
+    -webkit-border-radius: $btn_size*0.375;
+    -moz-border-radius: $btn_size*0.375;
+    border-radius: $btn_size*0.375;
+    -webkit-box-shadow: inset 0px $btn_size/200 0px #a8a8a8, 0px $btn_size/200 0px #2a2a2a, 0px $btn_size*1.5/200 0px #2a2a2a, 0px $btn_size/100 0px #2a2a2a, 0px $btn_size/80 0px #2a2a2a, 0px $btn_size*3/200 0px #2a2a2a, 0px $btn_size*7/400 0px #2a2a2a, 0px $btn_size/50 0px #2a2a2a, 0px $btn_size*9/400 0px #2a2a2a, 0px $btn_size/40 0px #2a2a2a, $btn_size/40 $btn_size/20 $btn_size/40 #000;
+    -moz-box-shadow: inset 0px $btn_size/200 0px #a8a8a8, 0px $btn_size/200 0px #2a2a2a, 0px $btn_size*1.5/200 0px #2a2a2a, 0px $btn_size/100 0px #2a2a2a, 0px $btn_size/80 0px #2a2a2a, 0px $btn_size*3/200 0px #2a2a2a, 0px $btn_size*7/400 0px #2a2a2a, 0px $btn_size/50 0px #2a2a2a, 0px $btn_size*9/400 0px #2a2a2a, 0px $btn_size/40 0px #2a2a2a, $btn_size/40 $btn_size/20 $btn_size/40 #000;
+    box-shadow: inset 0px $btn_size/200 0px #a8a8a8, 0px $btn_size/200 0px #2a2a2a, 0px $btn_size*1.5/200 0px #2a2a2a, 0px $btn_size/100 0px #2a2a2a, 0px $btn_size/80 0px #2a2a2a, 0px $btn_size*3/200 0px #2a2a2a, 0px $btn_size*7/400 0px #2a2a2a, 0px $btn_size/50 0px #2a2a2a, 0px $btn_size*9/400 0px #2a2a2a, 0px $btn_size/40 0px #2a2a2a, $btn_size/40 $btn_size/20 $btn_size/40 #000;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
+.play_button:active {
+    top: $btn_size/80;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: inset 0px 2px 0px #a8a8a8;
+}
+.play_button .triangle {
+    left: -$btn_size*27/400;
+    top: -$btn_size/8;
+    margin-left: 50%;
+    border-top: $btn_size/8 solid transparent;
+    border-bottom: $btn_size/8 solid transparent;
+    border-left: $btn_size/5 solid #22a9db;
+}
+.triangle {
+    width: 0px;
+    height: 0px;
+    margin-top: 50%;
+    position: relative;
+    z-index: 2;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+.play_button:hover .triangle { border-left: $btn_size/5 solid #45bde9 }
+.play_button:active .triangle { border-left: $btn_size/5 solid #e94545 }
+#lighter_triangle {
+    width: 0px;
+    height: 0px;
+    margin-left: 50%;
+    margin-top: 50%;
+    left: -27px;
+    top: -48px;
+    position: absolute;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 80px solid #43c0ee;
+    z-index: 1;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+#play_button:hover #lighter_triangle { border-left: 80px solid #8bdaf7 }
+#play_button:active #lighter_triangle { border-left: 80px solid #f78b8b }
+#darker_triangle {
+    width: 0px;
+    height: 0px;
+    margin-left: 50%;
+    margin-top: 50%;
+    left: -28px;
+    top: -53px;
+    position: absolute;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 80px solid #0a7da7;
+    z-index: 1;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+#play_button:hover #darker_triangle { border-left: 80px solid #1d98c5 }
+#play_button:active #darker_triangle { border-left: 80px solid #c51d1d }
+
+section#main article { padding-top: 32px }
+
+.skip_song {
+    width: $btn_size*11/16;
+    height: $btn_size*3/4;
+    display: inline-block;
+    position: relative;
+    z-index: -1;
+    top: $btn_size*-1/8;
+    background-color: #252525;
+    -webkit-box-shadow: inset 0px 2px 0px #585858, 1px 1px 0px #000, 2px 2px 5px #000;
+    -moz-box-shadow: inset 0px 2px 0px #585858, 1px 1px 0px #000, 2px 2px 5px #000;
+    box-shadow: inset 0px 2px 0px #585858, 1px 1px 0px #000, 2px 2px 5px #000;
+
+    &.next {
+        left: $btn_size*-3/16;
+        border-radius: 0px $btn_size*3/8 $btn_size*3/8 0px;
+    }
+    &.prev {
+        right: $btn_size*-3/16;
+        border-radius: $btn_size*3/8 0px 0px $btn_size*3/8;
+    }
+}
+
+.skip_song .triangle{
+    left: 0px;
+    top: -$btn_size*3/32;
+    border-top: $btn_size/8 solid transparent;
+    border-bottom: $btn_size/8 solid transparent;
+
+}
+
+.skip_song.prev .triangle {
+    border-right: $btn_size/5 solid #CCC;
+    float: left;
+    margin-left: $btn_size/6;
+}
+
+.skip_song.next .triangle {
+    border-left: $btn_size/5 solid #CCC;
+    float: right;
+    margin-right: $btn_size/6;
+}
