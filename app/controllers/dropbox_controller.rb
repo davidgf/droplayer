@@ -19,39 +19,6 @@ require 'securerandom'
 
 class DropboxController < ApplicationController
 
-    def main
-        client = get_dropbox_client
-        unless client
-            redirect_to(:action => 'auth_start') and return
-        end
-
-        account_info = client.account_info
-
-        # Show a file upload page
-        render :inline =>
-            "#{account_info['email']} <br/><%= form_tag({:action => :main}, :multipart => true) do %><%= file_field_tag 'fxile' %><%= submit_tag 'Upload' %><% end %>"
-    end
-
-    def upload
-        client = get_dropbox_client
-        unless client
-            redirect_to(:action => 'auth_start') and return
-        end
-
-        begin
-            # Upload the POST'd file to Dropbox, keeping the same name
-            resp = client.put_file(params[:file].original_filename, params[:file].read)
-            render :text => "Upload successful.  File now at #{resp['path']}"
-        rescue DropboxAuthError => e
-            session.delete(:access_token)  # An auth error means the access token is probably bad
-            logger.info "Dropbox auth error: #{e}"
-            render :text => "Dropbox auth error"
-        rescue DropboxError => e
-            logger.info "Dropbox API error: #{e}"
-            render :text => "Dropbox API error"
-        end
-    end
-
     def get_web_auth()
         redirect_uri = url_for(:action => 'auth_finish')
         DropboxOAuth2Flow.new(DropboxSettings[:APP_KEY], DropboxSettings[:APP_SECRET], redirect_uri, session, :dropbox_auth_csrf_token)
@@ -69,6 +36,8 @@ class DropboxController < ApplicationController
         begin
             access_token, user_id, url_state = get_web_auth.finish(params)
             session[:access_token] = access_token
+            current_user.dropbox_token = access_token
+            current_user.save
             redirect_to :controller => 'songs', :action => 'index'
         rescue DropboxOAuth2Flow::BadRequestError => e
             render :text => "Error in OAuth 2 flow: Bad request: #{e}"

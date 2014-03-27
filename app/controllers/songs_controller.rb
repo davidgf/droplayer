@@ -11,34 +11,18 @@ class SongsController < ApplicationController
         unless client
             redirect_to(:controller => 'dropbox', :action => 'auth_start') and return
         end
-        songs_list = client.search '/', 'mp3'
-        media_share = []
-        # uri = "https://api-content.dropbox.com/1/files/sandbox"
-        @songs = songs_list.map {|attr|
-          if not attr["is_dir"]
-            resp = client.get_file_chunk(attr["path"])
-            id3 = StringIO.new(resp)
-            Mp3Info.open(id3) do |mp3|
-              puts attr["path"]
-              puts '==========================title'
-              puts mp3.hastag1?
-              puts mp3.hastag2?
-              if not mp3.tag.empty?
-                attr['artist'] = mp3.tag.artist
-                attr['title'] = mp3.tag.title
-              end
-              puts mp3.tag.title
-              puts mp3.tag.artist
-            end
-            Song.new(attr)
-          end
-        }
+        sync_songs client
+        
+        current_user.songs.find_each do |song|
+            save_id3_info(client, song)
+        end
+
+        @songs = current_user.songs.to_a
               
-      respond_to do |format|
-        format.html
-        # format.html { render :text => '<pre>'+JSON.pretty_generate(songs_list)+'</pre>' }
-        format.json { render :json => @songs }
-      end
+        respond_to do |format|
+            format.html
+            format.json { render :json => @songs }
+        end
     end
     
     def media_link
@@ -57,6 +41,49 @@ class SongsController < ApplicationController
         format.json { render :json => @media }
       end
     end
+
+private
+
+    def sync_songs(dropbox_client)
+        songs_list = dropbox_client.search '/', 'mp3'
+        songs_path = songs_list.map! {|song| song.slice("path")}
+        current_user.songs.create(songs_path)
+    end
+
+    def save_id3_info(dropbox_client, song)
+        if !song.id3?
+            artist, title, album, genre = get_song_info(dropbox_client, song)
+            song.id3 = true
+            song.artist = artist
+            song.title = title
+            song.album = album
+            song.genre = genre
+            song.save
+        end
+    end
+
+    def get_song_info(dropbox_client, song)
+        mp3_file = get_mp3_head_chunk(dropbox_client, song)
+        return get_id3_info(mp3_file)
+    end
+
+    def get_mp3_head_chunk(dropbox_client, song)
+        resp = dropbox_client.get_file_chunk(song.path)
+        return StringIO.new(resp)
+    end
+
+    def get_id3_info(mp3_file)
+        Mp3Info.open(mp3_file) do |mp3|
+          if not mp3.tag.empty?
+            artist = mp3.tag.artist
+            title = mp3.tag.title
+            genre = mp3.tag.genre
+            album = mp3.tag.album
+          end
+          return artist, title, album, genre
+        end
+    end
+
 end
 
 

@@ -1,11 +1,11 @@
 Droplayer::Application.routes.draw do
+  get "pages/home"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'songs#index'
-  get  "dropbox/main"
-  post "dropbox/upload"
+  root 'pages#home'
+  
   get  "dropbox/auth_start"
   get  "dropbox/auth_finish"
   get 'songs' => 'songs#index'

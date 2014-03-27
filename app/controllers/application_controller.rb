@@ -1,12 +1,13 @@
 class ApplicationController < ActionController::Base
+  include Clearance::Controller
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
 	def get_dropbox_client
-	    if session[:access_token]
+	    if signed_in? and current_user.has_dropbox_token?
 	        begin
-	            access_token = session[:access_token]
+	            access_token = current_user.dropbox_token
 	            DropboxClient.new(access_token)
 	        rescue
 	            # Maybe something's wrong with the access token?
