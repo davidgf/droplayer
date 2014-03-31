@@ -1,30 +1,18 @@
-class Song
-  
-  include ActiveModel::Validations
-  include ActiveModel::Conversion
-  extend ActiveModel::Naming
-  
-  attr_accessor :path, :root, :mime_type, :artist, :title
-  validates_presence_of :mime_type
-  
-  def self.attr_accessor(*vars)
-    @attributes ||= []
-    @attributes.concat( vars )
-    super
-  end
+require 'digest/md5'
 
- def self.attributes
-   @attributes
- end
+class Song < ActiveRecord::Base
 
- def initialize(attributes={})
-   attributes && attributes.each do |name, value|
-     send("#{name}=", value) if respond_to? name.to_sym 
-   end
- end
- 
- def self.inspect
-  "#<#{ self.to_s} #{ self.attributes.collect{ |e| ":#{ e }" }.join(', ') }>"
- end
+    self.primary_key = "path_md5"
+    belongs_to :user
+    validates :path, presence: true
+    validates :path_md5, uniqueness: true
+    before_validation :ensure_md5
 
+private
+
+    def ensure_md5
+        if !self.path.blank? and self.path_md5.blank?
+            self.path_md5 = Digest::MD5.digest(self.path)
+        end
+    end
 end
