@@ -1,7 +1,18 @@
 <% content_for :javascript_includes do %>
+<%= javascript_include_tag "application" %>
 <script data-main="/assets/config" src="/assets/lib/quo.js"></script>
 <script data-main="/assets/config" src="/assets/lib/lungo.js"></script>
-<script data-main="/assets/config" src="/assets/lib/require.js"></script>
+<script data-main="/assets/config" src="/assets/lib/underscore-min.js"></script>
+<script data-main="/assets/config" src="/assets/lib/backbone-min.js"></script>
+<script data-main="/assets/config" src="/assets/app/models/song.js"></script>
+<script data-main="/assets/config" src="/assets/app/collections/songs.js"></script>
+<script data-main="/assets/config" src="/assets/app/models/playlist.js"></script>
+<script data-main="/assets/config" src="/assets/app/views/song_view.js"></script>
+<script data-main="/assets/config" src="/assets/app/views/main_view.js"></script>
+<script data-main="/assets/config" src="/assets/app/views/plsong_view.js"></script>
+<script data-main="/assets/config" src="/assets/app/views/playlist.js"></script>
+<script data-main="/assets/config" src="/assets/app/views/controls.js"></script>
+<script data-main="/assets/config" src="/assets/app/main.js"></script>
 <% end %>
 
 <% content_for :css_includes do %>
