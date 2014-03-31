@@ -12,7 +12,6 @@ class SongsController < ApplicationController
             redirect_to(:controller => 'dropbox', :action => 'auth_start') and return
         end
         sync_songs client
-        
         current_user.songs.find_each do |song|
             save_id3_info(client, song)
         end
@@ -51,37 +50,31 @@ private
     end
 
     def save_id3_info(dropbox_client, song)
-        if !song.id3?
-            artist, title, album, genre = get_song_info(dropbox_client, song)
-            song.id3 = true
-            song.artist = artist
-            song.title = title
-            song.album = album
-            song.genre = genre
-            song.save
+        begin
+            if !song.id3?
+                artist, title, album, genre = get_mp3_info(dropbox_client, song)
+                song.id3 = true
+                song.artist = artist
+                song.title = title
+                song.album = album
+                song.genre = genre
+                song.save
+                puts "song #{song.path}", song.artist, song.title, song.album, song.genre
+            end
+        rescue Mp3InfoError => e
+            logger.error "#{song.path}: error getting id3 info"
+            logger.error e
         end
     end
 
-    def get_song_info(dropbox_client, song)
-        mp3_file = get_mp3_head_chunk(dropbox_client, song)
+    def get_mp3_info(dropbox_client, song)
+        mp3_file = get_mp3_head(dropbox_client, song)
         return get_id3_info(mp3_file)
     end
 
-    def get_mp3_head_chunk(dropbox_client, song)
+    def get_mp3_head(dropbox_client, song)
         resp = dropbox_client.get_file_chunk(song.path)
         return StringIO.new(resp)
-    end
-
-    def get_id3_info(mp3_file)
-        Mp3Info.open(mp3_file) do |mp3|
-          if not mp3.tag.empty?
-            artist = mp3.tag.artist
-            title = mp3.tag.title
-            genre = mp3.tag.genre
-            album = mp3.tag.album
-          end
-          return artist, title, album, genre
-        end
     end
 
 end

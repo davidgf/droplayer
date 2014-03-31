@@ -8,7 +8,7 @@ gem 'sqlite3'
 
 gem 'dropbox-sdk'
 gem 'json'
-gem 'mp3info'
+gem 'ruby-mp3info'
 gem 'iconv'
 gem 'clearance'
 
@@ -48,4 +48,4 @@ end
 # gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]
