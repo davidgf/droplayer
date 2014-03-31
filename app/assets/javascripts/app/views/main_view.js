@@ -24,7 +24,8 @@ define(['jquery', 'underscore', 'backbone', 'views/song_view'], function($, _ , 
     },
 
     fetchSongs: function(){
-      window.app.library.fetch({validate:true});
+      console.log('Fetching songs');
+      window.app.library.fetch({validate:false});
     },
 
     timeUpdate: function(){
