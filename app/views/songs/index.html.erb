@@ -1,26 +1,24 @@
 <% content_for :javascript_includes do %>
+<script data-main="/assets/config" src="/assets/lib/quo.js"></script>
+<script data-main="/assets/config" src="/assets/lib/lungo.js"></script>
 <script data-main="/assets/config" src="/assets/lib/require.js"></script>
 <% end %>
 
 <% content_for :css_includes do %>
 <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-<!--<link href="/assets/lungo/lungo.css" rel="stylesheet" />
-<link rel="stylesheet" href="/assets/lungo/lungo.icon.brand.css" />
-<link rel="stylesheet" href="/assets/lungo/lungo.icon.css" />
-<link rel="stylesheet" href="/assets/lungo/theme.lungo.css" />-->
 <% end %>
 
 <section id="main" data-transition="slide">
     <header data-title="My Music">
-        <nav>
-            <a id="mybtn" href="javascript:void(0)" data-icon="refresh" class="right"></a>
+        <nav class="on-right">
+            <a id="mybtn" href="javascript:void(0)" data-icon="refresh"></a>
         </nav>
     </header>
-    <nav class="groupbar">
-        <a href="#main-article" data-router="article" class="active">
+    <nav data-control="groupbar">
+        <a href="#" data-view-article="main-article" class="active">
             Library
         </a>
-        <a href="#playlist-article" data-router="article">
+        <a href="#" data-view-article="playlist-article">
             Playlist
         </a>
     </nav>

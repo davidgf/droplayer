@@ -1,4 +1,4 @@
-require(['jquery', 'backbone', 'underscore', 'models/song', 'collections/songs', 'models/playlist', 'views/main_view', 'views/playlist', 'views/controls', 'lungo'], function($, Backbone, _, song, songs, playlist, mainview, plview, controls, Lungo) {
+require(['jquery', 'backbone', 'underscore', 'models/song', 'collections/songs', 'models/playlist', 'views/main_view', 'views/playlist', 'views/controls'], function($, Backbone, _, song, songs, playlist, mainview, plview, controls) {
 
     
 
