@@ -8,8 +8,8 @@ var MainView = Backbone.View.extend({
   },
 
   initialize: function(){
-      //window.app.collections.songs.on('add', this.render, this );
-      window.app.library.on('reset', this.render, this );
+      // window.app.library.on('reset', this.render, this );
+      window.app.library.on('add', this.render, this );
   },
   
   render: function(){
@@ -24,7 +24,7 @@ var MainView = Backbone.View.extend({
 
   fetchSongs: function(){
     console.log('Fetching songs');
-    window.app.library.fetch({validate:false});
+    window.app.library.fetch({remove:true});
   },
 
   timeUpdate: function(){
