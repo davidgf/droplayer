@@ -11,7 +11,7 @@ class SongsController < ApplicationController
         unless client
             redirect_to(:controller => 'dropbox', :action => 'auth_start') and return
         end
-        sync_songs client
+        # sync_songs client
         current_user.songs.find_each do |song|
             save_id3_info(client, song)
         end

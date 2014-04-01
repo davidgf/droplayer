@@ -1,0 +1,13 @@
+//= require lib/quo
+//= require lib/lungo
+//= require lib/underscore-min
+//= require lib/backbone-min
+//= require app/models/song
+//= require app/collections/songs
+//= require app/models/playlist
+//= require app/views/song_view
+//= require app/views/main_view
+//= require app/views/plsong_view
+//= require app/views/playlist
+//= require app/views/controls
+//= require app/main
