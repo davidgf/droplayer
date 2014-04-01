@@ -10,6 +10,7 @@ var MainView = Backbone.View.extend({
   initialize: function(){
       // window.app.library.on('reset', this.render, this );
       window.app.library.on('add', this.render, this );
+      this.render();
   },
   
   render: function(){

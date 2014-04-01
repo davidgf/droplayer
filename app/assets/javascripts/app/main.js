@@ -2,7 +2,7 @@ $(function() {
     
     app = {};
  
-    app.library = new Songs();
+    app.library = new Songs(window.songs_json);
     app.library.url = '/songs';
     app.playlist = new Playlist();
     app.songslist = new MainView();
