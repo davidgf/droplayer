@@ -1,4 +1,9 @@
 var Song = Backbone.Model.extend({
+    defaults: {
+        "artist_default": "Unknown",
+        "album_default": "Unknown"
+    },
+
     initialize : function() {
 
     },
