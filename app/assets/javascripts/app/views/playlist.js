@@ -6,7 +6,6 @@ var PlaylistView = Backbone.View.extend({
   },
 
   initialize: function(){
-      console.log(app.playlist);
       window.app.playlist.get('songs').on('add', this.addOne, this );
   },
   

@@ -1,0 +1,32 @@
+<section id="player" data-transition="slide">
+    <header data-title="Player">
+        <nav>
+            <%= render "aside_button" %>
+        </nav>
+    </header>    
+    <article id="playlist-article" class="scroll">
+        <div class="">
+            <div id="first-article" class="list">
+                <ul id="playlist"></ul>
+            </div>
+        </div>
+        <div id="controls" class="text align_center">
+            <audio autoplay="autoplay" id="myaudio" ></audio>
+            <div class="skip_song prev">
+                <div class="triangle" ></div>
+            </div>
+            <div class="container_button" >
+                <div class="hole" >
+                    <div class="play_button" >
+                        <div class="triangle" ></div>
+                        <div class="lighter_triangle" ></div>
+                        <div class="darker_triangle" ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skip_song next">
+                <div class="triangle" ></div>
+            </div>
+        </div>
+    </article>
+</section>

@@ -1,0 +1,29 @@
+<section id="library" data-aside="options" data-transition="slide">
+    <header data-title="My Music">
+        <nav>
+            <%= render "aside_button" %>
+        </nav>
+        <nav class="on-right">
+            <a id="mybtn" href="javascript:void(0)" data-icon="refresh"></a>
+        </nav>
+    </header>
+    <article id="main-article" class="active list scroll">
+        <div id="flash">
+          <% flash.each do |key, value| %>
+            <div class="flash <%= key %>"><%= value %></div>
+          <% end %>
+        </div>
+        <div class="">
+            <div id="first-article" class="">
+                <ul id="songslist"></ul>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <nav>
+            <a href="#" data-icon="music" class="active"></a>
+            <a href="#" data-icon="user"></a>
+            <a href="#" data-icon="picture"></a>
+        </nav>
+    </footer>
+</section>
