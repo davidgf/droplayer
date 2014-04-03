@@ -6,7 +6,8 @@ $(function() {
     app.library.url = '/songs';
     app.playlist = new Playlist();
     app.songslist = new MainView();
-    app.plview = new PlaylistView();
+    app.artistslist = new MainView();
+    app.plview = new ByArtistView();
     app.controls = new Controls();
 
     Lungo.init({

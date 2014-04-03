@@ -7,6 +7,7 @@
 //= require app/models/playlist
 //= require app/views/song_view
 //= require app/views/main_view
+//= require app/views/songs_by_artist
 //= require app/views/plsong_view
 //= require app/views/playlist
 //= require app/views/controls
