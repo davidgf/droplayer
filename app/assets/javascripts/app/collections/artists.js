@@ -6,7 +6,14 @@ var Artists = Backbone.Collection.extend({
     },
 
     addSong: function(song) {
-        console.log('adding song');
-        console.log(song);
+        var artist_name = song.get('artist');
+        var artists = this.where({"name": artist_name});
+        var artist = null;
+        if(artists.length < 1){
+            artist = new Artist({"name": artist_name});
+            this.add(artist);
+        } else
+            artist = artists[0]
+        song.set({'artist_model': artist});
     }
 });

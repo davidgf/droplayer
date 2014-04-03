@@ -4,14 +4,14 @@ var SongView = Backbone.View.extend({
       '<strong><%= song.title %></strong>'+
     '<% }else {%>'+
       '<strong><%= song.path %></strong>'+
-    '<% } %>'+'<small><%= song.artist || song.artist_default %></small>'),
+    '<% } %>'+'<small><%= song.artist %></small>'),
   events: {
     'click': 'addToPlaylist'
   },
 
   initialize: function(){
-      window.app.library.on('add', this.render, this );
-      window.app.library.on('reset', this.render, this );
+      // window.app.library.on('add', this.render, this );
+      // window.app.library.on('reset', this.render, this );
   },
 
   render: function(){
