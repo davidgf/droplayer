@@ -3,7 +3,9 @@
 //= require lib/underscore-min
 //= require lib/backbone-min
 //= require app/models/song
+//= require app/models/artist
 //= require app/collections/songs
+//= require app/collections/artists
 //= require app/models/playlist
 //= require app/views/song_view
 //= require app/views/main_view
