@@ -1,7 +1,7 @@
 var PlaylistView = Backbone.View.extend({
   el: '#playlist',
   //songsTemplate: _.template($('#songslisttpl').html()),
-  songTemplate: _.template('<li><strong><%= song.path %></strong></li>'),
+  songTemplate: _.template(SongArtistTemplate),
   events: {
   },
 

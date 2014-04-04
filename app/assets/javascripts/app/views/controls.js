@@ -2,9 +2,9 @@ var Controls = Backbone.View.extend({
   el: '#controls',
 
   events: {
-    'click .hole': 'playToggle',
-    'click .skip_song.next': 'playNext',
-    'click .skip_song.prev': 'playPrev'
+    'click .play': 'playToggle',
+    'click .next_song': 'playNext',
+    'click .prev_song': 'playPrev'
   },
 
   initialize: function(){
@@ -21,6 +21,7 @@ var Controls = Backbone.View.extend({
   },
 
   playToggle: function() {
+    console.log('play');
     if (this.audio.paused) {
       this.audio.play();
     } else{

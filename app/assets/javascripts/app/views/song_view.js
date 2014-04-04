@@ -1,10 +1,6 @@
 var SongView = Backbone.View.extend({
   tagName: 'li',
-  songTemplate: _.template('<% if(song.title){ %>'+
-      '<strong><%= song.title %></strong>'+
-    '<% }else {%>'+
-      '<strong><%= song.path %></strong>'+
-    '<% } %>'+'<small><%= song.artist %></small>'),
+  songTemplate: _.template(SongArtistTemplate),
   events: {
     'click': 'addToPlaylist'
   },

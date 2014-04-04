@@ -10,23 +10,16 @@
                 <ul id="playlist"></ul>
             </div>
         </div>
-        <div id="controls" class="text align_center">
-            <audio autoplay="autoplay" id="myaudio" ></audio>
-            <div class="skip_song prev">
-                <div class="triangle" ></div>
-            </div>
-            <div class="container_button" >
-                <div class="hole" >
-                    <div class="play_button" >
-                        <div class="triangle" ></div>
-                        <div class="lighter_triangle" ></div>
-                        <div class="darker_triangle" ></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skip_song next">
-                <div class="triangle" ></div>
-            </div>
-        </div>
     </article>
+    <footer>
+        <div id="controls" class="layout horizontal">
+            <audio autoplay="autoplay" id="myaudio" ></audio>
+            <div data-layout="secondary" class="secondary layout horizontal">
+                <div class="icon backward prev_song"></div>
+                <div class="icon play play"></div>
+                <div class="icon forward next_song"></div>
+            </div>
+            <div data-layout="primary">aaa</div>
+        </div>
+    </footer>
 </section>

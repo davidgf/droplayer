@@ -10,3 +10,11 @@ var GroupedSongsTemplate =
             <% }); %> \
         </ul> \
     </div>';
+
+var SongArtistTemplate = 
+    '<% if(song.title){ %> \
+        <strong><%= song.title %></strong> \
+    <% }else {%> \
+        <strong><%= song.path %></strong> \
+    <% } %> \
+    <small><%= song.artist %></small>'
