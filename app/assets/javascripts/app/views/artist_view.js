@@ -1,13 +1,12 @@
 var ArtistView = Backbone.View.extend({
   tagName: 'li',
-  artistTemplate: _.template('<%= artist_name %>'),
-  songsTemplate: _.template('<div class="songslist">'+
-    '<% _.each(songs, function(song){ %>'+
-      '<li><strong><%= song.get("title") || song.get("path") %></strong></li>'+
-    '<% }); %>'+
-    '</div>'),
+  className: 'color',
+  artistTemplate: _.template('<strong class="artist_name"><%= artist_name %></strong>'),
+  songsTemplate: _.template(GroupedSongsTemplate),
   events: {
-    'click': 'showSongs'
+    'click strong.artist_name': 'showSongs',
+    'click .playall': 'playAll',
+    'click .qeueall': 'qeueAll'
   },
 
   initialize: function(){
@@ -25,5 +24,13 @@ var ArtistView = Backbone.View.extend({
     else
       songslist.toggle();
     return this;
+  },
+
+  playAll: function(){
+    app.playlist.playSongs();
+  },
+
+  qeueAll: function(){
+    app.playlist.addSong(this.collection);
   }
 });

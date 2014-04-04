@@ -5,6 +5,7 @@
 //= require app/models/song
 //= require app/collections/songs
 //= require app/models/playlist
+//= require app/views/templates
 //= require app/views/song_view
 //= require app/views/artist_view
 //= require app/views/album_view

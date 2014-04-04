@@ -1,18 +1,16 @@
 var AlbumView = Backbone.View.extend({
   tagName: 'li',
-  albumTemplate: _.template('<% if(album != "null"){ %>'+
+  albumTemplate: _.template('<span class="album_name"><% if(album != "null"){ %>'+
         '<strong><%= album %></strong><small><%= artist %></small>'+
       '<% } else { %>'+
         '<strong>Unknown</strong><small>Various</small>'+
-      '<% } %>'
+      '<% } %></span>'
       ),
-  songsTemplate: _.template('<div class="songslist">'+
-    '<% _.each(songs, function(song){ %>'+
-      '<li><strong><%= song.get("title") || song.get("path") %></strong></li>'+
-    '<% }); %>'+
-    '</div>'),
+  songsTemplate: _.template(GroupedSongsTemplate),
   events: {
-    'click': 'showSongs'
+    'click span.album_name': 'showSongs',
+    'click .playall': 'playAll',
+    'click .qeueall': 'qeueAll'
   },
 
   initialize: function(){
@@ -31,5 +29,13 @@ var AlbumView = Backbone.View.extend({
     else
       songslist.toggle();
     return this;
+  },
+
+  playAll: function(){
+    app.playlist.playSongs();
+  },
+
+  qeueAll: function(){
+    app.playlist.addSong(this.collection);
   }
 });
