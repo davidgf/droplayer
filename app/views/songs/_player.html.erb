@@ -1,0 +1,24 @@
+<section id="player" data-transition="slide">
+    <header data-title="Player">
+        <nav>
+            <%= render "aside_button" %>
+        </nav>
+    </header>    
+    <article id="playlist-article" class="scroll">
+        <div class="">
+            <div id="first-article" class="list">
+                <ul id="playlist"></ul>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div id="controls" class="layout horizontal">
+            <audio autoplay="autoplay" id="myaudio" ></audio>
+            <div data-layout="secondary" class="secondary layout horizontal">
+                <div class="icon backward prev_song"></div>
+                <div class="icon play play_btn"></div>
+                <div class="icon forward next_song"></div>
+            </div>
+        </div>
+    </footer>
+</section>

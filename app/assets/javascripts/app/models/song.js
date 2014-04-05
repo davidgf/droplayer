@@ -1,6 +1,14 @@
 var Song = Backbone.Model.extend({
-    initialize : function() {
 
+    defaults: {
+        "artist_default": "Unknown",
+        "album_default": "Unknown"
+    },
+
+    initialize : function(attrs) {
+        if(!attrs.hasOwnProperty('artist') || !attrs.artist){
+            this.set({'artist': this.defaults.artist_default});
+        }
     },
 
     getMediaLink: function(callback){

@@ -1,6 +1,6 @@
 var PlsongView = Backbone.View.extend({
   tagName: 'li',
-  songTemplate: _.template('<strong><%= song.path %></strong>'),
+  songTemplate: _.template(SongArtistTemplate),
   events: {
     'click': 'changeSong'
   },

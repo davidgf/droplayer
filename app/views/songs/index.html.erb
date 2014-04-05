@@ -1,89 +1,15 @@
 <% content_for :javascript_includes do %>
-<%= javascript_include_tag "application" %>
-<script data-main="/assets/config" src="/assets/lib/quo.js"></script>
-<script data-main="/assets/config" src="/assets/lib/lungo.js"></script>
-<script data-main="/assets/config" src="/assets/lib/underscore-min.js"></script>
-<script data-main="/assets/config" src="/assets/lib/backbone-min.js"></script>
-<script data-main="/assets/config" src="/assets/app/models/song.js"></script>
-<script data-main="/assets/config" src="/assets/app/collections/songs.js"></script>
-<script data-main="/assets/config" src="/assets/app/models/playlist.js"></script>
-<script data-main="/assets/config" src="/assets/app/views/song_view.js"></script>
-<script data-main="/assets/config" src="/assets/app/views/main_view.js"></script>
-<script data-main="/assets/config" src="/assets/app/views/plsong_view.js"></script>
-<script data-main="/assets/config" src="/assets/app/views/playlist.js"></script>
-<script data-main="/assets/config" src="/assets/app/views/controls.js"></script>
-<script data-main="/assets/config" src="/assets/app/main.js"></script>
+    <%= javascript_tag do %>
+        window.songs_json = <%= raw @songs.to_json %>;
+    <% end %>
+    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "player" %>
 <% end %>
 
 <% content_for :css_includes do %>
 <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 <% end %>
 
-<section id="main" data-transition="slide">
-    <header data-title="My Music">
-        <nav class="on-right">
-            <a id="mybtn" href="javascript:void(0)" data-icon="refresh"></a>
-        </nav>
-    </header>
-    <nav data-control="groupbar">
-        <a href="#" data-view-article="main-article" class="active">
-            Library
-        </a>
-        <a href="#" data-view-article="playlist-article">
-            Playlist
-        </a>
-    </nav>
-    <article id="main-article" class="indented active">
+<%= render "aside_menu" %>
 
-        <% if signed_in? %>
-          Signed in as: <%= current_user.email %>
-          <%= link_to 'Sign out', sign_out_path, method: :delete %>
-        <% else %>
-          <%= link_to 'Sign in', sign_in_path %>
-        <% end %>
-
-        <div id="flash">
-          <% flash.each do |key, value| %>
-            <div class="flash <%= key %>"><%= value %></div>
-          <% end %>
-        </div>
-        <div class="lists scroll">
-            <div id="first-article" class="list scroll">
-                <ul id="songslist"></ul>
-            </div>
-        </div>
-    </article>
-    <article id="playlist-article" class="indented">
-        <div class="lists scroll">
-            <div id="first-article" class="list scroll">
-                <ul id="playlist"></ul>
-            </div>
-        </div>
-        <div id="controls" class="text align_center">
-            <audio autoplay="autoplay" id="myaudio" ></audio>
-            <div class="skip_song prev">
-                <div class="triangle" ></div>
-            </div>
-            <div class="container_button" >
-                <div class="hole" >
-                    <div class="play_button" >
-                        <div class="triangle" ></div>
-                        <div class="lighter_triangle" ></div>
-                        <div class="darker_triangle" ></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skip_song next">
-                <div class="triangle" ></div>
-            </div>
-        </div>
-    </article>
-</section>
-
-<script type="text/template" id="songslisttpl">
-    {{ _.each(songs, function(song){ }}
-        <li>
-            <strong>{{= song.path }}</strong>
-        </li>
-    {{ }); }}
-</script>
+<%= render "app_main" %>

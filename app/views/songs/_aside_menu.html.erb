@@ -1,0 +1,16 @@
+<aside id="options">
+    <header data-title="Options"></header>
+    <article class="active list scroll">
+        <ul>
+            <li data-view-section="library" data-icon="music">
+                <strong>Library</strong>
+            </li>
+            <li data-view-section="player" data-icon="headphones">
+                <strong>Player</strong>
+            </li>
+            <li data-icon="signout">
+                <strong><%= link_to 'Sign out', sign_out_path, method: :delete %></strong>
+            </li>
+        </ul>
+    </article>
+</aside>

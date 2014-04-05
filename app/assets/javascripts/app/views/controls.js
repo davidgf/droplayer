@@ -1,15 +1,18 @@
 var Controls = Backbone.View.extend({
   el: '#controls',
 
+  playIconClass: 'play',
+  pauseIconClass: 'pause',
+
   events: {
-    'click .hole': 'playToggle',
-    'click .skip_song.next': 'playNext',
-    'click .skip_song.prev': 'playPrev'
+    'click .play_btn': 'playToggle',
+    'click .next_song': 'playNext',
+    'click .prev_song': 'playPrev'
   },
 
   initialize: function(){
     app.playlist.on('playsong',this.play,this);
-      this.audio = this.$el.find('audio')[0];
+    this.audio = this.$el.find('audio')[0];
   },
 
   play: function(song){
@@ -21,11 +24,20 @@ var Controls = Backbone.View.extend({
   },
 
   playToggle: function() {
+    console.log('play');
     if (this.audio.paused) {
       this.audio.play();
     } else{
       this.audio.pause();
     }
+  },
+
+  togglePlayIcon: function(){
+    var play_btn = this.$el.find('.play_btn'); 
+    if(play_btn.hasClass(this.playIconClass))
+      play_btn.removeClass(this.playIconClass).addClass(this.pauseIconClass);
+    else
+      play_btn.removeClass(this.pauseIconClass).addClass(this.playIconClass);
   },
 
   playNext: function(){

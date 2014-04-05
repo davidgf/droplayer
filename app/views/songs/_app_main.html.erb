@@ -1,0 +1,11 @@
+<%= render "library" %>
+
+<%= render "player" %>
+
+<script type="text/template" id="songslisttpl">
+    {{ _.each(songs, function(song){ }}
+        <li>
+            <strong>{{= song.path }}</strong>
+        </li>
+    {{ }); }}
+</script>

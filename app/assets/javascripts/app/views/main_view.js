@@ -1,6 +1,5 @@
 var MainView = Backbone.View.extend({
-  el: '#main',
-  //songsTemplate: _.template($('#songslisttpl').html()),
+  el: '#library',
   songsTemplate: _.template('<% _.each(songs, function(song){ %><li><strong><%= song.path %></strong></li><% }); %>'),
   events: {
     'click #mybtn': 'fetchSongs',
@@ -8,8 +7,9 @@ var MainView = Backbone.View.extend({
   },
 
   initialize: function(){
-      //window.app.collections.songs.on('add', this.render, this );
-      window.app.library.on('reset', this.render, this );
+      // window.app.library.on('reset', this.render, this );
+      window.app.library.on('add', this.render, this );
+      this.render();
   },
   
   render: function(){
@@ -23,8 +23,7 @@ var MainView = Backbone.View.extend({
   },
 
   fetchSongs: function(){
-    console.log('Fetching songs');
-    window.app.library.fetch({validate:false});
+    window.app.library.fetch({remove:true});
   },
 
   timeUpdate: function(){
