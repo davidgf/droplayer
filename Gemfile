@@ -11,6 +11,9 @@ gem 'json'
 gem 'ruby-mp3info'
 gem 'iconv'
 gem 'clearance'
+gem 'sidekiq'
+gem 'sinatra', require: false
+gem 'slim'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
