@@ -1,19 +1,3953 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  title: MyString
-  artist: MyString
-  album: MyString
-  genre: MyString
-  path: MyString
-  path_md5: 
-  user_id: 
-
-two:
-  title: MyString
-  artist: MyString
-  album: MyString
-  genre: MyString
-  path: MyString
-  path_md5: 
-  user_id: 
+---
+songs_001:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/acdc_touch_too_much.mp3"
+  path_md5: !binary |-
+    +TmsQdnBFZVKBWVM37G0Bw==
+  user_id: 2
+  created_at: '2014-03-31 17:14:40.885128'
+  updated_at: '2014-03-31 17:39:28.755932'
+  id3: t
+songs_002:
+  title: California Uber Alles
+  artist: Dead Kennedys
+  album: Give me convenience OR give me death
+  genre: 
+  path: "/boarding_passes/Dead Kennedys - 03 - California Uber Alles.mp3"
+  path_md5: !binary |-
+    VpIzyC5XUic6kfkoifYNNw==
+  user_id: 2
+  created_at: '2014-03-31 17:14:41.031004'
+  updated_at: '2014-03-31 17:39:12.545425'
+  id3: t
+songs_003:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Badfinger - Baby Blue.mp3"
+  path_md5: !binary |-
+    KkJJGbHwU9YaWUwSgIYvDA==
+  user_id: 2
+  created_at: '2014-03-31 17:14:41.161880'
+  updated_at: '2014-03-31 17:39:08.675684'
+  id3: t
+songs_004:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Apps/barullo/Highway to Hell - 04 - Touch too much.mp3"
+  path_md5: !binary |-
+    3QTkA11nv1cycj67YfXHLg==
+  user_id: 2
+  created_at: '2014-03-31 17:14:41.282795'
+  updated_at: '2014-03-31 17:39:25.585302'
+  id3: t
+songs_005:
+  title: California Uber Alles
+  artist: Dead Kennedys
+  album: Give me convenience OR give me death
+  genre: 
+  path: "/Apps/barullo/Dead Kennedys - 03 - California Uber Alles.mp3"
+  path_md5: !binary |-
+    ZLJpbu9g8O/Sr/mqI8e+vQ==
+  user_id: 2
+  created_at: '2014-03-31 17:14:41.427820'
+  updated_at: '2014-03-31 17:39:16.483281'
+  id3: t
+songs_006:
+  title: California Uber Alles
+  artist: Dead Kennedys
+  album: Give me convenience OR give me death
+  genre: 
+  path: "/Apps/barullo/musica/Dead Kennedys - California Uber Alles.mp3"
+  path_md5: !binary |-
+    loO/n6+eZzILWnZ0bIrRGw==
+  user_id: 2
+  created_at: '2014-03-31 17:14:41.549616'
+  updated_at: '2014-03-31 17:39:19.513671'
+  id3: t
+songs_007:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Apps/barullo/acdc_touch_too_much.mp3"
+  path_md5: !binary |-
+    lyySPe8WfWqE99bn8L4fpw==
+  user_id: 2
+  created_at: '2014-03-31 17:14:41.671634'
+  updated_at: '2014-03-31 17:39:22.395108'
+  id3: t
+songs_008:
+  title: Old Yellow Bricks
+  artist: Arctic Monkeys
+  album: Favourite Worst Nightmare
+  genre: 
+  path: "/Arctic Monkeys/Favourite Worst Nightmare (2007)/11 Old Yellow Bricks.mp3"
+  path_md5: !binary |-
+    UX4czH1YUoSQr47TQ5u0Xg==
+  user_id: 5
+  created_at: '2014-04-02 17:56:11.695480'
+  updated_at: '2014-04-02 17:56:25.128964'
+  id3: t
+songs_009:
+  title: Do Me A Favour
+  artist: Arctic Monkeys
+  album: Favourite Worst Nightmare
+  genre: 
+  path: "/Arctic Monkeys/Favourite Worst Nightmare (2007)/07 Do Me A Favour.mp3"
+  path_md5: !binary |-
+    bgcCFU4esBJ5X4mDJC6tMg==
+  user_id: 5
+  created_at: '2014-04-02 17:56:11.837148'
+  updated_at: '2014-04-02 17:56:28.872575'
+  id3: t
+songs_010:
+  title: This House Is a Circus
+  artist: Arctic Monkeys
+  album: Favourite Worst Nightmare
+  genre: 
+  path: "/Arctic Monkeys/Favourite Worst Nightmare (2007)/08 This House Is A Circus.mp3"
+  path_md5: !binary |-
+    YG1WMsdjOcEv60x7JXQBRQ==
+  user_id: 5
+  created_at: '2014-04-02 17:56:11.981337'
+  updated_at: '2014-04-02 17:56:27.187997'
+  id3: t
+songs_011:
+  title: '505'
+  artist: Arctic Monkeys
+  album: Favourite Worst Nightmare
+  genre: 
+  path: "/Arctic Monkeys/Favourite Worst Nightmare (2007)/12 505.mp3"
+  path_md5: !binary |-
+    kQTUGqlcwM0Fca6UtNnMkQ==
+  user_id: 5
+  created_at: '2014-04-02 17:56:12.104813'
+  updated_at: '2014-04-02 17:56:38.530937'
+  id3: t
+songs_012:
+  title: The Bad Thing
+  artist: Arctic Monkeys
+  album: Favourite Worst Nightmare
+  genre: 
+  path: "/Arctic Monkeys/Favourite Worst Nightmare (2007)/10 The Bad Thing.mp3"
+  path_md5: !binary |-
+    lKJxhWJ7JhRfzF6muh0PCQ==
+  user_id: 5
+  created_at: '2014-04-02 17:56:12.240009'
+  updated_at: '2014-04-02 17:56:41.165784'
+  id3: t
+songs_013:
+  title: If You Were There, Beware
+  artist: Arctic Monkeys
+  album: Favourite Worst Nightmare
+  genre: 
+  path: "/Arctic Monkeys/Favourite Worst Nightmare (2007)/09 If You Were There, Beware.mp3"
+  path_md5: !binary |-
+    28GJvv0dkUDBrJpbgGG+1A==
+  user_id: 5
+  created_at: '2014-04-02 17:56:12.382737'
+  updated_at: '2014-04-02 17:56:50.344612'
+  id3: t
+songs_014:
+  title: Only Ones Who Know
+  artist: Arctic Monkeys
+  album: Favourite Worst Nightmare
+  genre: 
+  path: "/Arctic Monkeys/Favourite Worst Nightmare (2007)/06 Only Ones Who Know.mp3"
+  path_md5: !binary |-
+    c0ltixq/RxLZKppajKAzLg==
+  user_id: 5
+  created_at: '2014-04-02 17:56:12.526386'
+  updated_at: '2014-04-02 17:56:31.580253'
+  id3: t
+songs_015:
+  title: Fluorescent Adolescent
+  artist: Arctic Monkeys
+  album: Favourite Worst Nightmare
+  genre: 
+  path: "/Arctic Monkeys/Favourite Worst Nightmare (2007)/05 Fluorescent Adolescent.mp3"
+  path_md5: !binary |-
+    xeNKIJjIko0K78aQCDArgg==
+  user_id: 5
+  created_at: '2014-04-02 17:56:12.648243'
+  updated_at: '2014-04-02 17:56:45.626676'
+  id3: t
+songs_016:
+  title: Balaclava
+  artist: Arctic Monkeys
+  album: Favourite Worst Nightmare
+  genre: 
+  path: "/Arctic Monkeys/Favourite Worst Nightmare (2007)/04 Balaclava.mp3"
+  path_md5: !binary |-
+    Bt/gN3Uq/V2K4YiRLWEmNg==
+  user_id: 5
+  created_at: '2014-04-02 17:56:12.813670'
+  updated_at: '2014-04-02 17:56:17.013878'
+  id3: t
+songs_017:
+  title: D Is For Dangerous
+  artist: Arctic Monkeys
+  album: Favourite Worst Nightmare
+  genre: 
+  path: "/Arctic Monkeys/Favourite Worst Nightmare (2007)/03 D Is For Dangerous.mp3"
+  path_md5: !binary |-
+    mQMEnSmX5PzjDLZZxk+HIQ==
+  user_id: 5
+  created_at: '2014-04-02 17:56:12.980811'
+  updated_at: '2014-04-02 17:56:43.271861'
+  id3: t
+songs_018:
+  title: Teddy Picker
+  artist: Arctic Monkeys
+  album: Favourite Worst Nightmare
+  genre: 
+  path: "/Arctic Monkeys/Favourite Worst Nightmare (2007)/02 Teddy Picker.mp3"
+  path_md5: !binary |-
+    +cBnLtQLIkRwfLIAao1ttg==
+  user_id: 5
+  created_at: '2014-04-02 17:56:13.145708'
+  updated_at: '2014-04-02 17:56:52.559535'
+  id3: t
+songs_019:
+  title: Brianstorm
+  artist: Arctic Monkeys
+  album: Favourite Worst Nightmare
+  genre: 
+  path: "/Arctic Monkeys/Favourite Worst Nightmare (2007)/01 Brianstorm.mp3"
+  path_md5: !binary |-
+    hFqIHIE/k9nBxeFRS4GIKQ==
+  user_id: 5
+  created_at: '2014-04-02 17:56:13.312718'
+  updated_at: '2014-04-02 17:56:36.350086'
+  id3: t
+songs_020:
+  title: Still Take You Home
+  artist: Arctic Monkeys
+  album: 
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/14 Arctic Monkeys - Still Take You
+    Home.mp3"
+  path_md5: !binary |-
+    J9az8UcrBfrzgukD2i1qlg==
+  user_id: 5
+  created_at: '2014-04-02 17:56:13.445527'
+  updated_at: '2014-04-02 17:56:19.388103'
+  id3: t
+songs_021:
+  title: Curtains Closed
+  artist: Arctic Monkeys
+  album: Untitled - 04-05-05
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/06 Arctic Monkeys - Curtains Closed.mp3"
+  path_md5: !binary |-
+    LtDi/6lKiMWIBebD/DT44w==
+  user_id: 5
+  created_at: '2014-04-02 17:56:13.591390'
+  updated_at: '2014-04-02 17:56:22.083604'
+  id3: t
+songs_022:
+  title: Wavin' Bye To The Train Or The Bus
+  artist: Arctic Monkeys
+  album: 'Demo #1'
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/15 Arctic Monkeys - Wavin' Bye To The
+    Train Or The Bus.mp3"
+  path_md5: !binary |-
+    1I9P+XgMV10MjF2tRn/kzg==
+  user_id: 5
+  created_at: '2014-04-02 17:56:13.735422'
+  updated_at: '2014-04-03 10:57:08.494912'
+  id3: t
+songs_023:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/16 Arctic Monkeys - On the run from
+    the MI5 (Live).mp3"
+  path_md5: !binary |-
+    fxBM9KOPFW2Kk74Cqz1STg==
+  user_id: 5
+  created_at: '2014-04-02 17:56:13.879487'
+  updated_at: '2014-04-02 17:56:34.301782'
+  id3: t
+songs_024:
+  title: Scummy
+  artist: Arctic Monkeys
+  album: 
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/13 Arctic Monkeys - Scummy.mp3"
+  path_md5: !binary |-
+    imespZlSrAUBSSlKrQ9O1Q==
+  user_id: 5
+  created_at: '2014-04-02 17:59:47.143113'
+  updated_at: '2014-04-02 17:59:49.574715'
+  id3: t
+songs_025:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/12 Arctic Monkeys - Riot Van.mp3"
+  path_md5: !binary |-
+    yeAcztrR1U0j1L8fSN67qw==
+  user_id: 5
+  created_at: '2014-04-02 17:59:47.281847'
+  updated_at: '2014-04-02 17:59:54.395226'
+  id3: t
+songs_026:
+  title: Arctic Monkeys - Knock A Door Run
+  artist: Arctic Monkeys
+  album: Untitled - 04-05-05
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/11 Arctic Monkeys - Knock A Door Run.mp3"
+  path_md5: !binary |-
+    q+ASTHwX6YAqhze4lsmZMw==
+  user_id: 5
+  created_at: '2014-04-02 17:59:47.415149'
+  updated_at: '2014-04-02 17:59:52.179108'
+  id3: t
+songs_027:
+  title: I Bet You Look Good On The Dancefloor(1)
+  artist: Arctic Monkeys
+  album: Arctic Monkeys
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/10 Arctic Monkeys - I bet You Look
+    Good On The Dancefloor(1).mp3"
+  path_md5: !binary |-
+    PL8JmVE/voO+diESMDDukw==
+  user_id: 5
+  created_at: '2014-04-02 18:03:59.736713'
+  updated_at: '2014-04-02 18:04:08.486111'
+  id3: t
+songs_028:
+  title: From The Ritz To The Rubble
+  artist: Arctic Monkeys
+  album: Five Minutes With Arctic Monkeys
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/09 Arctic Monkeys - From The Ritz To
+    The Rubble(2).mp3"
+  path_md5: !binary |-
+    MWN2u2FUBltTvsXDVfN1xw==
+  user_id: 5
+  created_at: '2014-04-02 18:03:59.903387'
+  updated_at: '2014-04-03 10:56:42.276372'
+  id3: t
+songs_029:
+  title: Fake Tales of San Francisco
+  artist: Arctic Monkeys
+  album: Untitled - 04-05-05
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/08 Arctic Monkeys - Fake Tales of San
+    Francisco.mp3"
+  path_md5: !binary |-
+    NQzTi6ovk/w7LEzAOAHkuw==
+  user_id: 5
+  created_at: '2014-04-02 18:04:00.058022'
+  updated_at: '2014-04-02 18:04:05.897891'
+  id3: t
+songs_030:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/07 Arctic Monkeys - Dancing Shoes.mp3"
+  path_md5: !binary |-
+    e8bHDigOaNrFxB+CUbk4bQ==
+  user_id: 5
+  created_at: '2014-04-02 18:04:58.576479'
+  updated_at: '2014-04-02 18:05:03.129327'
+  id3: t
+songs_031:
+  title: Cigarette Smoke
+  artist: Arctic Monkeys
+  album: 
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/05 Arctic Monkeys - Cigarette Smoke.mp3"
+  path_md5: !binary |-
+    fGwMRDsEXKuEDzeT2st/1w==
+  user_id: 5
+  created_at: '2014-04-02 18:07:47.351577'
+  updated_at: '2014-04-02 18:07:51.608186'
+  id3: t
+songs_032:
+  title: Arctic Monkeys - Choo Choo
+  artist: Arctic Monkeys
+  album: Untitled - 04-05-05
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/04 Arctic Monkeys - Choo Choo.mp3"
+  path_md5: !binary |-
+    wYU4W0Sgy/R1iRu5H5n8WQ==
+  user_id: 5
+  created_at: '2014-04-02 18:07:47.517779'
+  updated_at: '2014-04-02 18:07:54.291706'
+  id3: t
+songs_033:
+  title: Bigger Boys And Stolen Sweethearts
+  artist: Arctic Monkeys
+  album: Arctic Monkeys
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/03 Arctic Monkeys - Bigger Boys and
+    Stolen Sweethearts.mp3"
+  path_md5: !binary |-
+    Wq7npj16Zksbtlnxmux8EQ==
+  user_id: 5
+  created_at: '2014-04-02 18:11:24.118226'
+  updated_at: '2014-04-02 18:11:28.353658'
+  id3: t
+songs_034:
+  title: Mardy Bum
+  artist: Arctic Monkeys
+  album: Beneath the boardwalk
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/02 Arctic Monkeys - Mardy Bum.mp3"
+  path_md5: !binary |-
+    KAGJUbC0AZNuID+the2Nkw==
+  user_id: 5
+  created_at: '2014-04-02 18:11:24.253021'
+  updated_at: '2014-04-02 18:11:25.833804'
+  id3: t
+songs_035:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/01 Arctic Monkeys - A Certain Romance.mp3"
+  path_md5: !binary |-
+    e2JUKWEFmYHq9XDUtEeh1A==
+  user_id: 5
+  created_at: '2014-04-02 18:11:24.408813'
+  updated_at: '2014-04-02 18:11:29.802529'
+  id3: t
+songs_036:
+  title: The Jeweller's Hands
+  artist: Arctic Monkeys
+  album: Humbug
+  genre: 
+  path: "/Arctic Monkeys/Arctic Monkeys - Humbug (2009)/10. The Jeweller's Hands.mp3"
+  path_md5: !binary |-
+    tLV7CMuKTOVhenZ6PaaTAw==
+  user_id: 5
+  created_at: '2014-04-02 18:28:41.714491'
+  updated_at: '2014-04-03 10:57:01.019375'
+  id3: t
+songs_037:
+  title: Cornerstone
+  artist: Arctic Monkeys
+  album: Humbug
+  genre: 
+  path: "/Arctic Monkeys/Arctic Monkeys - Humbug (2009)/07. Cornerstone.mp3"
+  path_md5: !binary |-
+    LXLXQNu2GZcLVaI8BEfkDg==
+  user_id: 5
+  created_at: '2014-04-02 18:28:41.867452'
+  updated_at: '2014-04-03 10:56:38.668714'
+  id3: t
+songs_038:
+  title: Pretty Visitors
+  artist: Arctic Monkeys
+  album: Humbug
+  genre: 
+  path: "/Arctic Monkeys/Arctic Monkeys - Humbug (2009)/09. Pretty Visitors.mp3"
+  path_md5: !binary |-
+    f/fdrZsg5XOmy6Pfh4uxQw==
+  user_id: 5
+  created_at: '2014-04-02 18:28:42.000292'
+  updated_at: '2014-04-03 10:56:55.697954'
+  id3: t
+songs_039:
+  title: Fire And The Thud
+  artist: Arctic Monkeys
+  album: Humbug
+  genre: 
+  path: "/Arctic Monkeys/Arctic Monkeys - Humbug (2009)/06. Fire And The Thud.mp3"
+  path_md5: !binary |-
+    9FdATvhfAxhCMGto4ktV3w==
+  user_id: 5
+  created_at: '2014-04-02 18:28:42.144223'
+  updated_at: '2014-04-03 10:57:24.596758'
+  id3: t
+songs_040:
+  title: Dance Little Liar
+  artist: Arctic Monkeys
+  album: Humbug
+  genre: 
+  path: "/Arctic Monkeys/Arctic Monkeys - Humbug (2009)/08. Dance Little Liar.mp3"
+  path_md5: !binary |-
+    uU2ehCZa3cpGiabNvB3jCQ==
+  user_id: 5
+  created_at: '2014-04-02 18:28:42.277134'
+  updated_at: '2014-04-03 10:57:03.579344'
+  id3: t
+songs_041:
+  title: Dangerous Animals
+  artist: Arctic Monkeys
+  album: Humbug
+  genre: 
+  path: "/Arctic Monkeys/Arctic Monkeys - Humbug (2009)/03. Dangerous Animals.mp3"
+  path_md5: !binary |-
+    aafXLl9cUT+1+dOj4aBpGQ==
+  user_id: 5
+  created_at: '2014-04-02 18:28:42.410611'
+  updated_at: '2014-04-03 10:56:53.047873'
+  id3: t
+songs_042:
+  title: Crying Lightning
+  artist: Arctic Monkeys
+  album: Humbug
+  genre: 
+  path: "/Arctic Monkeys/Arctic Monkeys - Humbug (2009)/02. Crying Lightning.mp3"
+  path_md5: !binary |-
+    /buMAZuarzjeSniDs91H1Q==
+  user_id: 5
+  created_at: '2014-04-02 18:28:42.565581'
+  updated_at: '2014-04-03 10:57:27.177048'
+  id3: t
+songs_043:
+  title: My Propeller
+  artist: Arctic Monkeys
+  album: Humbug
+  genre: 
+  path: "/Arctic Monkeys/Arctic Monkeys - Humbug (2009)/01. My Propeller.mp3"
+  path_md5: !binary |-
+    RBWKkHKKJzsdAnTokxmzwA==
+  user_id: 5
+  created_at: '2014-04-02 18:28:42.710793'
+  updated_at: '2014-04-03 10:56:48.917812'
+  id3: t
+songs_044:
+  title: Potion Approaching
+  artist: Arctic Monkeys
+  album: Humbug
+  genre: 
+  path: "/Arctic Monkeys/Arctic Monkeys - Humbug (2009)/05. Potion Approaching.mp3"
+  path_md5: !binary |-
+    yA14ySuK4CKUSnF5jd+csw==
+  user_id: 5
+  created_at: '2014-04-02 18:28:42.887623'
+  updated_at: '2014-04-03 10:57:06.064295'
+  id3: t
+songs_045:
+  title: Secret Door
+  artist: Arctic Monkeys
+  album: Humbug
+  genre: 
+  path: "/Arctic Monkeys/Arctic Monkeys - Humbug (2009)/04. Secret Door.mp3"
+  path_md5: !binary |-
+    8rtGo5RMjnUO4+zQC8BniA==
+  user_id: 5
+  created_at: '2014-04-02 18:28:43.031855'
+  updated_at: '2014-04-03 10:57:22.169355'
+  id3: t
+songs_046:
+  title: Do You Want It All?
+  artist: Two Door Cinema Club
+  album: Four Words To Stand On
+  genre: 
+  path: "/Two Door Cinema Club/Four Words To Stand On/02 - Do You Want It All.mp3"
+  path_md5: !binary |-
+    8J+Rwnwrg9dYXm4qOsjQ+w==
+  user_id: 5
+  created_at: '2014-04-02 18:40:28.729134'
+  updated_at: '2014-04-03 10:57:19.600829'
+  id3: t
+songs_047:
+  title: Undercover Martyn
+  artist: Two Door Cinema Club
+  album: Four Words To Stand On
+  genre: 
+  path: "/Two Door Cinema Club/Four Words To Stand On/04 - Undercover Martyn.mp3"
+  path_md5: !binary |-
+    ntw0WEVyQle3JcxopTTI+Q==
+  user_id: 5
+  created_at: '2014-04-02 18:40:28.874989'
+  updated_at: '2014-04-03 10:56:58.436555'
+  id3: t
+songs_048:
+  title: Cigarettes In The Theatre
+  artist: Two Door Cinema Club
+  album: Four Words To Stand On
+  genre: 
+  path: "/Two Door Cinema Club/Four Words To Stand On/01 - Cigarettes In The Theatre.mp3"
+  path_md5: !binary |-
+    PU43ur8wgusDmiYNSdwxrw==
+  user_id: 5
+  created_at: '2014-04-02 18:40:28.997301'
+  updated_at: '2014-04-03 10:56:46.365486'
+  id3: t
+songs_049:
+  title: Standing On Ghosts
+  artist: Two Door Cinema Club
+  album: Four Words To Stand On
+  genre: 
+  path: "/Two Door Cinema Club/Four Words To Stand On/05 - Standing On Ghosts.mp3"
+  path_md5: !binary |-
+    12Xv2SPiCSUST0hclimAKQ==
+  user_id: 5
+  created_at: '2014-04-02 18:40:29.119535'
+  updated_at: '2014-04-03 10:57:17.061173'
+  id3: t
+songs_050:
+  title: New Houses
+  artist: Two Door Cinema Club
+  album: Four Words To Stand On
+  genre: 
+  path: "/Two Door Cinema Club/Four Words To Stand On/03 - New Houses.mp3"
+  path_md5: !binary |-
+    1cnDFaizvuoTb1Fn4/bkUQ==
+  user_id: 5
+  created_at: '2014-04-02 18:40:29.274956'
+  updated_at: '2014-04-03 10:57:14.445236'
+  id3: t
+songs_051:
+  title: Cochise
+  artist: Audioslave
+  album: 'Audioslave '
+  genre: 
+  path: "/audioslave/Audioslave - Audioslave/01 Cochise.mp3"
+  path_md5: !binary |-
+    mljTcXPqPgYL7o+MibGgrw==
+  user_id: 5
+  created_at: '2014-04-04 10:44:34.934162'
+  updated_at: '2014-04-04 11:03:32.462639'
+  id3: t
+songs_052:
+  title: Exploder
+  artist: Audioslave
+  album: 'Audioslave '
+  genre: 
+  path: "/audioslave/Audioslave - Audioslave/09 Exploder.mp3"
+  path_md5: !binary |-
+    NWTGq+Rrdij83OKdS9QIDA==
+  user_id: 5
+  created_at: '2014-04-04 10:44:35.069656'
+  updated_at: '2014-04-04 10:58:46.219043'
+  id3: t
+songs_053:
+  title: Hypnotize
+  artist: Audioslave
+  album: 'Audioslave '
+  genre: 
+  path: "/audioslave/Audioslave - Audioslave/10 Hypnotize.mp3"
+  path_md5: !binary |-
+    aEuqs6QZjTOu37ynkkzHtQ==
+  user_id: 5
+  created_at: '2014-04-04 10:44:35.202404'
+  updated_at: '2014-04-04 10:59:29.298716'
+  id3: t
+songs_054:
+  title: What You Are
+  artist: Audioslave
+  album: 'Audioslave '
+  genre: 
+  path: "/audioslave/Audioslave - Audioslave/04 What You Are.mp3"
+  path_md5: !binary |-
+    0EFNqTE99R5CEfz4a/NTMg==
+  user_id: 5
+  created_at: '2014-04-04 10:44:35.357682'
+  updated_at: '2014-04-04 11:04:38.273310'
+  id3: t
+songs_055:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/audioslave/Audioslave-Revelations-2006/07-audioslave-somedays.mp3"
+  path_md5: !binary |-
+    78231iywXPAwcnJrH69DRQ==
+  user_id: 5
+  created_at: '2014-04-04 10:44:35.501768'
+  updated_at: '2014-04-04 11:05:25.075277'
+  id3: t
+songs_056:
+  title: Revelations
+  artist: Audioslave
+  album: Revelations
+  genre: 
+  path: "/audioslave/Audioslave-Revelations-2006/01-audioslave-revelations.mp3"
+  path_md5: !binary |-
+    a+cwwbmw4tqzx0rUf8QYug==
+  user_id: 5
+  created_at: '2014-04-04 10:44:35.645200'
+  updated_at: '2014-04-04 10:59:32.259553'
+  id3: t
+songs_057:
+  title: Broken City
+  artist: Audioslave
+  album: Revelations
+  genre: 
+  path: "/audioslave/Audioslave-Revelations-2006/06-audioslave-broken_city.mp3"
+  path_md5: !binary |-
+    lMfDfeuhqkTJUP+mtIBNQg==
+  user_id: 5
+  created_at: '2014-04-04 10:44:35.778340'
+  updated_at: '2014-04-04 11:03:28.347560'
+  id3: t
+songs_058:
+  title: Original Fire
+  artist: Audioslave
+  album: Revelations
+  genre: 
+  path: "/audioslave/Audioslave-Revelations-2006/05-audioslave-original_fire.mp3"
+  path_md5: !binary |-
+    kY8vbUebo/sjKH7XYi7lsg==
+  user_id: 5
+  created_at: '2014-04-04 10:44:35.933192'
+  updated_at: '2014-04-04 11:00:15.522888'
+  id3: t
+songs_059:
+  title: Until We Fall
+  artist: Audioslave
+  album: Revelations
+  genre: 
+  path: "/audioslave/Audioslave-Revelations-2006/04-audioslave-until_we_fall.mp3"
+  path_md5: !binary |-
+    sWe8TngFUuUEBhlZ8Vbs1g==
+  user_id: 5
+  created_at: '2014-04-04 10:44:36.099775'
+  updated_at: '2014-04-04 11:03:52.766303'
+  id3: t
+songs_060:
+  title: One And The Same
+  artist: Audioslave
+  album: Revelations
+  genre: 
+  path: "/audioslave/Audioslave-Revelations-2006/02-audioslave-one_and_the_same.mp3"
+  path_md5: !binary |-
+    DZCtbS0gmZgc0T6pxea4KA==
+  user_id: 5
+  created_at: '2014-04-04 10:44:36.254062'
+  updated_at: '2014-04-04 10:58:28.338237'
+  id3: t
+songs_061:
+  title: Jewel Of The Summertime
+  artist: Audioslave
+  album: Revelations
+  genre: 
+  path: "/audioslave/Audioslave-Revelations-2006/09-audioslave-jewel_of_the_summertime.mp3"
+  path_md5: !binary |-
+    LqM/6z0xHycM5eki3iI9oA==
+  user_id: 5
+  created_at: '2014-04-04 10:44:36.385751'
+  updated_at: '2014-04-04 10:58:37.007424'
+  id3: t
+songs_062:
+  title: The Worm
+  artist: Audioslave
+  album: Out Of Exile
+  genre: 
+  path: "/audioslave/Audioslave-Out_Of_Exile-(Retail)-2005-HHI/07-Audioslave-The_Worm-HHI.mp3"
+  path_md5: !binary |-
+    koORlF2rqBuinVkUrmH4rQ==
+  user_id: 5
+  created_at: '2014-04-04 10:44:36.520290'
+  updated_at: '2014-04-04 11:03:21.760112'
+  id3: t
+songs_063:
+  title: Man Or Animal
+  artist: Audioslave
+  album: Out Of Exile
+  genre: 
+  path: "/audioslave/Audioslave-Out_Of_Exile-(Retail)-2005-HHI/08-Audioslave-Man_Or_Animal-HHI.mp3"
+  path_md5: !binary |-
+    0bqUNMlSHJtqfAsvd/Ek4w==
+  user_id: 5
+  created_at: '2014-04-04 10:44:36.653261'
+  updated_at: '2014-04-04 11:04:48.257393'
+  id3: t
+songs_064:
+  title: Nothing Left To Say But Goodbye
+  artist: Audioslave
+  album: Revelations
+  genre: 
+  path: "/audioslave/Audioslave-Revelations-2006/11-audioslave-nothing_left_to_say_but_goodbye.mp3"
+  path_md5: !binary |-
+    sYKQRkWH4RNN9/ANUBKNig==
+  user_id: 5
+  created_at: '2014-04-04 10:44:36.798720'
+  updated_at: '2014-04-04 11:03:55.150518'
+  id3: t
+songs_065:
+  title: Drown Me Slowly
+  artist: Audioslave
+  album: Out Of Exile
+  genre: 
+  path: "/audioslave/Audioslave-Out_Of_Exile-(Retail)-2005-HHI/05-Audioslave-Drown_Me_Slowly-HHI.mp3"
+  path_md5: !binary |-
+    BNBNJMXJ7b6EW/CEPF1MaQ==
+  user_id: 5
+  created_at: '2014-04-04 10:44:36.943509'
+  updated_at: '2014-04-04 10:58:25.788298'
+  id3: t
+songs_066:
+  title: Your Time Has Come
+  artist: Audioslave
+  album: Out Of Exile
+  genre: 
+  path: "/audioslave/Audioslave-Out_Of_Exile-(Retail)-2005-HHI/01-Audioslave-Your_Time_Has_Come-HHI.mp3"
+  path_md5: !binary |-
+    +GUybEe6NJxHxqxuNnH0rw==
+  user_id: 5
+  created_at: '2014-04-04 10:44:37.097521'
+  updated_at: '2014-04-04 11:05:35.654454'
+  id3: t
+songs_067:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Wolfmother/12 Love Train.mp3"
+  path_md5: !binary |-
+    LyMvqYdosiSfu/9JwrY9zw==
+  user_id: 5
+  created_at: '2014-04-04 10:51:20.865183'
+  updated_at: '2014-04-04 10:58:40.744545'
+  id3: t
+songs_068:
+  title: Monolith
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - Monolith.mp3"
+  path_md5: !binary |-
+    S4rRM152XWhhoLeNZFd/Gg==
+  user_id: 5
+  created_at: '2014-04-04 10:51:21.008861'
+  updated_at: '2014-04-04 10:59:01.709594'
+  id3: t
+songs_069:
+  title: Golden Ratio
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - Golden Ratio.mp3"
+  path_md5: !binary |-
+    giigt6Abwmt6dENNBoxDKw==
+  user_id: 5
+  created_at: '2014-04-04 10:51:21.165363'
+  updated_at: '2014-04-04 11:00:00.485854'
+  id3: t
+songs_070:
+  title: Mutatis Mutandis
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - Mutatis Mutandis.mp3"
+  path_md5: !binary |-
+    lKXTtj+rHZ1jLZa+s/RKPQ==
+  user_id: 5
+  created_at: '2014-04-04 10:51:21.320759'
+  updated_at: '2014-04-04 11:03:26.969545'
+  id3: t
+songs_071:
+  title: Recombinant Resurgence
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - Recombinant Resurgence.mp3"
+  path_md5: !binary |-
+    771HAnswxAzI8oR2Pa3Oww==
+  user_id: 5
+  created_at: '2014-04-04 10:51:21.474812'
+  updated_at: '2014-04-04 11:05:22.059746'
+  id3: t
+songs_072:
+  title: Before the fall
+  artist: The Hellacopters
+  album: Rock & roll is dead
+  genre: 
+  path: "/the hellacopters/Rock & Roll Is Dead/01 Before the fall.mp3"
+  path_md5: !binary |-
+    MlUfRWw3kAgqgyD4kMS3mw==
+  user_id: 5
+  created_at: '2014-04-04 10:51:21.608291'
+  updated_at: '2014-04-04 10:58:43.563452'
+  id3: t
+songs_073:
+  title: Bringt it on home
+  artist: The Hellacopters
+  album: Rock & roll is dead
+  genre: 
+  path: "/the hellacopters/Rock & Roll Is Dead/05 Bringt it on home.mp3"
+  path_md5: !binary |-
+    Ubkv1cosqTlGYP2o3TPoWQ==
+  user_id: 5
+  created_at: '2014-04-04 10:51:21.741447'
+  updated_at: '2014-04-04 10:59:04.925287'
+  id3: t
+songs_074:
+  title: Renvoyer
+  artist: The Hellacopters
+  album: Grande Rock
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Grande_Rock/12-Renvoyer.mp3"
+  path_md5: !binary |-
+    IG14vFeGDjRqwKqh5s39gg==
+  user_id: 5
+  created_at: '2014-04-04 10:51:21.874268'
+  updated_at: '2014-04-04 10:58:30.917047'
+  id3: t
+songs_075:
+  title: Paul Stanley
+  artist: The Hellacopters
+  album: Grande Rock
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Grande_Rock/06-Paul Stanley.mp3"
+  path_md5: !binary |-
+    oNfax/i1rbMZv6uNLMJFHg==
+  user_id: 5
+  created_at: '2014-04-04 10:51:22.007385'
+  updated_at: '2014-04-04 11:03:40.232787'
+  id3: t
+songs_076:
+  title: Action De Gråce
+  artist: The Hellacopters
+  album: Grande Rock
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Grande_Rock/01-Action De Gråce.mp3"
+  path_md5: !binary |-
+    k5LS80+9RRpDPve/4g5SZg==
+  user_id: 5
+  created_at: '2014-04-04 10:51:22.140239'
+  updated_at: '2014-04-04 11:03:23.900505'
+  id3: t
+songs_077:
+  title: 24h hell
+  artist: The Hellacopters
+  album: Supershitty To The Max
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Supershitty_To_The_Max(/02-24h hell.mp3"
+  path_md5: !binary |-
+    m6ZnhtfD8NWYPKMBkX/mqw==
+  user_id: 5
+  created_at: '2014-04-04 10:51:22.273851'
+  updated_at: '2014-04-04 11:03:36.480564'
+  id3: t
+songs_078:
+  title: Bring It On Home
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/22_the_hellacopters-bring_it_on_home.mp3"
+  path_md5: !binary |-
+    eIA2s7L2AYRVFsxDE7C/YQ==
+  user_id: 5
+  created_at: '2014-04-04 10:51:22.416058'
+  updated_at: '2014-04-04 10:59:47.653443'
+  id3: t
+songs_079:
+  title: The Electric Index Eel
+  artist: The Hellacopters
+  album: Grande Rock
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Grande_Rock/05-The Electric Index Eel.mp3"
+  path_md5: !binary |-
+    0/yQ1Mvp5Rn/4xUeQBrTEQ==
+  user_id: 5
+  created_at: '2014-04-04 10:51:22.561333'
+  updated_at: '2014-04-04 11:04:56.704780'
+  id3: t
+songs_080:
+  title: Move Right Out Of Here
+  artist: The Hellacopters
+  album: Grande Rock
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Grande_Rock/03-Move Right Out Of Here.mp3"
+  path_md5: !binary |-
+    bmJ/FJnCXTcFMbX7bnQalA==
+  user_id: 5
+  created_at: '2014-04-04 10:51:22.705165'
+  updated_at: '2014-04-04 10:59:35.459347'
+  id3: t
+songs_081:
+  title: random riot
+  artist: The Hellacopters
+  album: Supershitty To The Max
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Supershitty_To_The_Max(/09-random riot.mp3"
+  path_md5: !binary |-
+    bzXvGUNcif1HPMAmYiDNsg==
+  user_id: 5
+  created_at: '2014-04-04 10:51:22.883222'
+  updated_at: '2014-04-04 10:59:38.226778'
+  id3: t
+songs_082:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/69 Hard _ Go_ Baby
+    Go.mp3"
+  path_md5: !binary |-
+    xvWQ0TjRfX0FnmDD7CCvrQ==
+  user_id: 5
+  created_at: '2014-04-04 10:51:23.027760'
+  updated_at: '2014-04-04 11:04:27.914057'
+  id3: t
+songs_083:
+  title: such a blast
+  artist: The Hellacopters
+  album: Supershitty To The Max
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Supershitty_To_The_Max(/12-such a blast.mp3"
+  path_md5: !binary |-
+    QezrfbYT4oEj4av6+MbdHQ==
+  user_id: 5
+  created_at: '2014-04-04 10:51:23.161115'
+  updated_at: '2014-04-04 10:58:54.487738'
+  id3: t
+songs_084:
+  title: Oh Yeah Allright!
+  artist: The Hellacopters
+  album: Disappointment Blues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Disappointment Blues/02-Oh Yeah Allright!.mp3"
+  path_md5: !binary |-
+    iXLFV9uvdOjdtTqhlVwpHg==
+  user_id: 5
+  created_at: '2014-04-04 10:51:23.293210'
+  updated_at: '2014-04-04 11:00:07.091201'
+  id3: t
+songs_085:
+  title: didn't stop us
+  artist: The Hellacopters
+  album: Supershitty To The Max
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Supershitty_To_The_Max(/08-didn't stop
+    us.mp3"
+  path_md5: !binary |-
+    YAKCAa5aDGW/kzje2zSNBQ==
+  user_id: 5
+  created_at: '2014-04-04 10:51:23.426596'
+  updated_at: '2014-04-04 10:59:26.103212'
+  id3: t
+songs_086:
+  title: fire fire fire
+  artist: The Hellacopters
+  album: Supershitty To The Max
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Supershitty_To_The_Max(/03-fire fire
+    fire.mp3"
+  path_md5: !binary |-
+    fYfGiG6fITc6mKDYLDudwA==
+  user_id: 5
+  created_at: '2014-04-04 10:51:23.559612'
+  updated_at: '2014-04-04 10:59:52.971046'
+  id3: t
+songs_087:
+  title: Move Right Out Of Here
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/08_the_hellacopters-move_right_out_of_here.mp3"
+  path_md5: !binary |-
+    hCe/KKlcSsa4F0tqPFvllw==
+  user_id: 5
+  created_at: '2014-04-04 10:51:23.692299'
+  updated_at: '2014-04-04 11:00:03.940467'
+  id3: t
+songs_088:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Hellride _ She_s On
+    Fire.mp3"
+  path_md5: !binary |-
+    Vg1CtJdlyteVmhMJUE1qXg==
+  user_id: 5
+  created_at: '2014-04-04 10:51:23.824384'
+  updated_at: '2014-04-04 10:59:11.572214'
+  id3: t
+songs_089:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Rickshaw _ Bad Breath
+    Baby.mp3"
+  path_md5: !binary |-
+    Ao8g7atDfUwGq7Ta/JBP8g==
+  user_id: 5
+  created_at: '2014-04-04 10:51:23.958650'
+  updated_at: '2014-04-04 10:58:24.040081'
+  id3: t
+songs_090:
+  title: Another Turn
+  artist: The Hellacopters
+  album: Head Off
+  genre: 
+  path: "/the hellacopters/Head Off (2008)/The Hellacopters - Head Off - 07 - Another
+    Turn.mp3"
+  path_md5: !binary |-
+    xbX6szE30ApbFc0zl2mV/Q==
+  user_id: 5
+  created_at: '2014-04-04 10:51:24.113095'
+  updated_at: '2014-04-04 11:04:24.092308'
+  id3: t
+songs_091:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Demons _ Another Pretty
+    Face.mp3"
+  path_md5: !binary |-
+    XX/nyJebl/BJoqT0Jk+Otw==
+  user_id: 5
+  created_at: '2014-04-04 10:51:24.246566'
+  updated_at: '2014-04-04 10:59:24.027041'
+  id3: t
+songs_092:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Puffball _ Like Men
+    Possessed.mp3"
+  path_md5: !binary |-
+    yBDTCYta6wDNj4gMujwOiw==
+  user_id: 5
+  created_at: '2014-04-04 10:51:24.402922'
+  updated_at: '2014-04-04 11:04:30.798440'
+  id3: t
+songs_093:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/The Product _ Let_s
+    Go To Cbgb.mp3"
+  path_md5: !binary |-
+    JFOJWxJv5F0ABW9+m+rCAA==
+  user_id: 5
+  created_at: '2014-04-04 10:51:24.536428'
+  updated_at: '2014-04-04 10:58:32.153740'
+  id3: t
+songs_094:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Let_s Go_s _ Last
+    Man Standing.mp3"
+  path_md5: !binary |-
+    v2gkDkFkp4rrciNoDu3knQ==
+  user_id: 5
+  created_at: '2014-04-04 10:51:24.668918'
+  updated_at: '2014-04-04 11:04:15.478319'
+  id3: t
+songs_095:
+  title: "(I'm) Watching You"
+  artist: The Hellacopters
+  album: Head Off
+  genre: 
+  path: "/the hellacopters/Head Off (2008)/The Hellacopters - Head Off - 03 - (I'm)
+    Watching You.mp3"
+  path_md5: !binary |-
+    p7RCufs7gML/1nzIhg/xdw==
+  user_id: 5
+  created_at: '2014-04-04 10:51:24.800620'
+  updated_at: '2014-04-04 11:03:43.335831'
+  id3: t
+songs_096:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Don_t Cares _ Ready_
+    Steady_ Go!.mp3"
+  path_md5: !binary |-
+    iizH0M2pzdf0RXiqfDShWg==
+  user_id: 5
+  created_at: '2014-04-04 10:51:24.935587'
+  updated_at: '2014-04-04 11:00:10.060421'
+  id3: t
+songs_097:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Part _ Time Posers
+    - I Drink Too Much.mp3"
+  path_md5: !binary |-
+    XSpX4nWwYJ0vw7Sb3NnKVA==
+  user_id: 5
+  created_at: '2014-04-04 10:51:25.068439'
+  updated_at: '2014-04-04 10:59:21.175730'
+  id3: t
+songs_098:
+  title: The Same Lame Story
+  artist: The Hellacopters
+  album: Head Off
+  genre: 
+  path: "/the hellacopters/Head Off (2008)/The Hellacopters - Head Off - 13 - The
+    Same Lame Story (bonus).mp3"
+  path_md5: !binary |-
+    mxIpp53EBHsjfDmQ/dH+aA==
+  user_id: 5
+  created_at: '2014-04-04 10:51:25.211772'
+  updated_at: '2014-04-04 11:03:33.685639'
+  id3: t
+songs_099:
+  title: Twist Action
+  artist: The Hellacopters
+  album: Payin' The Dues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters-Payin.The.Dues/The Hellacopters - Payin'
+    The Dues - 08 - Twist Action.mp3"
+  path_md5: !binary |-
+    scBvPYWaptRc5FtU79Kabg==
+  user_id: 5
+  created_at: '2014-04-04 10:51:25.344942'
+  updated_at: '2014-04-04 11:03:57.758474'
+  id3: t
+songs_100:
+  title: Looking At Me
+  artist: The Hellacopters
+  album: Payin' The Dues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters-Payin.The.Dues/The Hellacopters - Payin'
+    The Dues - 03 - Looking At Me.mp3"
+  path_md5: !binary |-
+    0z3NKtBByG3CHBC38CEfSA==
+  user_id: 5
+  created_at: '2014-04-04 10:51:25.499691'
+  updated_at: '2014-04-04 11:04:51.050469'
+  id3: t
+songs_101:
+  title: Riot On The Rocks
+  artist: The Hellacopters
+  album: Payin' The Dues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters-Payin.The.Dues/The Hellacopters - Payin'
+    The Dues - 04 - Riot On The Rocks.mp3"
+  path_md5: !binary |-
+    V7DSm+hrECEUSaJNGZN7IA==
+  user_id: 5
+  created_at: '2014-04-04 10:51:25.633348'
+  updated_at: '2014-04-04 10:59:14.304187'
+  id3: t
+songs_102:
+  title: Dig
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - Dig.mp3"
+  path_md5: !binary |-
+    w6qoxCq55od6X/zYuzWnyQ==
+  user_id: 5
+  created_at: '2014-04-04 10:58:16.519578'
+  updated_at: '2014-04-04 11:04:20.953915'
+  id3: t
+songs_103:
+  title: Monkeyboy
+  artist: The Hellacopters
+  album: Rock & roll is dead
+  genre: 
+  path: "/the hellacopters/Rock & Roll Is Dead/03 Monkeyboy.mp3"
+  path_md5: !binary |-
+    p/PJ/0hndZF2ZOhKmKfJBA==
+  user_id: 5
+  created_at: '2014-04-04 10:58:16.684727'
+  updated_at: '2014-04-04 11:03:45.813351'
+  id3: t
+songs_104:
+  title: 455 SD
+  artist: The Hellacopters
+  album: Disappointment Blues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Disappointment Blues/07-455 SD.mp3"
+  path_md5: !binary |-
+    8wJl9cZOTVmFcBk2CVtcTQ==
+  user_id: 5
+  created_at: '2014-04-04 10:58:16.839989'
+  updated_at: '2014-04-04 11:05:28.568541'
+  id3: t
+songs_105:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/A Bombs _ Bitch.mp3"
+  path_md5: !binary |-
+    cXMfZezlMG2TD9I73tdM6g==
+  user_id: 5
+  created_at: '2014-04-04 10:58:16.994110'
+  updated_at: '2014-04-04 10:59:45.274692'
+  id3: t
+songs_106:
+  title: 12 - Hurtin' Time
+  artist: The Hellacopters
+  album: High Visibility
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_High_Visibility/12 - Hurtin' Time.mp3"
+  path_md5: !binary |-
+    0ETvqyMlblcg8c273LJ5cw==
+  user_id: 5
+  created_at: '2014-04-04 10:58:17.127500'
+  updated_at: '2014-04-04 11:04:41.461172'
+  id3: t
+songs_107:
+  title: You Are Nothin´
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/05_the_hellacopters-you_are_nothin.mp3"
+  path_md5: !binary |-
+    cRNfbiRtJvbSfc+06FPG6w==
+  user_id: 5
+  created_at: '2014-04-04 10:58:17.260296'
+  updated_at: '2014-04-04 10:59:41.491745'
+  id3: t
+songs_108:
+  title: 11 - I Wanna Touch
+  artist: The Hellacopters
+  album: High Visibility
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_High_Visibility/11 - I Wanna Touch.mp3"
+  path_md5: !binary |-
+    PIa4Hnf4/jYyPvIX+URFaQ==
+  user_id: 5
+  created_at: '2014-04-04 10:58:17.415595'
+  updated_at: '2014-04-04 10:58:50.012423'
+  id3: t
+songs_109:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Nomads _ I_m Gone.mp3"
+  path_md5: !binary |-
+    Cx4WGeOKOvDWLTId6+nWGg==
+  user_id: 5
+  created_at: '2014-04-04 10:58:17.570695'
+  updated_at: '2014-04-04 10:58:27.073686'
+  id3: t
+songs_110:
+  title: Turn The Wrong Key
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/19_the_hellacopters-turn_the_wrong_key.mp3"
+  path_md5: !binary |-
+    1GYKfFN1CA4hN6fLMcLhBg==
+  user_id: 5
+  created_at: '2014-04-04 10:58:17.714354'
+  updated_at: '2014-04-04 11:05:00.162513'
+  id3: t
+songs_111:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Datsun _ Raymon Cruz.mp3"
+  path_md5: !binary |-
+    Dz3xwRWLfJ5r82wmce8r3Q==
+  user_id: 5
+  created_at: '2014-04-04 10:58:17.847462'
+  updated_at: '2014-04-04 10:58:29.606704'
+  id3: t
+songs_112:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Nuggets _ Power Pop
+    Girl.mp3"
+  path_md5: !binary |-
+    J92JpmMO14+ZQ3+AOBp+kw==
+  user_id: 5
+  created_at: '2014-04-04 10:58:17.991464'
+  updated_at: '2014-04-04 10:58:33.675863'
+  id3: t
+songs_113:
+  title: Electrocute
+  artist: The Hellacopters
+  album: Head Off
+  genre: 
+  path: "/the hellacopters/Head Off (2008)/The Hellacopters - Head Off - 01 - Electrocute.mp3"
+  path_md5: !binary |-
+    ReOmSNyMzXWyLhMz+1zjsA==
+  user_id: 5
+  created_at: '2014-04-04 10:58:18.123999'
+  updated_at: '2014-04-04 10:58:57.440246'
+  id3: t
+songs_114:
+  title: 03 - Sometimes I Don't Know
+  artist: The Hellacopters
+  album: High Visibility
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_High_Visibility/03 - Sometimes I Don't
+    Know.mp3"
+  path_md5: !binary |-
+    XC3dfERGWxQm6M9kwKrqnw==
+  user_id: 5
+  created_at: '2014-04-04 10:58:18.256685'
+  updated_at: '2014-04-04 10:59:18.293912'
+  id3: t
+songs_115:
+  title: Veronica Lake
+  artist: The Hellacopters
+  album: Head Off
+  genre: 
+  path: "/the hellacopters/Head Off (2008)/The Hellacopters - Head Off - 06 - Veronica
+    Lake.mp3"
+  path_md5: !binary |-
+    UniNGiQaBav1sqUrHxHZsQ==
+  user_id: 5
+  created_at: '2014-04-04 10:58:18.390598'
+  updated_at: '2014-04-04 10:59:08.150019'
+  id3: t
+songs_116:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/wolfmother/Wolfmother • New Crown [2014] 320/Wolfmother - New Crown - 06
+    Feelings.mp3"
+  path_md5: !binary |-
+    tjY4M5bKKnBdyrBhHICrUw==
+  user_id: 5
+  created_at: '2014-04-04 10:58:18.558170'
+  updated_at: '2014-04-04 10:58:18.558170'
+  id3: f
+songs_117:
+  title: Throttle Bottom
+  artist: The Hellacopters
+  album: Head Off
+  genre: 
+  path: "/the hellacopters/Head Off (2008)/The Hellacopters - Head Off - 11 - Throttle
+    Bottom.mp3"
+  path_md5: !binary |-
+    3YTScPPrvdBPWMLIHPJUSw==
+  user_id: 5
+  created_at: '2014-04-04 10:58:18.712529'
+  updated_at: '2014-04-04 11:05:05.381691'
+  id3: t
+songs_118:
+  title: 05 - You're Too Good (To Me Baby)
+  artist: The Hellacopters
+  album: High Visibility
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_High_Visibility/05 - You're Too Good
+    (To Me Baby).mp3"
+  path_md5: !binary |-
+    s/EFsijQXvh2dENVJ9yv4Q==
+  user_id: 5
+  created_at: '2014-04-04 10:58:19.297383'
+  updated_at: '2014-04-04 11:04:00.769683'
+  id3: t
+songs_119:
+  title: Red Light
+  artist: Hellacopters
+  album: By The Grace Of God (CDS)
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_By_The_Grace_Of_God/(The Hellacopters)
+    - 14 - Bonus.mp3"
+  path_md5: !binary |-
+    5ptyhWdtYEO4YOCzYHPQ9w==
+  user_id: 5
+  created_at: '2014-04-04 10:58:19.452172'
+  updated_at: '2014-04-04 11:05:11.208552'
+  id3: t
+songs_120:
+  title: Making Up for Lost Time
+  artist: The Hellacopters
+  album: Head Off
+  genre: 
+  path: "/the hellacopters/Head Off (2008)/The Hellacopters - Head Off - 10 - Making
+    Up For Lost Time.mp3"
+  path_md5: !binary |-
+    vNXqNtG8QKzOp82P8nFVrg==
+  user_id: 5
+  created_at: '2014-04-04 10:58:19.576044'
+  updated_at: '2014-04-04 11:04:11.972047'
+  id3: t
+songs_121:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/The Fish Faces _ She
+    Looks Like A Doll.mp3"
+  path_md5: !binary |-
+    efDV8KcExc0pjfcN5NN/7w==
+  user_id: 5
+  created_at: '2014-04-04 10:58:19.727813'
+  updated_at: '2014-04-04 10:59:50.238316'
+  id3: t
+songs_122:
+  title: The Exorcist
+  artist: Hellacopters
+  album: By The Grace Of God
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_By_The_Grace_Of_God/(The Hellacopters)
+    - 12 - The Exorcist.mp3"
+  path_md5: !binary |-
+    04SuuRqgtvQP7ic8vPczvQ==
+  user_id: 5
+  created_at: '2014-04-04 10:58:19.877019'
+  updated_at: '2014-04-04 11:04:53.378730'
+  id3: t
+songs_123:
+  title: Acid Reign
+  artist: The Hellacopters
+  album: Head Off
+  genre: 
+  path: "/the hellacopters/Head Off (2008)/The Hellacopters - Head Off - 15 - Acid
+    Reign (single b-side).mp3"
+  path_md5: !binary |-
+    lNeL3n7G4kebbi5P3CPrPA==
+  user_id: 5
+  created_at: '2014-04-04 10:58:20.072402'
+  updated_at: '2014-04-04 11:03:29.651631'
+  id3: t
+songs_124:
+  title: Down On Freestreet
+  artist: Hellacopters
+  album: By The Grace Of God
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_By_The_Grace_Of_God/(The Hellacopters)
+    - 03 - Down On Freestreet.mp3"
+  path_md5: !binary |-
+    jllgnB/ypERdWoHKQqygmQ==
+  user_id: 5
+  created_at: '2014-04-04 10:58:20.216553'
+  updated_at: '2014-04-04 11:00:13.069802'
+  id3: t
+songs_125:
+  title: You Are Nothin'
+  artist: The Hellacopters
+  album: Payin' The Dues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters-Payin.The.Dues/The Hellacopters - Payin'
+    The Dues - 01 - You Are Nothin'.mp3"
+  path_md5: !binary |-
+    5ghMsgda2D2f1mcw4NEcSA==
+  user_id: 5
+  created_at: '2014-04-04 10:58:20.360642'
+  updated_at: '2014-04-04 11:05:08.283149'
+  id3: t
+songs_126:
+  title: Where The Action Is
+  artist: The Hellacopters
+  album: Payin' The Dues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters-Payin.The.Dues/The Hellacopters - Payin'
+    The Dues - 07 - Where The Action Is.mp3"
+  path_md5: !binary |-
+    /R4FMK0yEKEh3Ap7n2GLPA==
+  user_id: 5
+  created_at: '2014-04-04 10:58:20.517053'
+  updated_at: '2014-04-04 11:05:38.534821'
+  id3: t
+songs_127:
+  title: American Ruse [The Hellacopter
+  artist: The Hellacopters & Gluecifer
+  album: Respect The Rock America
+  genre: 
+  path: "/the hellacopters/Hellacopters Gluecifer Split/The Hellacopters & Gluecifer
+    - Respect The Rock America - 01 - American Ruse [The Hellacopter.mp3"
+  path_md5: !binary |-
+    6YttZZoPZm31xqr9QneynQ==
+  user_id: 5
+  created_at: '2014-04-04 10:58:20.672274'
+  updated_at: '2014-04-04 11:05:15.695586'
+  id3: t
+songs_128:
+  title: Woman
+  artist: Wolfmother
+  album: Wolfmother
+  genre: 
+  path: "/wolfmother/Wolfmother/02 - Woman.mp3"
+  path_md5: !binary |-
+    0EaWv1j1z9cmagqai9AW/Q==
+  user_id: 5
+  created_at: '2014-04-04 11:02:27.856771'
+  updated_at: '2014-04-04 11:04:44.220306'
+  id3: t
+songs_129:
+  title: Lethal Dosage
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - Lethal Dosage.mp3"
+  path_md5: !binary |-
+    tPeIhp8WBxW2DdvGgamMQg==
+  user_id: 5
+  created_at: '2014-04-04 11:02:28.010342'
+  updated_at: '2014-04-04 11:04:03.580701'
+  id3: t
+songs_130:
+  title: Make it tonight
+  artist: The Hellacopters
+  album: Rock & roll is dead
+  genre: 
+  path: "/the hellacopters/Rock & Roll Is Dead/12 Make it tonight.mp3"
+  path_md5: !binary |-
+    wHFV7MsY3L/7GY3L2NMDAw==
+  user_id: 5
+  created_at: '2014-04-04 11:02:28.165392'
+  updated_at: '2014-04-04 11:04:17.751737'
+  id3: t
+songs_131:
+  title: Nothing terribly new
+  artist: The Hellacopters
+  album: Rock & roll is dead
+  genre: 
+  path: "/the hellacopters/Rock & Roll Is Dead/11 Nothing terribly new.mp3"
+  path_md5: !binary |-
+    b2bXQh/jbfKKyK+ND7U5bQ==
+  user_id: 5
+  created_at: '2014-04-04 11:02:28.319729'
+  updated_at: '2014-04-04 11:03:16.851617'
+  id3: t
+songs_132:
+  title: A Cross for Cain
+  artist: The Hellacopters
+  album: Hopeless Case of a Kid in Denial
+  genre: 
+  path: "/the hellacopters/Hopeless Case of a Kid in Denial/02 A Cross for Cain.mp3"
+  path_md5: !binary |-
+    Nhp9jEva/uAZvASvsQU67A==
+  user_id: 5
+  created_at: '2014-04-04 11:02:28.453893'
+  updated_at: '2014-04-04 11:03:01.390227'
+  id3: t
+songs_133:
+  title: Alright Already Now
+  artist: The Hellacopters
+  album: Grande Rock
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Grande_Rock/02-Alright Already Now.mp3"
+  path_md5: !binary |-
+    LzsMU6QsuolvUet9gE9Rsg==
+  user_id: 5
+  created_at: '2014-04-04 11:02:28.586611'
+  updated_at: '2014-04-04 11:02:53.576850'
+  id3: t
+songs_134:
+  title: Venus In Force
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/10_the_hellacopters-venus_in_force.mp3"
+  path_md5: !binary |-
+    ykK+MDynRShCK3XbYbrtpg==
+  user_id: 5
+  created_at: '2014-04-04 11:02:28.742029'
+  updated_at: '2014-04-04 11:04:34.925507'
+  id3: t
+songs_135:
+  title: Long Gone Losers
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/07_the_hellacopters-long_gone_losers.mp3"
+  path_md5: !binary |-
+    GfJbffAg+nbntjkbD7Etag==
+  user_id: 5
+  created_at: '2014-04-04 11:02:28.875119'
+  updated_at: '2014-04-04 11:02:37.929319'
+  id3: t
+songs_136:
+  title: fake baby
+  artist: The Hellacopters
+  album: Supershitty To The Max
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Supershitty_To_The_Max(/10-fake baby.mp3"
+  path_md5: !binary |-
+    LcsTDNUABEEfSC/VzO9vuw==
+  user_id: 5
+  created_at: '2014-04-04 11:02:29.042657'
+  updated_at: '2014-04-04 11:02:49.315718'
+  id3: t
+songs_137:
+  title: 02 - Baby Borderline
+  artist: The Hellacopters
+  album: High Visibility
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_High_Visibility/02 - Baby Borderline.mp3"
+  path_md5: !binary |-
+    kKDRpQY1YGYkuRbMeVrxUg==
+  user_id: 5
+  created_at: '2014-04-04 11:02:29.234892'
+  updated_at: '2014-04-04 11:03:19.766680'
+  id3: t
+songs_138:
+  title: Long Gone Losers
+  artist: The Hellacopters
+  album: Disappointment Blues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Disappointment Blues/01-Long Gone Losers.mp3"
+  path_md5: !binary |-
+    r2PBsGIipNMhdetsgLE+hw==
+  user_id: 5
+  created_at: '2014-04-04 11:02:29.374891'
+  updated_at: '2014-04-04 11:03:48.469589'
+  id3: t
+songs_139:
+  title: ain't no time
+  artist: The Hellacopters
+  album: Supershitty To The Max
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Supershitty_To_The_Max(/11-ain't no
+    time.mp3"
+  path_md5: !binary |-
+    G6w6+pb2GzGeH1agzpvUrw==
+  user_id: 5
+  created_at: '2014-04-04 11:02:29.539575'
+  updated_at: '2014-04-04 11:02:41.264128'
+  id3: t
+songs_140:
+  title: 08 - Trucloads Of Nothin'
+  artist: The Hellacopters
+  album: High Visibility
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_High_Visibility/08 - Trucloads Of Nothin'.mp3"
+  path_md5: !binary |-
+    jH08lAUWkUGE+6vd5D7t1A==
+  user_id: 5
+  created_at: '2014-04-04 11:02:29.706123'
+  updated_at: '2014-04-04 11:03:18.310598'
+  id3: t
+songs_141:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Hellacopter _ T_V_
+    Addict.mp3"
+  path_md5: !binary |-
+    L+syydtmPT6wac57Y09gVA==
+  user_id: 5
+  created_at: '2014-04-04 11:02:29.873012'
+  updated_at: '2014-04-04 11:02:56.826787'
+  id3: t
+songs_142:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Very Ape _ Back In
+    The ECC.mp3"
+  path_md5: !binary |-
+    7U4t4FTBitl5Z51WAxbJLQ==
+  user_id: 5
+  created_at: '2014-04-04 11:02:30.016897'
+  updated_at: '2014-04-04 11:05:18.895609'
+  id3: t
+songs_143:
+  title: Midnight Angels
+  artist: The Hellacopters
+  album: Head Off
+  genre: 
+  path: "/the hellacopters/Head Off (2008)/The Hellacopters - Head Off - 02 - Midnight
+    Angels.mp3"
+  path_md5: !binary |-
+    Hywp4+qtN9LjbfpOp8YWEQ==
+  user_id: 5
+  created_at: '2014-04-04 11:02:30.160608'
+  updated_at: '2014-04-04 11:02:45.278721'
+  id3: t
+songs_144:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/wolfmother/Wolfmother • New Crown [2014] 320/Wolfmother - New Crown - 08
+    She Got It.mp3"
+  path_md5: !binary |-
+    TRe6oAj4uWUAs6PsfgVt3A==
+  user_id: 5
+  created_at: '2014-04-04 11:02:30.304562'
+  updated_at: '2014-04-04 11:02:30.304562'
+  id3: f
+songs_145:
+  title: It´s Good But It Just Ain´t Right
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/18_the_hellacopters-its_good_but_it_just_aint_right.mp3"
+  path_md5: !binary |-
+    QkMiUN2Z7NMa2nY27ZlXpA==
+  user_id: 5
+  created_at: '2014-04-04 11:02:30.448122'
+  updated_at: '2014-04-04 11:03:05.159333'
+  id3: t
+songs_146:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/wolfmother/Wolfmother • New Crown [2014] 320/Wolfmother - New Crown - 01
+    How Many Times.mp3"
+  path_md5: !binary |-
+    ZSnClZBM4LXMZ2SjJ8/K7Q==
+  user_id: 5
+  created_at: '2014-04-04 11:02:30.593351'
+  updated_at: '2014-04-04 11:02:30.593351'
+  id3: f
+songs_147:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Cato Salsa Experience
+    _ Sister Disco.mp3"
+  path_md5: !binary |-
+    XpQvsgF8rTukxT6AuEKRRw==
+  user_id: 5
+  created_at: '2014-04-04 11:02:30.747328'
+  updated_at: '2014-04-04 11:03:11.180751'
+  id3: t
+songs_148:
+  title: Go Easy Now
+  artist: Hellacopters
+  album: By The Grace Of God
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_By_The_Grace_Of_God/(The Hellacopters)
+    - 11 - Go Easy Now.mp3"
+  path_md5: !binary |-
+    MSiH5uJ1YIFtr6BuntQXMQ==
+  user_id: 5
+  created_at: '2014-04-04 11:02:30.903793'
+  updated_at: '2014-04-04 11:02:58.837560'
+  id3: t
+songs_149:
+  title: All I've Got
+  artist: Hellacopters
+  album: By The Grace Of God
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_By_The_Grace_Of_God/(The Hellacopters)
+    - 10 - All I've Got.mp3"
+  path_md5: !binary |-
+    D2sqOQzWloA60XCoK8a8kA==
+  user_id: 5
+  created_at: '2014-04-04 11:02:31.058542'
+  updated_at: '2014-04-04 11:02:34.949516'
+  id3: t
+songs_150:
+  title: Better Than You
+  artist: Hellacopters
+  album: By The Grace Of God
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_By_The_Grace_Of_God/(The Hellacopters)
+    - 04 - Better Than You.mp3"
+  path_md5: !binary |-
+    3H7lW1+BBeJVh+NY2PnbAA==
+  user_id: 5
+  created_at: '2014-04-04 11:02:31.202836'
+  updated_at: '2014-04-04 11:05:03.186404'
+  id3: t
+songs_151:
+  title: It´s Good But It Just An't Right
+  artist: Hellacopters
+  album: By The Grace Of God
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_By_The_Grace_Of_God/(The Hellacopters)
+    - 07 - It's Good But It Just Ain't Right.mp3"
+  path_md5: !binary |-
+    lFSAAnZIzl5ym4P0+7MuZA==
+  user_id: 5
+  created_at: '2014-04-04 11:02:31.346496'
+  updated_at: '2014-04-04 11:03:25.265238'
+  id3: t
+songs_152:
+  title: Put out the fire
+  artist: The Hellacopters
+  album: Rock & roll is dead
+  genre: 
+  path: "/the hellacopters/Rock & Roll Is Dead/09 Put out the fire.mp3"
+  path_md5: !binary |-
+    MTsO5gZHbh4/Esp2ZXyNbA==
+  user_id: 5
+  created_at: '2014-04-04 11:12:57.156864'
+  updated_at: '2014-04-04 12:00:51.181139'
+  id3: t
+songs_153:
+  title: Murder on my mind
+  artist: The Hellacopters
+  album: Rock & roll is dead
+  genre: 
+  path: "/the hellacopters/Rock & Roll Is Dead/07 Murder on my mind.mp3"
+  path_md5: !binary |-
+    VHLS1WIYIXXmG4JBVYPUjw==
+  user_id: 5
+  created_at: '2014-04-04 11:12:57.327691'
+  updated_at: '2014-04-04 12:01:31.326578'
+  id3: t
+songs_154:
+  title: Lonely
+  artist: The Hellacopters
+  album: Grande Rock
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Grande_Rock/11-Lonely.mp3"
+  path_md5: !binary |-
+    IZuFR0V/324wSp21QmJtuw==
+  user_id: 5
+  created_at: '2014-04-04 11:12:57.471297'
+  updated_at: '2014-04-04 12:00:37.736176'
+  id3: t
+wolf1:
+  title: White Feather
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/03 - White Feather.mp3"
+  path_md5: !binary |-
+    KrXbq8WGQDC0UuvJ/6aw3w==
+  user_id: 5
+  created_at: '2014-04-04 11:12:57.616927'
+  updated_at: '2014-04-04 12:00:43.754740'
+  id3: t
+songs_156:
+  title: Ferrytale
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/02_the_hellacopters-ferrytale.mp3"
+  path_md5: !binary |-
+    QRBuv1wjMjVfyww7z/YsJA==
+  user_id: 5
+  created_at: '2014-04-04 11:12:57.782883'
+  updated_at: '2014-04-04 12:01:10.104523'
+  id3: t
+songs_157:
+  title: Venus in Force
+  artist: The Hellacopters
+  album: Grande Rock
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Grande_Rock/09-Venus in Force.mp3"
+  path_md5: !binary |-
+    zYIDzl+LOWrDMji2FO2KUA==
+  user_id: 5
+  created_at: '2014-04-04 11:12:57.949141'
+  updated_at: '2014-04-04 12:05:32.058478'
+  id3: t
+songs_158:
+  title: Soulseller
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/04_the_hellacopters-soulseller.mp3"
+  path_md5: !binary |-
+    MEd6cYOPa6z2nz7tEhkTBQ==
+  user_id: 5
+  created_at: '2014-04-04 11:12:58.092485'
+  updated_at: '2014-04-04 12:00:48.684198'
+  id3: t
+songs_159:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Mutants _ Dr_ Gedup.mp3"
+  path_md5: !binary |-
+    3NRxbI2Z8tVI7Aet2bC3sQ==
+  user_id: 5
+  created_at: '2014-04-04 11:12:58.225589'
+  updated_at: '2014-04-04 12:05:48.890210'
+  id3: t
+songs_160:
+  title: By The Grace Of God
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/16_the_hellacopters-by_the_grace_of_god.mp3"
+  path_md5: !binary |-
+    eq4MFBNpnlljyfdJ9Ljjrw==
+  user_id: 5
+  created_at: '2014-04-04 11:12:58.369458'
+  updated_at: '2014-04-04 12:02:01.948938'
+  id3: t
+songs_161:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Gluecifer _ Mano A
+    Mano.mp3"
+  path_md5: !binary |-
+    xfzfRH+ha79/F2kuLlz43Q==
+  user_id: 5
+  created_at: '2014-04-04 11:12:58.502621'
+  updated_at: '2014-04-04 12:05:24.571289'
+  id3: t
+songs_162:
+  title: Hopeless Case of a Kid in Denial
+  artist: The Hellacopters
+  album: Hopeless Case of a Kid in Denial
+  genre: 
+  path: "/the hellacopters/Hopeless Case of a Kid in Denial/01 Hopeless Case of a
+    Kid in Denial.mp3"
+  path_md5: !binary |-
+    UG3FnK1R0rAyi4bX4p6uDA==
+  user_id: 5
+  created_at: '2014-04-04 11:12:58.634250'
+  updated_at: '2014-04-04 12:01:27.020537'
+  id3: t
+songs_163:
+  title: 10 - No One's Gonna Do It For You
+  artist: The Hellacopters
+  album: High Visibility
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_High_Visibility/10 - No One's Gonna
+    Do It For You.mp3"
+  path_md5: !binary |-
+    HKVqjhR64o2fNRWMQgjsRw==
+  user_id: 5
+  created_at: '2014-04-04 11:12:58.790380'
+  updated_at: '2014-04-04 12:00:32.834740'
+  id3: t
+songs_164:
+  title: Hopeless Case Of A Kid In Denial
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/13_the_hellacopters-hopeless_case_of_a_kid_in_denial.mp3"
+  path_md5: !binary |-
+    /X1I7QUMDbDSzUG6j3qYAg==
+  user_id: 5
+  created_at: '2014-04-04 11:12:58.935232'
+  updated_at: '2014-04-04 14:11:53.861611'
+  id3: t
+songs_165:
+  title: On Time
+  artist: Hellacopters
+  album: By The Grace Of God
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_By_The_Grace_Of_God/(The Hellacopters)
+    - 09 - On Time.mp3"
+  path_md5: !binary |-
+    o5gwD7lNjEaUMscMCt6ehw==
+  user_id: 5
+  created_at: '2014-04-04 11:12:59.078615'
+  updated_at: '2014-04-04 12:05:00.573385'
+  id3: t
+songs_166:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_High_Visibility/01 - Hopeless Case Of
+    A Kid In Denial.mp3"
+  path_md5: !binary |-
+    FS88alaZPrQ/vzpoQ1FSOQ==
+  user_id: 5
+  created_at: '2014-04-04 11:12:59.211316'
+  updated_at: '2014-04-04 12:00:22.286190'
+  id3: t
+songs_167:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Turpentines _ Take
+    It Like A Man_ Man.mp3"
+  path_md5: !binary |-
+    TSCbszwomUaX8GxrFpGM7w==
+  user_id: 5
+  created_at: '2014-04-04 11:12:59.368257'
+  updated_at: '2014-04-04 12:01:25.768840'
+  id3: t
+songs_168:
+  title: In the Sign of the Octopus
+  artist: The Hellacopters
+  album: Head Off
+  genre: 
+  path: "/the hellacopters/Head Off (2008)/The Hellacopters - Head Off - 05 - In The
+    Sign Of The Octopus.mp3"
+  path_md5: !binary |-
+    1l7nczu2dlGN8Fc4FRLCFA==
+  user_id: 5
+  created_at: '2014-04-04 11:12:59.522035'
+  updated_at: '2014-04-04 12:05:42.873669'
+  id3: t
+songs_169:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Sewergrooves _ Electric
+    (Shake Me Around).mp3"
+  path_md5: !binary |-
+    r33Ojh13oP/rOIHPtcUUhA==
+  user_id: 5
+  created_at: '2014-04-04 11:12:59.677895'
+  updated_at: '2014-04-04 12:05:07.796894'
+  id3: t
+songs_170:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Matching Numbers _
+    Ready For The Last Time.mp3"
+  path_md5: !binary |-
+    wHOWwejrNVZkw/6cZBBmiQ==
+  user_id: 5
+  created_at: '2014-04-04 11:12:59.810677'
+  updated_at: '2014-04-04 12:05:17.716950'
+  id3: t
+songs_171:
+  title: By The Grace Of God
+  artist: The Hellacopters
+  album: By The Grace Of God
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_By_The_Grace_Of_God/(The Hellacopters)
+    - 01 - By The Grace Of God.mp3"
+  path_md5: !binary |-
+    qh8hAdHbW8Kkuqp/v1XL6w==
+  user_id: 5
+  created_at: '2014-04-04 11:12:59.943827'
+  updated_at: '2014-04-04 12:05:06.583183'
+  id3: t
+songs_172:
+  title: Gary O'Kane [Gluecifer]
+  artist: The Hellacopters & Gluecifer
+  album: Respect The Rock America
+  genre: 
+  path: "/the hellacopters/Hellacopters Gluecifer Split/The Hellacopters & Gluecifer
+    - Respect The Rock America - 06 - Gary O'Kane [Gluecifer].mp3"
+  path_md5: !binary |-
+    msWMYKaF6V8FxCs1iqyDJA==
+  user_id: 5
+  created_at: '2014-04-04 11:13:00.077367'
+  updated_at: '2014-04-04 12:04:58.083651'
+  id3: t
+songs_173:
+  title: A Man And A Half [The Hellacop
+  artist: The Hellacopters & Gluecifer
+  album: Respect The Rock America
+  genre: 
+  path: "/the hellacopters/Hellacopters Gluecifer Split/The Hellacopters & Gluecifer
+    - Respect The Rock America - 03 - A Man And A Half [The Hellacop.mp3"
+  path_md5: !binary |-
+    MHNKQq1NdNIHqgLe0/CW8Q==
+  user_id: 5
+  created_at: '2014-04-04 11:13:00.210162'
+  updated_at: '2014-04-04 12:00:49.975981'
+  id3: t
+songs_174:
+  title: Withcraft
+  artist: Wolfmother
+  album: Wolfmother
+  genre: 
+  path: "/wolfmother/Wolfmother/11 - Withcraft.mp3"
+  path_md5: !binary |-
+    jq2syavVfSkypeDYcXrqAg==
+  user_id: 5
+  created_at: '2014-04-04 11:13:00.354440'
+  updated_at: '2014-04-04 12:02:18.747022'
+  id3: t
+songs_175:
+  title: Everything and Nothing
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - Everything and Nothing.mp3"
+  path_md5: !binary |-
+    +uGQR0Zv1jZnhgaC8d6EmQ==
+  user_id: 5
+  created_at: '2014-04-04 11:13:00.498488'
+  updated_at: '2014-04-04 12:06:01.943780'
+  id3: t
+songs_176:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/The hellacopters/New Hellacopters - By the grace of God.mp3"
+  path_md5: !binary |-
+    DulpHhVspi4pU8lbS3SmWA==
+  user_id: 5
+  created_at: '2014-04-04 11:13:00.642359'
+  updated_at: '2014-04-04 12:00:17.251692'
+  id3: t
+songs_177:
+  title: I'm in the band
+  artist: The Hellacopters
+  album: Rock & roll is dead
+  genre: 
+  path: "/the hellacopters/Rock & Roll Is Dead/08 I'm in the band.mp3"
+  path_md5: !binary |-
+    JB+b1XNMXsTbCndwyyd5VA==
+  user_id: 5
+  created_at: '2014-04-04 11:13:00.786554'
+  updated_at: '2014-04-04 12:00:39.961480'
+  id3: t
+songs_178:
+  title: Everything's on TV
+  artist: The Hellacopters
+  album: Rock & roll is dead
+  genre: 
+  path: "/the hellacopters/Rock & Roll Is Dead/02 Everything's on TV.mp3"
+  path_md5: !binary |-
+    ES/PFzSqRMNyz95CXZ4rdg==
+  user_id: 5
+  created_at: '2014-04-04 11:13:00.942617'
+  updated_at: '2014-04-04 12:00:18.518127'
+  id3: t
+songs_179:
+  title: Dogday Mornings
+  artist: The Hellacopters
+  album: Grande Rock
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Grande_Rock/08-Dogday Mornings.mp3"
+  path_md5: !binary |-
+    L9OZ8PFY7JDA47nKZpnE9Q==
+  user_id: 5
+  created_at: '2014-04-04 11:13:01.075629'
+  updated_at: '2014-04-04 12:00:47.439324'
+  id3: t
+songs_180:
+  title: Ferrytale
+  artist: The Hellacopters
+  album: Disappointment Blues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Disappointment Blues/06-Ferrytale.mp3"
+  path_md5: !binary |-
+    26IChCFii905OAnoiVqRUQ==
+  user_id: 5
+  created_at: '2014-04-04 11:13:01.208762'
+  updated_at: '2014-04-04 12:05:45.316674'
+  id3: t
+songs_181:
+  title: I´m In The Band
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/21_the_hellacopters-im_in_the_band.mp3"
+  path_md5: !binary |-
+    x5OkFow9h2vSxT4NeWcF+w==
+  user_id: 5
+  created_at: '2014-04-04 11:13:01.340133'
+  updated_at: '2014-04-04 12:05:25.799106'
+  id3: t
+songs_182:
+  title: Speedfreak
+  artist: The Hellacopters
+  album: Disappointment Blues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Disappointment Blues/04-Speedfreak.mp3"
+  path_md5: !binary |-
+    BSFo8Y1CDepL2Wz7g/qfBw==
+  user_id: 5
+  created_at: '2014-04-04 11:13:01.485434'
+  updated_at: '2014-04-04 11:13:06.380306'
+  id3: t
+songs_183:
+  title: bore me
+  artist: The Hellacopters
+  album: Supershitty To The Max
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Supershitty_To_The_Max(/05-bore me.mp3"
+  path_md5: !binary |-
+    lPoci4Sdd1r490pk75H/bg==
+  user_id: 5
+  created_at: '2014-04-04 11:13:01.618881'
+  updated_at: '2014-04-04 12:02:27.569959'
+  id3: t
+songs_184:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Rockets _ Electrify.mp3"
+  path_md5: !binary |-
+    MdvzmoxizhKS7UdwcB/dCA==
+  user_id: 5
+  created_at: '2014-04-04 11:13:01.750227'
+  updated_at: '2014-04-04 12:00:52.398704'
+  id3: t
+songs_185:
+  title: Everything´s On TV
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/20_the_hellacopters-everythings_on_tv.mp3"
+  path_md5: !binary |-
+    qgnCbyGPcJLWqnAEVsM9CQ==
+  user_id: 5
+  created_at: '2014-04-04 11:13:01.906904'
+  updated_at: '2014-04-04 12:05:05.322589'
+  id3: t
+songs_186:
+  title: Like No Other Man
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/06_the_hellacopters-like_no_other_man.mp3"
+  path_md5: !binary |-
+    CascONTRlat64CJIhomoPg==
+  user_id: 5
+  created_at: '2014-04-04 11:13:02.050465'
+  updated_at: '2014-04-04 11:13:09.759073'
+  id3: t
+songs_187:
+  title: 06 - Throw Away Heroes
+  artist: The Hellacopters
+  album: High Visibility
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_High_Visibility/06 - Throw Away Heroes.mp3"
+  path_md5: !binary |-
+    EveHkogEe8jMPGL9VBQtjA==
+  user_id: 5
+  created_at: '2014-04-04 11:13:02.194761'
+  updated_at: '2014-04-04 12:00:21.095461'
+  id3: t
+songs_188:
+  title: Cold Night for Alligators
+  artist: The Hellacopters
+  album: Hopeless Case of a Kid in Denial
+  genre: 
+  path: "/the hellacopters/Hopeless Case of a Kid in Denial/03 Cold Night for Alligators.mp3"
+  path_md5: !binary |-
+    d3b5+lRK1fo+8emlzVwLew==
+  user_id: 5
+  created_at: '2014-04-04 11:13:02.360745'
+  updated_at: '2014-04-04 12:01:57.002666'
+  id3: t
+songs_189:
+  title: "(Gotta Get some Action) NOW!"
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/01_the_hellacopters-(gotta_get_some_action)_now.mp3"
+  path_md5: !binary |-
+    9uFTXgAFZXt9/PjXjWnXYA==
+  user_id: 5
+  created_at: '2014-04-04 11:13:02.529043'
+  updated_at: '2014-04-04 12:06:00.559815'
+  id3: t
+songs_190:
+  title: "(gotta get some action) now!"
+  artist: The Hellacopters
+  album: Supershitty To The Max
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Supershitty_To_The_Max(/01-(gotta get
+    some action) now!.mp3"
+  path_md5: !binary |-
+    uVH2OMYBqQBoKV71Twq60A==
+  user_id: 5
+  created_at: '2014-04-04 11:13:02.661651'
+  updated_at: '2014-04-04 12:05:16.497804'
+  id3: t
+songs_191:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Squareheads _ Hunk
+    Your Horn For Daddy.mp3"
+  path_md5: !binary |-
+    YfrRvVhYf+hKdeenqXzlEQ==
+  user_id: 5
+  created_at: '2014-04-04 11:13:02.794057'
+  updated_at: '2014-04-04 12:01:42.986298'
+  id3: t
+songs_192:
+  title: Hey!
+  artist: The Hellacopters
+  album: Payin' The Dues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters-Payin.The.Dues/The Hellacopters - Payin'
+    The Dues - 05 - Hey!.mp3"
+  path_md5: !binary |-
+    4GSkoUQpOe8w88gw5lI4ag==
+  user_id: 5
+  created_at: '2014-04-04 11:13:02.926979'
+  updated_at: '2014-04-04 12:05:52.423843'
+  id3: t
+songs_193:
+  title: Soulseller
+  artist: The Hellacopters
+  album: Payin' The Dues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters-Payin.The.Dues/The Hellacopters - Payin'
+    The Dues - 06 - Soulseller.mp3"
+  path_md5: !binary |-
+    1UbULqxD2fsHRn2KN9YMpA==
+  user_id: 5
+  created_at: '2014-04-04 11:13:03.064406'
+  updated_at: '2014-04-04 12:05:40.242195'
+  id3: t
+songs_194:
+  title: Like No Other Man
+  artist: The Hellacopters
+  album: Payin' The Dues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters-Payin.The.Dues/The Hellacopters - Payin'
+    The Dues - 02 - Like No Other Man.mp3"
+  path_md5: !binary |-
+    7xTAh8LXo9DIlkqTDwurUg==
+  user_id: 5
+  created_at: '2014-04-04 11:13:03.226189'
+  updated_at: '2014-04-04 12:05:54.953004'
+  id3: t
+songs_195:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Tourist History/12 Kids.mp3"
+  path_md5: !binary |-
+    ZItHDrPlhJA2gtddk+aeEg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:43.692844'
+  updated_at: '2014-04-04 11:59:43.692844'
+  id3: f
+songs_196:
+  title: Costume Party
+  artist: Two Door Cinema Club
+  album: Tourist History
+  genre: 
+  path: "/Tourist History/11 Costume Party.mp3"
+  path_md5: !binary |-
+    ip3PlcLNO+al05CPmwAfQA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:43.839669'
+  updated_at: '2014-04-04 12:02:12.753538'
+  id3: t
+songs_197:
+  title: Apple Tree
+  artist: Wolfmother
+  album: Wolfmother
+  genre: 
+  path: "/wolfmother/Wolfmother/09 - Apple Tree.mp3"
+  path_md5: !binary |-
+    Mt+o56rI6gc/3UoIwP7sDg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:43.994144'
+  updated_at: '2014-04-04 12:00:54.951159'
+  id3: t
+songs_198:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/The hellacopters/Hellacopters - Carry Me Home.mp3"
+  path_md5: !binary |-
+    AWNKaLuZrx8ycNIHe4Yobg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:44.160261'
+  updated_at: '2014-04-04 12:00:04.304786'
+  id3: t
+songs_199:
+  title: Tales From the Forest of The Gnomes
+  artist: Wolfmother
+  album: Wolfmother
+  genre: 
+  path: "/wolfmother/Wolfmother/10 - Tales From the Forest of Gnomes.mp3"
+  path_md5: !binary |-
+    3G1cfhmIVCDMgq0P/j57HQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:44.326360'
+  updated_at: '2014-04-04 12:05:47.645227'
+  id3: t
+songs_200:
+  title: I might come see you tonight
+  artist: The Hellacopters
+  album: Rock & roll is dead
+  genre: 
+  path: "/the hellacopters/Rock & Roll Is Dead/10 I might come see you tonight.mp3"
+  path_md5: !binary |-
+    loLV2SOKzKKysYDJbMKfDQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:44.569865'
+  updated_at: '2014-04-04 12:02:29.984532'
+  id3: t
+songs_201:
+  title: Carry Me Home
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/17_the_hellacopters-carry_me_home.mp3"
+  path_md5: !binary |-
+    z8evEphvWUbYgvuwyuZjTg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:44.735576'
+  updated_at: '2014-04-04 12:05:33.304871'
+  id3: t
+songs_202:
+  title: Time got no time to wait for me
+  artist: The Hellacopters
+  album: Rock & roll is dead
+  genre: 
+  path: "/the hellacopters/Rock & Roll Is Dead/13 Time got no time to wait for me.mp3"
+  path_md5: !binary |-
+    yJKTZ3x0Fz/OCRHv5Lsv/w==
+  user_id: 5
+  created_at: '2014-04-04 11:59:44.879411'
+  updated_at: '2014-04-04 12:05:28.373627'
+  id3: t
+songs_203:
+  title: Toys And Flavors
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/14_the_hellacopters-toys_and_flavors.mp3"
+  path_md5: !binary |-
+    PwNjsHZL3itGuJFkbV3/cg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:45.023466'
+  updated_at: '2014-04-04 12:01:08.649646'
+  id3: t
+songs_204:
+  title: 04 - Toys And Flavors
+  artist: The Hellacopters
+  album: High Visibility
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_High_Visibility/04 - Toys And Flavors.mp3"
+  path_md5: !binary |-
+    Pm4hYsemOBapMYEWAUcJBQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:45.168148'
+  updated_at: '2014-04-04 12:01:06.302048'
+  id3: t
+songs_205:
+  title: Like No Other Man [Live]
+  artist: The Hellacopters
+  album: Hopeless Case of a Kid in Denial
+  genre: 
+  path: "/the hellacopters/Hopeless Case of a Kid in Denial/05 Like No Other Man [Live].mp3"
+  path_md5: !binary |-
+    d4ZMvUXSQB8OGAYfeu0sKg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:45.311686'
+  updated_at: '2014-04-04 12:01:58.265183'
+  id3: t
+songs_206:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/The Leftlovers _ Go
+    Faster.mp3"
+  path_md5: !binary |-
+    bi/7GE2FA38CnQzH4S09tQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:45.466803'
+  updated_at: '2014-04-04 12:01:55.717518'
+  id3: t
+songs_207:
+  title: 13. Pride
+  artist: Hellacopters
+  album: By The Grace Of God
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_By_The_Grace_Of_God/(The Hellacopters)
+    - 13 - Pride.mp3"
+  path_md5: !binary |-
+    lFC69LITJBSGTvYAuyO1/Q==
+  user_id: 5
+  created_at: '2014-04-04 11:59:45.611978'
+  updated_at: '2014-04-04 12:02:26.313050'
+  id3: t
+songs_208:
+  title: All New Low
+  artist: Hellacopters
+  album: By The Grace Of God
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_By_The_Grace_Of_God/(The Hellacopters)
+    - 02 - All New Low.mp3"
+  path_md5: !binary |-
+    eNmwNfzv/+4taYvWUxSHOg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:45.756386'
+  updated_at: '2014-04-04 12:01:59.482297'
+  id3: t
+songs_209:
+  title: Carry Me Home
+  artist: Hellacopters
+  album: By The Grace Of God
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_By_The_Grace_Of_God/(The Hellacopters)
+    - 05 - Carry Me Home.mp3"
+  path_md5: !binary |-
+    y+niNJgmqoqLlERE4tefGw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:45.933103'
+  updated_at: '2014-04-04 12:05:29.619545'
+  id3: t
+songs_210:
+  title: I Just Don't Know About Girls
+  artist: The Hellacopters
+  album: Head Off
+  genre: 
+  path: "/the hellacopters/Head Off (2008)/The Hellacopters - Head Off - 08 - I Just
+    Don't Know About Girls.mp3"
+  path_md5: !binary |-
+    Ckcc3f1AHiuEmtKOA7MMNg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:46.110110'
+  updated_at: '2014-04-04 12:00:09.969308'
+  id3: t
+songs_211:
+  title: Rainy Days Revisited
+  artist: Hellacopters
+  album: 'By the Grace of God '
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_By_The_Grace_Of_God/(The Hellacopters)
+    - 06 - Rainy Days Revisited.mp3"
+  path_md5: !binary |-
+    lfstsRWBghVIsxusxq8XfA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:46.286945'
+  updated_at: '2014-04-04 12:02:28.744659'
+  id3: t
+songs_212:
+  title: Going Down [Gluecifer]
+  artist: The Hellacopters & Gluecifer
+  album: Respect The Rock America
+  genre: 
+  path: "/the hellacopters/Hellacopters Gluecifer Split/The Hellacopters & Gluecifer
+    - Respect The Rock America - 10 - Going Down [Gluecifer].mp3"
+  path_md5: !binary |-
+    A3qgL5eP5fLF1F//+kz7fg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:46.441808'
+  updated_at: '2014-04-04 12:00:08.527214'
+  id3: t
+songs_213:
+  title: No Goddamn Phones [Gluecifer]
+  artist: The Hellacopters & Gluecifer
+  album: Respect The Rock America
+  genre: 
+  path: "/the hellacopters/Hellacopters Gluecifer Split/The Hellacopters & Gluecifer
+    - Respect The Rock America - 09 - No Goddamn Phones [Gluecifer].mp3"
+  path_md5: !binary |-
+    LKy6CTUOJ1QdsGmZPpYZzQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:46.585698'
+  updated_at: '2014-04-04 12:00:46.185077'
+  id3: t
+songs_214:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/wolfmother/Wolfmother/12 - Vagabond.mp3"
+  path_md5: !binary |-
+    S4eOzvLFfkTYO3NBHwHVgQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:46.729567'
+  updated_at: '2014-04-04 12:01:22.490500'
+  id3: t
+songs_215:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Tourist History/07 Undercover Martyn.mp3"
+  path_md5: !binary |-
+    IdsAPQn8jde68zoSUux1pA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:46.873549'
+  updated_at: '2014-04-04 11:59:46.873549'
+  id3: f
+songs_216:
+  title: Under My Skin
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - Under My Skin.mp3"
+  path_md5: !binary |-
+    a4RHX99gUk/fcqy+bZ3xqg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:47.017780'
+  updated_at: '2014-04-04 12:01:54.307423'
+  id3: t
+songs_217:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Tourist History/05 Something Good Can Work.mp3"
+  path_md5: !binary |-
+    k7PvnUWxIhZB83ivqQPH8w==
+  user_id: 5
+  created_at: '2014-04-04 11:59:47.172172'
+  updated_at: '2014-04-04 11:59:47.172172'
+  id3: f
+songs_218:
+  title: Sundial
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/04 - Sundial.mp3"
+  path_md5: !binary |-
+    tO3zW4PtRvN3rMeWapsn7g==
+  user_id: 5
+  created_at: '2014-04-04 11:59:47.316584'
+  updated_at: '2014-04-04 12:05:12.790458'
+  id3: t
+songs_219:
+  title: Back Round
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/12 - Back Round.mp3"
+  path_md5: !binary |-
+    YeuNjbvjPfDklu3aWMdLSg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:47.472889'
+  updated_at: '2014-04-04 12:01:41.415115'
+  id3: t
+songs_220:
+  title: No angel to lay me away
+  artist: The Hellacopters
+  album: Rock & roll is dead
+  genre: 
+  path: "/the hellacopters/Rock & Roll Is Dead/04 No angel to lay me away.mp3"
+  path_md5: !binary |-
+    ZyAKOsfEFzZGKx2DGijg3Q==
+  user_id: 5
+  created_at: '2014-04-04 11:59:47.638904'
+  updated_at: '2014-04-04 12:01:49.218018'
+  id3: t
+songs_221:
+  title: New Moon Rising
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/02 - New Moon Rising.mp3"
+  path_md5: !binary |-
+    POH1R7kDHPe3EaDhYgTzpA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:47.815848'
+  updated_at: '2014-04-04 12:01:03.144969'
+  id3: t
+songs_222:
+  title: California Queen
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/01 - California Queen.mp3"
+  path_md5: !binary |-
+    xTFkiv1udJH4Gx658ABftQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:48.003808'
+  updated_at: '2014-04-04 12:05:22.727845'
+  id3: t
+songs_223:
+  title: Heaven
+  artist: The Hellacopters
+  album: Disappointment Blues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Disappointment Blues/03-Heaven.mp3"
+  path_md5: !binary |-
+    CuOo7SyPbebpaHCDc3Alag==
+  user_id: 5
+  created_at: '2014-04-04 11:59:48.159592'
+  updated_at: '2014-04-04 12:00:12.395540'
+  id3: t
+songs_224:
+  title: "(I'm A) Stealer"
+  artist: The Hellacopters
+  album: Hopeless Case of a Kid in Denial
+  genre: 
+  path: "/the hellacopters/Hopeless Case of a Kid in Denial/04 (I'm A) Stealer.mp3"
+  path_md5: !binary |-
+    gtBOEdJH2XKH1g4En2g0eA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:48.302664'
+  updated_at: '2014-04-04 12:02:07.864019'
+  id3: t
+songs_225:
+  title: Rescue
+  artist: The Hellacopters
+  album: Head Off
+  genre: 
+  path: "/the hellacopters/Head Off (2008)/The Hellacopters - Head Off - 09 - Rescue.mp3"
+  path_md5: !binary |-
+    Gxt3A0JmdO4arxJlhoa60Q==
+  user_id: 5
+  created_at: '2014-04-04 11:59:48.446458'
+  updated_at: '2014-04-04 12:00:31.297803'
+  id3: t
+songs_226:
+  title: 09 - A Heart Without Home
+  artist: The Hellacopters
+  album: High Visibility
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_High_Visibility/09 - A Heart Without
+    Home.mp3"
+  path_md5: !binary |-
+    RXuUCzuX+iywBRG5XFV/yg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:48.590479'
+  updated_at: '2014-04-04 12:01:14.062114'
+  id3: t
+songs_227:
+  title: how could I care
+  artist: The Hellacopters
+  album: Supershitty To The Max
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Supershitty_To_The_Max(/07-how could
+    I care.mp3"
+  path_md5: !binary |-
+    WlMxkZDS0odHv1ujwpkgNw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:48.734905'
+  updated_at: '2014-04-04 12:01:36.292818'
+  id3: t
+songs_228:
+  title: No Salvation
+  artist: The Hellacopters
+  album: Head Off
+  genre: 
+  path: "/the hellacopters/Head Off (2008)/The Hellacopters - Head Off - 04 - No Salvation.mp3"
+  path_md5: !binary |-
+    wx6sXdTfjhTNY+uGy5cS0Q==
+  user_id: 5
+  created_at: '2014-04-04 11:59:48.878197'
+  updated_at: '2014-04-04 12:05:20.204502'
+  id3: t
+songs_229:
+  title: The Devil Stole The Beat From The Lord
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/09_the_hellacopters-the_devil_stole_the_beat_from_the_lord.mp3"
+  path_md5: !binary |-
+    AcF4hKnawliOV+KtY9tczw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:49.021900'
+  updated_at: '2014-04-04 12:00:07.283328'
+  id3: t
+songs_230:
+  title: Straight Until Morning
+  artist: The Hellacopters
+  album: Head Off
+  genre: 
+  path: "/the hellacopters/Head Off (2008)/The Hellacopters - Head Off - 14 - Straight
+    Until Morning (bonus).mp3"
+  path_md5: !binary |-
+    YMMK0YtTz0AZOS7I5xq71A==
+  user_id: 5
+  created_at: '2014-04-04 11:59:49.175696'
+  updated_at: '2014-04-04 12:01:40.228198'
+  id3: t
+songs_231:
+  title: My Card Says Typhoon Killer [G
+  artist: The Hellacopters & Gluecifer
+  album: Respect The Rock America
+  genre: 
+  path: "/the hellacopters/Hellacopters Gluecifer Split/The Hellacopters & Gluecifer
+    - Respect The Rock America - 08 - My Card Says Typhoon Killer [G.mp3"
+  path_md5: !binary |-
+    Rbg5TwANDq7UlOJ9W+amEQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:49.321093'
+  updated_at: '2014-04-04 12:01:15.280879'
+  id3: t
+songs_232:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Tourist History/06 I Can Talk.mp3"
+  path_md5: !binary |-
+    36XfTSSf1sqy6ed1cq08QA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:49.510409'
+  updated_at: '2014-04-04 11:59:49.510409'
+  id3: f
+songs_233:
+  title: "-1"
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - -1.mp3"
+  path_md5: !binary |-
+    hkKe7uHvS1zBDlF6wg5YQg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:49.687341'
+  updated_at: '2014-04-04 12:02:09.086366'
+  id3: t
+songs_234:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Wolfmother/LOBOmadre(beatoasis).mp3"
+  path_md5: !binary |-
+    F9R1DYldJlKtJpW0h0gelQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:49.864311'
+  updated_at: '2014-04-04 12:00:26.170559'
+  id3: t
+songs_235:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/The hellacopters/The Hellacopters - No song unheard.mp3"
+  path_md5: !binary |-
+    GTJ9/o/yHN9QZaU/Ki/Ong==
+  user_id: 5
+  created_at: '2014-04-04 11:59:50.019221'
+  updated_at: '2014-04-04 12:00:28.731632'
+  id3: t
+songs_236:
+  title: Leave it alone
+  artist: The Hellacopters
+  album: Rock & roll is dead
+  genre: 
+  path: "/the hellacopters/Rock & Roll Is Dead/06 Leave it alone.mp3"
+  path_md5: !binary |-
+    uG+hvQdWOnr74ZimxTcxoA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:50.163194'
+  updated_at: '2014-04-04 12:05:15.291472'
+  id3: t
+songs_237:
+  title: Far Away
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/08 - Far Away.mp3"
+  path_md5: !binary |-
+    OsgJqzgRc1jPhrzIocaYLQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:50.307235'
+  updated_at: '2014-04-04 12:01:00.190502'
+  id3: t
+songs_238:
+  title: Cosmic Egg
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/07 - Cosmic Egg.mp3"
+  path_md5: !binary |-
+    005Onr7iWBFdi8o5hrPVGg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:50.451227'
+  updated_at: '2014-04-04 12:05:37.154174'
+  id3: t
+songs_239:
+  title: 10,000 Feet
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/06 - 10,000 Feet.mp3"
+  path_md5: !binary |-
+    WiS2vfRf4TMx2P1eAQfzHg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:50.595056'
+  updated_at: '2014-04-04 12:01:35.041118'
+  id3: t
+songs_240:
+  title: 13 - Envious
+  artist: The Hellacopters
+  album: High Visibility
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_High_Visibility/13 - Envious.mp3"
+  path_md5: !binary |-
+    iP2F73slpbu2kGMN8/c1XQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:50.738830'
+  updated_at: '2014-04-04 12:02:11.498552'
+  id3: t
+songs_241:
+  title: No Song Unheard
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/15_the_hellacopters-no_song_unheard.mp3"
+  path_md5: !binary |-
+    oF+nDZKLjZOigBDn1sh4+A==
+  user_id: 5
+  created_at: '2014-04-04 11:59:50.892859'
+  updated_at: '2014-04-04 12:04:59.357836'
+  id3: t
+songs_242:
+  title: Crimson Ballroom
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/12_the_hellacopters-crimson_ballroom.mp3"
+  path_md5: !binary |-
+    6lydAhCX4k5zYCL/7n14vg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:51.038093'
+  updated_at: '2014-04-04 12:05:53.683916'
+  id3: t
+songs_243:
+  title: 07 - No Song Unheard
+  artist: The Hellacopters
+  album: High Visibility
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_High_Visibility/07 - No Song Unheard.mp3"
+  path_md5: !binary |-
+    2cLcdVIJjMAd3ALLF6OLGQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:51.193255'
+  updated_at: '2014-04-04 12:05:44.113748'
+  id3: t
+songs_244:
+  title: Darling Darling
+  artist: The Hellacopters
+  album: Head Off
+  genre: 
+  path: "/the hellacopters/Head Off (2008)/The Hellacopters - Head Off - 12 -  Darling
+    Darling.mp3"
+  path_md5: !binary |-
+    0O15V1GY1H5sk/GYHUN9vg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:51.349424'
+  updated_at: '2014-04-04 12:05:34.743169'
+  id3: t
+songs_245:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/wolfmother/Wolfmother • New Crown [2014] 320/Wolfmother - New Crown - 03
+    Heavy Weight.mp3"
+  path_md5: !binary |-
+    IMdXHn8U2H9NF66dUPunlA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:51.482560'
+  updated_at: '2014-04-04 11:59:51.482560'
+  id3: f
+songs_246:
+  title: The Devil Stole The Beat From The Lord
+  artist: The Hellacopters
+  album: Grande Rock
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Grande_Rock/07-The Devil Stole The Beat
+    From The Lord.mp3"
+  path_md5: !binary |-
+    ZSxyHtcfhPljlJepe1frVA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:51.625921'
+  updated_at: '2014-04-04 12:01:48.032516'
+  id3: t
+songs_247:
+  title: U.YF.S.
+  artist: Hellacopters
+  album: By The Grace Of God
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_By_The_Grace_Of_God/(The Hellacopters)
+    - 08 - U.Y.F.S..mp3"
+  path_md5: !binary |-
+    CopESjrZU68aMcCPyItDFQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:51.759763'
+  updated_at: '2014-04-04 12:00:11.172564'
+  id3: t
+songs_248:
+  title: Colapso Nervioso
+  artist: The Hellacopters
+  album: Payin' The Dues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters-Payin.The.Dues/The Hellacopters - Payin'
+    The Dues - 09 - Colapso Nervioso.mp3"
+  path_md5: !binary |-
+    NOtRHcUSe9rI01onbVk4lg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:51.892592'
+  updated_at: '2014-04-04 12:00:57.569898'
+  id3: t
+songs_249:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Tourist History/08 What You Know.mp3"
+  path_md5: !binary |-
+    8jG6+DG/iuSbsNX9aGqnwQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:52.025897'
+  updated_at: '2014-04-04 11:59:52.025897'
+  id3: f
+songs_250:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Tourist History/02 Come Back Home.mp3"
+  path_md5: !binary |-
+    a1jBbHzRAU8p2Wa4qbmVqA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:52.159081'
+  updated_at: '2014-04-04 11:59:52.159081'
+  id3: f
+songs_251:
+  title: Dimension
+  artist: Wolfmother
+  album: Wolfmother
+  genre: 
+  path: "/wolfmother/Wolfmother/07 - Dimension.mp3"
+  path_md5: !binary |-
+    /S9AN1XWXKOeD7QhShLbQQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:52.292141'
+  updated_at: '2014-04-04 12:06:04.227064'
+  id3: t
+songs_252:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Tourist History/10 You're Not Stubborn.mp3"
+  path_md5: !binary |-
+    U3c5Oni3ipgE7hlSOigOzw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:52.439824'
+  updated_at: '2014-04-04 11:59:52.439824'
+  id3: f
+songs_253:
+  title: Set it Off
+  artist: Audioslave
+  album: 'Audioslave '
+  genre: 
+  path: "/audioslave/Audioslave - Audioslave/06 Set It Off.mp3"
+  path_md5: !binary |-
+    SSPVOy7hueLmVsDkQPZUVw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:52.590732'
+  updated_at: '2014-04-04 12:01:18.814494'
+  id3: t
+songs_254:
+  title: Wide Awake
+  artist: Audioslave
+  album: Revelations
+  genre: 
+  path: "/audioslave/Audioslave-Revelations-2006/10-audioslave-wide_awake.mp3"
+  path_md5: !binary |-
+    8mb0eU9YCmxGgtm86EJKMg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:52.745912'
+  updated_at: '2014-04-04 12:05:59.271543'
+  id3: t
+songs_255:
+  title: Born Broke
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/03_the_hellacopters-born_broke.mp3"
+  path_md5: !binary |-
+    mlvpDo6eJjbRAOYFuZ+Ukw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:52.913059'
+  updated_at: '2014-04-04 12:02:34.085535'
+  id3: t
+songs_256:
+  title: Sound Of A Gun
+  artist: Audioslave
+  album: Revelations
+  genre: 
+  path: "/audioslave/Audioslave-Revelations-2006/03-audioslave-sound_of_a_gun.mp3"
+  path_md5: !binary |-
+    Q5PUJ4VP18s8AzNziNZomQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:53.056890'
+  updated_at: '2014-04-04 12:01:12.729932'
+  id3: t
+songs_257:
+  title: born broke
+  artist: The Hellacopters
+  album: Supershitty To The Max
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Supershitty_To_The_Max(/04-born broke.mp3"
+  path_md5: !binary |-
+    M/bhu93d85P+NEbWKBENUg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:53.212440'
+  updated_at: '2014-04-04 12:00:56.200694'
+  id3: t
+songs_258:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Wonderfools _ Suck
+    And Swallow.mp3"
+  path_md5: !binary |-
+    jQ0u0crRl49Af5RhwM6sgA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:53.345743'
+  updated_at: '2014-04-04 12:02:16.291264'
+  id3: t
+songs_259:
+  title: Doesn't Remind Me
+  artist: Audioslave
+  album: Out Of Exile
+  genre: 
+  path: "/audioslave/Audioslave-Out_Of_Exile-(Retail)-2005-HHI/04-Audioslave-Doesnt_Remind_Me-HHI.mp3"
+  path_md5: !binary |-
+    PBfpGnlAUWTQ6pqML2D+JQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:53.478783'
+  updated_at: '2014-04-04 12:01:01.491000'
+  id3: t
+songs_260:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/wolfmother/Wolfmother • New Crown [2014] 320/Wolfmother - New Crown - 07
+    -I Ain't Got No-.mp3"
+  path_md5: !binary |-
+    RbjZw17AO6u59gliGoOK5A==
+  user_id: 5
+  created_at: '2014-04-04 11:59:53.612003'
+  updated_at: '2014-04-04 11:59:53.612003'
+  id3: f
+songs_261:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/wolfmother/Wolfmother • New Crown [2014] 320/Wolfmother - New Crown - 11
+    I Don't Know Why.mp3"
+  path_md5: !binary |-
+    DpOfBrTa3OmRnC/A/1mFkA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:53.765155'
+  updated_at: '2014-04-04 11:59:53.765155'
+  id3: f
+songs_262:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/wolfmother/Wolfmother • New Crown [2014] 320/Wolfmother - New Crown - 02
+    Enemy Is In Your Mind.mp3"
+  path_md5: !binary |-
+    prSU0MoHcvQo0tSYEV8glA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:53.932828'
+  updated_at: '2014-04-04 11:59:53.932828'
+  id3: f
+songs_263:
+  title: Psyched Out & Furious
+  artist: The Hellacopters
+  album: Payin' The Dues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters-Payin.The.Dues/The Hellacopters - Payin'
+    The Dues - 10 - Psyched Out & Furious.mp3"
+  path_md5: !binary |-
+    SwNyxdvD1VWa28++murXyw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:54.086668'
+  updated_at: '2014-04-04 12:01:21.306923'
+  id3: t
+songs_264:
+  title: Working for MCA [The Hellacopt
+  artist: The Hellacopters & Gluecifer
+  album: Respect The Rock America
+  genre: 
+  path: "/the hellacopters/Hellacopters Gluecifer Split/The Hellacopters & Gluecifer
+    - Respect The Rock America - 02 - Working for MCA [The Hellacopt.mp3"
+  path_md5: !binary |-
+    X4ZyDlhm+unahAwmO9TK7g==
+  user_id: 5
+  created_at: '2014-04-04 11:59:54.254276'
+  updated_at: '2014-04-04 12:01:37.647866'
+  id3: t
+songs_265:
+  title: Pyramid
+  artist: Wolfmother
+  album: Wolfmother
+  genre: 
+  path: "/wolfmother/Wolfmother/04 - Pyramid.mp3"
+  path_md5: !binary |-
+    GuwKew46uSseUv2GjqUM+g==
+  user_id: 5
+  created_at: '2014-04-04 11:59:54.388524'
+  updated_at: '2014-04-04 12:00:30.041700'
+  id3: t
+songs_266:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Tourist History/04 This Is The Life.mp3"
+  path_md5: !binary |-
+    jHKdFTd/MKA5V7L5oBnXlw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:54.621369'
+  updated_at: '2014-04-04 11:59:54.621369'
+  id3: f
+songs_267:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Tourist History/03 Do You Want It All.mp3"
+  path_md5: !binary |-
+    mm7zIDr+gEm1Ka52x6+/dQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:54.821660'
+  updated_at: '2014-04-04 11:59:54.821660'
+  id3: f
+songs_268:
+  title: Joker & The Thief
+  artist: Wolfmother
+  album: Wolfmother
+  genre: 
+  path: "/wolfmother/Wolfmother/06 - Joker & The Thief.mp3"
+  path_md5: !binary |-
+    w0kq2A1F/+Y0x3GyrtDYTg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:54.976762'
+  updated_at: '2014-04-04 12:05:21.489245'
+  id3: t
+songs_269:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Tourist History/01 Cigarettes In The Theatre.mp3"
+  path_md5: !binary |-
+    3ZtUpqTdkDl6SmXT7ERNIw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:55.142575'
+  updated_at: '2014-04-04 11:59:55.142575'
+  id3: f
+songs_270:
+  title: Gasoline
+  artist: Audioslave
+  album: 'Audioslave '
+  genre: 
+  path: "/audioslave/Audioslave - Audioslave/03 Gasoline.mp3"
+  path_md5: !binary |-
+    U413oXraawray4m6Ou0eVQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:55.285984'
+  updated_at: '2014-04-04 12:01:30.065949'
+  id3: t
+songs_271:
+  title: Internal Primates Forever
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - Internal Primates Forever.mp3"
+  path_md5: !binary |-
+    VSdKenEuGCHB/ErgrQ4tGA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:55.430492'
+  updated_at: '2014-04-04 12:01:32.584938'
+  id3: t
+songs_272:
+  title: Show Me How to Live
+  artist: Audioslave
+  album: 'Audioslave '
+  genre: 
+  path: "/audioslave/Audioslave - Audioslave/02 Show Me How To Live.mp3"
+  path_md5: !binary |-
+    WYBvRqtjbQVr2OyEWUsJKw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:55.574515'
+  updated_at: '2014-04-04 12:01:33.771365'
+  id3: t
+songs_273:
+  title: Caroline
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/14 - Caroline.mp3"
+  path_md5: !binary |-
+    SFNwrgX/mbo9oxJblVVaiA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:55.707407'
+  updated_at: '2014-04-04 12:01:17.576268'
+  id3: t
+songs_274:
+  title: Down Right Blue
+  artist: The Hellacopters
+  album: Air Raid Serenades
+  genre: 
+  path: "/the hellacopters/Air Raid Serenades/11_the_hellacopters-down_right_blue.mp3"
+  path_md5: !binary |-
+    PllM4IqOWOMGAdyMXXJsgw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:55.838966'
+  updated_at: '2014-04-04 12:01:04.882231'
+  id3: t
+songs_275:
+  title: Shape Of Things To Come
+  artist: Audioslave
+  album: Revelations
+  genre: 
+  path: "/audioslave/Audioslave-Revelations-2006/08-audioslave-shape_of_things_to_come.mp3"
+  path_md5: !binary |-
+    feI3MzsGAV646Bu3Cpb32g==
+  user_id: 5
+  created_at: '2014-04-04 11:59:55.995558'
+  updated_at: '2014-04-04 12:02:05.468638'
+  id3: t
+songs_276:
+  title: Dandelion
+  artist: Audioslave
+  album: Out Of Exile
+  genre: 
+  path: "/audioslave/Audioslave-Out_Of_Exile-(Retail)-2005-HHI/10-Audioslave-Dandelion-HHI.mp3"
+  path_md5: !binary |-
+    wp+NjikzfyPXc1yf7eaTSg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:56.130067'
+  updated_at: '2014-04-04 12:05:18.982626'
+  id3: t
+songs_277:
+  title: Disappointment Blues
+  artist: The Hellacopters
+  album: Disappointment Blues
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Disappointment Blues/05-Disappointment
+    Blues.mp3"
+  path_md5: !binary |-
+    eaI5U0OykB4EkWUo9Dtspw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:56.274543'
+  updated_at: '2014-04-04 12:02:00.753280'
+  id3: t
+songs_278:
+  title: Heaven's Dead
+  artist: Audioslave
+  album: Out Of Exile
+  genre: 
+  path: "/audioslave/Audioslave-Out_Of_Exile-(Retail)-2005-HHI/06-Audioslave-Heavens_Dead-HHI.mp3"
+  path_md5: !binary |-
+    IVXjnAkOBzI43uQdm1oFHw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:56.428729'
+  updated_at: '2014-04-04 12:00:36.539091'
+  id3: t
+songs_279:
+  title: Yesterday To Tomorrow
+  artist: Audioslave
+  album: Out Of Exile
+  genre: 
+  path: "/audioslave/Audioslave-Out_Of_Exile-(Retail)-2005-HHI/09-Audioslave-Yesterday_To_Tomorrow-HHI.mp3"
+  path_md5: !binary |-
+    Dk3/HC1AUVIpEEvRDrLpZQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:56.561842'
+  updated_at: '2014-04-04 12:00:14.825268'
+  id3: t
+songs_280:
+  title: Colossal
+  artist: Wolfmother
+  album: Wolfmother
+  genre: 
+  path: "/wolfmother/Wolfmother/01 - Colossal.mp3"
+  path_md5: !binary |-
+    h1/cqhQBQ2i9zJPeMoUiFA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:56.717082'
+  updated_at: '2014-04-04 12:02:10.262196'
+  id3: t
+songs_281:
+  title: Mind's Eye
+  artist: Wolfmother
+  album: Wolfmother
+  genre: 
+  path: "/wolfmother/Wolfmother/05 - Mind's Eye.mp3"
+  path_md5: !binary |-
+    Ymye1TXQFLdXE+JV3Rxg1Q==
+  user_id: 5
+  created_at: '2014-04-04 11:59:56.871863'
+  updated_at: '2014-04-04 12:01:44.216962'
+  id3: t
+songs_282:
+  title: Death Blooms
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - Death Blooms.mp3"
+  path_md5: !binary |-
+    JKXgVs4RJ8Ub0C+VtD76tg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:57.016608'
+  updated_at: '2014-04-04 12:00:41.283818'
+  id3: t
+songs_283:
+  title: White Unicorn
+  artist: Wolfmother
+  album: Wolfmother
+  genre: 
+  path: "/wolfmother/Wolfmother/03 - White Unicorn.mp3"
+  path_md5: !binary |-
+    zX6j9S9l92lyuc5BPMs8vQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:57.149834'
+  updated_at: '2014-04-04 12:05:30.880787'
+  id3: t
+songs_284:
+  title: Getaway Car
+  artist: Audioslave
+  album: 'Audioslave '
+  genre: 
+  path: "/audioslave/Audioslave - Audioslave/13 Getaway Car.mp3"
+  path_md5: !binary |-
+    fFnb/SGXZ+DjqqsTpvVASw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:57.282578'
+  updated_at: '2014-04-04 12:02:04.259938'
+  id3: t
+songs_285:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Tourist History/09 Eat That Up, It's Good For You.mp3"
+  path_md5: !binary |-
+    /E+XUiu5UUoATD67O9mQgg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:57.415307'
+  updated_at: '2014-04-04 11:59:57.415307'
+  id3: f
+songs_286:
+  title: Light My Wav
+  artist: Audioslave
+  album: 'Audioslave '
+  genre: 
+  path: "/audioslave/Audioslave - Audioslave/12 Light My Way.mp3"
+  path_md5: !binary |-
+    lsq4nD2qBR7+t05EpyWsnA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:57.558769'
+  updated_at: '2014-04-04 12:02:31.636075'
+  id3: t
+songs_287:
+  title: Like a Stone
+  artist: Audioslave
+  album: 'Audioslave '
+  genre: 
+  path: "/audioslave/Audioslave - Audioslave/05 Like A Stone.mp3"
+  path_md5: !binary |-
+    K/r6ODxAkGE2f5opWzJRGQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:57.694223'
+  updated_at: '2014-04-04 12:00:44.994157'
+  id3: t
+songs_288:
+  title: Phoenix
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/15 - Phoenix.mp3"
+  path_md5: !binary |-
+    GF19CF2qVEuF3l5j9azggg==
+  user_id: 5
+  created_at: '2014-04-04 11:59:57.848760'
+  updated_at: '2014-04-04 12:00:27.497657'
+  id3: t
+songs_289:
+  title: Pilgrim
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/10 - Pilgrim.mp3"
+  path_md5: !binary |-
+    3AbD8jlwb+t8bo/ShrHrBQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:58.003963'
+  updated_at: '2014-04-04 12:05:46.497800'
+  id3: t
+songs_290:
+  title: Cosmonaut
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/09 - Cosmonaut.mp3"
+  path_md5: !binary |-
+    ghlnzL4S/Y0yllmi6r2LLw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:58.158363'
+  updated_at: '2014-04-04 12:02:06.686411'
+  id3: t
+songs_291:
+  title: Zero
+  artist: Audioslave
+  album: Out Of Exile
+  genre: 
+  path: "/audioslave/Audioslave-Out_Of_Exile-(Retail)-2005-HHI/11-Audioslave-Zero-HHI.mp3"
+  path_md5: !binary |-
+    IG6AvJppYanmYrBITOLh7Q==
+  user_id: 5
+  created_at: '2014-04-04 11:59:58.303292'
+  updated_at: '2014-04-04 12:00:34.226460'
+  id3: t
+songs_292:
+  title: Be Yourself
+  artist: Audioslave
+  album: Out Of Exile
+  genre: 
+  path: "/audioslave/Audioslave-Out_Of_Exile-(Retail)-2005-HHI/03-Audioslave-Be_Yourself-HHI.mp3"
+  path_md5: !binary |-
+    x/FjXPbBd5Eky0lwtScetw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:58.623215'
+  updated_at: '2014-04-04 12:05:27.134064'
+  id3: t
+songs_293:
+  title: Out Of Exile
+  artist: Audioslave
+  album: Out Of Exile
+  genre: 
+  path: "/audioslave/Audioslave-Out_Of_Exile-(Retail)-2005-HHI/02-Audioslave-Out_Of_Exile-HHI.mp3"
+  path_md5: !binary |-
+    0vufVtc2c6aUc6TXeAgMag==
+  user_id: 5
+  created_at: '2014-04-04 11:59:58.756144'
+  updated_at: '2014-04-04 12:05:35.962469'
+  id3: t
+songs_294:
+  title: Cradle
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - Cradle.mp3"
+  path_md5: !binary |-
+    jRv5V3WmAOs95edAyiZmHA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:58.889274'
+  updated_at: '2014-04-04 12:02:17.498786'
+  id3: t
+songs_295:
+  title: Nothing to Gein
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - Nothing to Gein.mp3"
+  path_md5: !binary |-
+    F13LlmZaAc83TRYxRUBG1Q==
+  user_id: 5
+  created_at: '2014-04-04 11:59:59.043186'
+  updated_at: '2014-04-04 12:00:24.988714'
+  id3: t
+songs_296:
+  title: Where Eagles Have Been
+  artist: Wolfmother
+  album: Wolfmother
+  genre: 
+  path: "/wolfmother/Wolfmother/08 - Where Eagles Have Been.mp3"
+  path_md5: !binary |-
+    tBbIN4rb9sBWHOqn/wNfoQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:59.188230'
+  updated_at: '2014-04-04 12:05:11.540845'
+  id3: t
+songs_297:
+  title: Bring Em Back Alive
+  artist: Audioslave
+  album: 'Audioslave '
+  genre: 
+  path: "/audioslave/Audioslave - Audioslave/11 Bring Em Back Alive.mp3"
+  path_md5: !binary |-
+    i6BvYRMn1Hjx/Lcy0FH3nw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:59.332169'
+  updated_at: '2014-04-04 12:02:14.052502'
+  id3: t
+songs_298:
+  title: Eyes Open
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/11 - Eyes Open.mp3"
+  path_md5: !binary |-
+    JsxCuuYAoq7MbZNuBPHaGA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:59.488911'
+  updated_at: '2014-04-04 12:00:42.544865'
+  id3: t
+songs_299:
+  title: The Last Remaining Light
+  artist: Audioslave
+  album: 'Audioslave '
+  genre: 
+  path: "/audioslave/Audioslave - Audioslave/14 The Last Remaining Light.mp3"
+  path_md5: !binary |-
+    MijHoiOu4a8tMo/U8WeEWw==
+  user_id: 5
+  created_at: '2014-04-04 11:59:59.654808'
+  updated_at: '2014-04-04 12:00:53.686397'
+  id3: t
+songs_300:
+  title: Welcome To Hell
+  artist: The Hellacopters
+  album: Grande Rock
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Grande_Rock/04-Welcome To Hell.mp3"
+  path_md5: !binary |-
+    mlnbN8hNIVumR5slJvfKlQ==
+  user_id: 5
+  created_at: '2014-04-04 11:59:59.809740'
+  updated_at: '2014-04-04 12:02:32.821301'
+  id3: t
+songs_301:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/wolfmother/Wolfmother • New Crown [2014] 320/Wolfmother - New Crown - 10
+    Radio.mp3"
+  path_md5: !binary |-
+    aNp22vUUZChJHbGHBlrRvA==
+  user_id: 5
+  created_at: '2014-04-04 11:59:59.964460'
+  updated_at: '2014-04-04 11:59:59.964460'
+  id3: f
+songs_302:
+  title: The Curse
+  artist: Audioslave
+  album: Out Of Exile
+  genre: 
+  path: "/audioslave/Audioslave-Out_Of_Exile-(Retail)-2005-HHI/12-Audioslave-The_Curse-HHI.mp3"
+  path_md5: !binary |-
+    EWe/pruwOdg2E0vZatXZZA==
+  user_id: 5
+  created_at: '2014-04-04 12:00:00.107873'
+  updated_at: '2014-04-04 12:00:19.865068'
+  id3: t
+songs_303:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/wolfmother/Wolfmother • New Crown [2014] 320/Wolfmother - New Crown - 05
+    Tall Ships.mp3"
+  path_md5: !binary |-
+    exVCj248rMCq4LJUDK9VNA==
+  user_id: 5
+  created_at: '2014-04-04 12:00:00.263647'
+  updated_at: '2014-04-04 12:00:00.263647'
+  id3: f
+songs_304:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters - Riot On The Rocks/Maryslim _ You Got
+    An Attitude.mp3"
+  path_md5: !binary |-
+    FWxWCPXRGTfBa1yYGTKB9Q==
+  user_id: 5
+  created_at: '2014-04-04 12:00:00.419379'
+  updated_at: '2014-04-04 12:00:23.555006'
+  id3: t
+songs_305:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/wolfmother/Wolfmother • New Crown [2014] 320/Wolfmother - New Crown - 09
+    My Tangerine Dream.mp3"
+  path_md5: !binary |-
+    1fZazDNg32Ijj3yV8P1dEA==
+  user_id: 5
+  created_at: '2014-04-04 12:00:00.608565'
+  updated_at: '2014-04-04 12:00:00.608565'
+  id3: f
+songs_306:
+  title: Shitty City [Gluecifer]
+  artist: The Hellacopters & Gluecifer
+  album: Respect The Rock America
+  genre: 
+  path: "/the hellacopters/Hellacopters Gluecifer Split/The Hellacopters & Gluecifer
+    - Respect The Rock America - 07 - Shitty City [Gluecifer].mp3"
+  path_md5: !binary |-
+    DQJ1fj0NB/mjguZ/Hmj7WQ==
+  user_id: 5
+  created_at: '2014-04-04 12:00:00.752526'
+  updated_at: '2014-04-04 12:00:13.594391'
+  id3: t
+songs_307:
+  title: Prod
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - Prod.mp3"
+  path_md5: !binary |-
+    AXJLTFwaBWenZONDLt61Pw==
+  user_id: 5
+  created_at: '2014-04-04 12:00:00.896303'
+  updated_at: '2014-04-04 12:00:05.583578'
+  id3: t
+songs_308:
+  title: Pharmaecopia
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - Pharmaecopia.mp3"
+  path_md5: !binary |-
+    s6o6skDZb+qQfd4xTjcnrA==
+  user_id: 5
+  created_at: '2014-04-04 12:00:01.063820'
+  updated_at: '2014-04-04 12:05:10.325048'
+  id3: t
+songs_309:
+  title: I Am the Highway
+  artist: Audioslave
+  album: 'Audioslave '
+  genre: 
+  path: "/audioslave/Audioslave - Audioslave/08 I Am The Highway.mp3"
+  path_md5: !binary |-
+    j2lmL82tKkNDACAYeIWwxQ==
+  user_id: 5
+  created_at: '2014-04-04 12:00:01.219097'
+  updated_at: '2014-04-04 12:02:20.010791'
+  id3: t
+songs_310:
+  title: Shadow on the Sun
+  artist: Audioslave
+  album: 'Audioslave '
+  genre: 
+  path: "/audioslave/Audioslave - Audioslave/07 Shadow On The Sun.mp3"
+  path_md5: !binary |-
+    79bGiYSBcD9S90ON3ywBfA==
+  user_id: 5
+  created_at: '2014-04-04 12:00:01.373726'
+  updated_at: '2014-04-04 12:05:56.812273'
+  id3: t
+songs_311:
+  title: 5 vs. 7
+  artist: The Hellacopters
+  album: Grande Rock
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Grande_Rock/10-5 vs. 7.mp3"
+  path_md5: !binary |-
+    1QOJugJj2nuBIJ5idUsKtw==
+  user_id: 5
+  created_at: '2014-04-04 12:00:01.517936'
+  updated_at: '2014-04-04 12:05:38.778242'
+  id3: t
+songs_312:
+  title: In The Castle
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/13 - In The Castle.mp3"
+  path_md5: !binary |-
+    qPL6CfkYBIJNx2dV8Stouw==
+  user_id: 5
+  created_at: '2014-04-04 12:00:01.650914'
+  updated_at: '2014-04-04 12:05:03.055383'
+  id3: t
+songs_313:
+  title: In The Morning
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/05 - In The Morning.mp3"
+  path_md5: !binary |-
+    kACtdx2ffXY3EU+qebGvRA==
+  user_id: 5
+  created_at: '2014-04-04 12:00:01.783821'
+  updated_at: '2014-04-04 12:02:22.593238'
+  id3: t
+songs_314:
+  title: tab
+  artist: The Hellacopters
+  album: Supershitty To The Max
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Supershitty_To_The_Max(/06-tab.mp3"
+  path_md5: !binary |-
+    at127QmH7+uQfdFBiINuIA==
+  user_id: 5
+  created_at: '2014-04-04 12:00:01.939297'
+  updated_at: '2014-04-04 12:01:51.644735'
+  id3: t
+songs_315:
+  title: Violence Of The Sun
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/16 - Violence Of The Sun.mp3"
+  path_md5: !binary |-
+    sI419mYUC97y3tJyv+S4mA==
+  user_id: 5
+  created_at: '2014-04-04 12:00:02.082765'
+  updated_at: '2014-04-04 12:05:09.051541'
+  id3: t
+songs_316:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Supershitty_To_The_Max(/13-spock in
+    my rocket.mp3"
+  path_md5: !binary |-
+    kZ4NN1SUI9uT4I+0ekjiRA==
+  user_id: 5
+  created_at: '2014-04-04 12:00:02.227265'
+  updated_at: '2014-04-04 12:02:23.942738'
+  id3: t
+songs_317:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/wolfmother/Wolfmother • New Crown [2014] 320/Wolfmother - New Crown - 04
+    New Crown.mp3"
+  path_md5: !binary |-
+    YBN7Bm77litufQHytW3P2g==
+  user_id: 5
+  created_at: '2014-04-04 12:00:02.371336'
+  updated_at: '2014-04-04 12:00:02.371336'
+  id3: f
+songs_318:
+  title: Severed
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - Severed.mp3"
+  path_md5: !binary |-
+    j+IO/nUihMUqH4Ymc5B0Qw==
+  user_id: 5
+  created_at: '2014-04-04 12:00:02.515122'
+  updated_at: '2014-04-04 12:02:21.279782'
+  id3: t
+songs_319:
+  title: "(k)Now F(orever)"
+  artist: Mudvayne
+  album: L.D. 50
+  genre: 
+  path: "/mudvayne/L.D. 50/Mudvayne - (k)Now F(orever).mp3"
+  path_md5: !binary |-
+    ORTstfYWqj+apjDwruGNmQ==
+  user_id: 5
+  created_at: '2014-04-04 12:00:02.682368'
+  updated_at: '2014-04-04 12:00:58.956113'
+  id3: t
+songs_320:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/The_Hellacopters_-_Supershitty_To_The_Max(/13-spock in
+    my rocket(hidden track).mp3"
+  path_md5: !binary |-
+    QxHI7sd6W2wnUMuaBk38Hw==
+  user_id: 5
+  created_at: '2014-04-04 12:00:02.826903'
+  updated_at: '2014-04-04 12:01:11.496000'
+  id3: t
+songs_321:
+  title: Doggone Your Bad Luck Soul [Th
+  artist: The Hellacopters & Gluecifer
+  album: Respect The Rock America
+  genre: 
+  path: "/the hellacopters/Hellacopters Gluecifer Split/The Hellacopters & Gluecifer
+    - Respect The Rock America - 05 - Doggone Your Bad Luck Soul [Th.mp3"
+  path_md5: !binary |-
+    SsHsbNblY/xPEhftBFJ/1A==
+  user_id: 5
+  created_at: '2014-04-04 12:00:02.970640'
+  updated_at: '2014-04-04 12:01:20.085592'
+  id3: t

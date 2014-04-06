@@ -14,7 +14,6 @@
 # 4. Run: rails server
 # 5. Point your browser at: https://localhost:3000/dropbox/main
 
-require 'dropbox_sdk'
 require 'securerandom'
 
 class DropboxController < ApplicationController
