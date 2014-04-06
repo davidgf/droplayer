@@ -5,8 +5,29 @@ class SongsDataWorker
     include Sidekiq::Worker
   
     def perform(user_id)
-        puts "user id: #{user_id}"
-        dropbox_client = get_dropbox_client(user_id)
+        user = User.find(user_id)
+        dropbox_client = get_dropbox_client(user)
+        songs = user.songs.where(id3: false)
+        songs.each do |song|
+            save_id3_info(dropbox_client, song)
+        end
+    end
+
+    def save_id3_info(dropbox_client, song)
+        begin
+            if !song.id3?
+                artist, title, album, genre = get_mp3_info(dropbox_client, song.path)
+                song.id3 = true
+                song.artist = artist
+                song.title = title
+                song.album = album
+                song.genre = genre
+                song.save
+            end
+        rescue Mp3InfoError => e
+            logger.error "#{song.path}: error getting id3 info"
+            logger.error e
+        end
     end
 
     def get_mp3_info(dropbox_client, song_path)
@@ -31,8 +52,7 @@ class SongsDataWorker
         end
     end
 
-    def get_dropbox_client(user_id)
-        user = User.find(user_id)
+    def get_dropbox_client(user)
         if user.has_dropbox_token?
             access_token = user.dropbox_token
             DropboxClient.new(access_token)

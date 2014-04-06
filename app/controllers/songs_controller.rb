@@ -59,7 +59,6 @@ private
                 song.album = album
                 song.genre = genre
                 song.save
-                puts "song #{song.path}", song.artist, song.title, song.album, song.genre
             end
         rescue Mp3InfoError => e
             logger.error "#{song.path}: error getting id3 info"
