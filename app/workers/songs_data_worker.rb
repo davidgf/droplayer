@@ -6,8 +6,10 @@ class SongsDataWorker
   
     def perform(user_id)
         user = User.find(user_id)
+        puts "Donwnloading songs for user #{user.email}"
         dropbox_client = get_dropbox_client(user)
         songs = user.songs.where(id3: false)
+        puts "Number of songs: #{songs.size}"
         songs.each do |song|
             save_id3_info(dropbox_client, song)
         end

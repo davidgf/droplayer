@@ -33,8 +33,8 @@ class SongsDataWorkerTest < ActiveSupport::TestCase
             assert(song_with_data.attributes[a].blank?)
         end
         @song_data_worker.perform song_no_data.user_id
-        song_with_data = Song.find(song_with_data.path_md5)
-        song_no_data = Song.find(song_no_data.path_md5)
+        song_with_data.reload
+        song_no_data.reload
         song_attributes.each do |a|
             assert(song_no_data.attributes[a].blank?, "It shouldn't have any data")
             assert_not(song_with_data.attributes[a].blank?, "Attribute #{a} should have data (#{song_with_data.attributes[a]})")
