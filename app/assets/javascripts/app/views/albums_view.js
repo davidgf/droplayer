@@ -10,7 +10,6 @@ var AlbumsView = Backbone.View.extend({
   render: function(){
     this.$el.find('#albumstslist').html('');
     var songs_by_album = app.library.groupBy('album');
-    console.log(songs_by_album);
     _.each(songs_by_album, function(songs, album){
       this.addAlbum(album, songs);
     }, this);

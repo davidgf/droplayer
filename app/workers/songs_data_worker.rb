@@ -16,29 +16,35 @@ class SongsDataWorker
     end
 
     def save_id3_info(dropbox_client, song)
-        begin
-            if !song.id3?
-                artist, title, album, genre = get_mp3_info(dropbox_client, song.path)
-                song.id3 = true
-                song.artist = artist
-                song.title = title
-                song.album = album
-                song.genre = genre
-                song.save
-            end
-        rescue Mp3InfoError => e
-            logger.error "#{song.path}: error getting id3 info"
-            logger.error e
+        if !song.id3?
+            artist, title, album, genre = get_mp3_info(dropbox_client, song.path)
+            song.id3 = true
+            song.artist = artist
+            song.title = title
+            song.album = album
+            song.genre = genre
+            song.save
         end
     end
 
-    def get_mp3_info(dropbox_client, song_path)
-        mp3_file = get_mp3_head(dropbox_client, song_path)
-        return get_id3_info(mp3_file)
+    def get_mp3_info(dropbox_client, song_path, head_size=50000)
+        begin
+            mp3_file = get_mp3_head(dropbox_client, song_path, head_size)
+            return get_id3_info(mp3_file)
+        rescue Mp3InfoError => e
+            size = head_size * 5
+            if size <= 1250000 then
+                puts "trying size #{size}"
+                return get_mp3_info(dropbox_client, song_path, size)
+            else
+                logger.error "#{song_path}: error getting id3 info (tag too large?)"
+                return nil, nil, nil, nil
+            end
+        end
     end
 
-    def get_mp3_head(dropbox_client, song_path)
-        resp = dropbox_client.get_file_chunk(song_path)
+    def get_mp3_head(dropbox_client, song_path, head_size=10000)
+        resp = dropbox_client.get_file_chunk(song_path, head_size)
         return StringIO.new(resp)
     end
 
