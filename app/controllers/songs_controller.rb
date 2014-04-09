@@ -41,11 +41,12 @@ private
 
     def sync_songs(dropbox_client)
         songs_list = dropbox_client.search '/', 'mp3'
-        songs_path = songs_list.map! {|song| song.slice("path")}
+        songs_list.select! {|song| song.include?("mime_type") and song["mime_type"] == "audio/mpeg"}
+        songs_list.map! {|song| song.slice("path")}
         songs_path_array = songs_list.map {|song| song["path"]}
         songs_to_remove = current_user.songs.where.not(path: songs_path_array)
         songs_to_remove.delete_all if songs_to_remove.size > 0
-        songs_to_create = songs_path.select {|song| not Song.exists?(path: song["path"], user_id: current_user.id)}
+        songs_to_create = songs_list.select {|song| not Song.exists?(path: song["path"], user_id: current_user.id)}
         if songs_to_create.size > 0 then
             current_user.songs.create(songs_to_create)
             SongsDataWorker.perform_async(current_user.id)
