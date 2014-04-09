@@ -49,7 +49,7 @@ private
         songs_to_create = songs_list.select {|song| not Song.exists?(path: song["path"], user_id: current_user.id)}
         if songs_to_create.size > 0 then
             current_user.songs.create(songs_to_create)
-            SongsDataWorker.perform_async(current_user.id)
+            Sidekiq::Client.push('queue' => current_user.id, 'class' => SongsDataWorker, 'args' => [current_user.id])
         end
     end
 
