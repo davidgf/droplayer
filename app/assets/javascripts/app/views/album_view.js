@@ -25,7 +25,10 @@ var AlbumView = Backbone.View.extend({
   showSongs: function(){
     var songslist = this.$el.find('div.songslist');
     if(songslist.length == 0)
-      this.$el.append(this.songsTemplate({songs: this.collection}));
+      this.$el.append(this.songsTemplate({songs: _.sortBy(this.collection, function(song){ 
+        var str = song.get('title') || song.get('path');
+        return str.toLowerCase();
+      })}));
     else
       songslist.toggle();
     return this;

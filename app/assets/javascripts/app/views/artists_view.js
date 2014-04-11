@@ -10,9 +10,11 @@ var ArtistsView = Backbone.View.extend({
   render: function(){
     this.$el.find('#artistslist').html('');
     var songs_by_artist = app.library.groupBy('artist');
-    _.each(songs_by_artist, function(songs, artist){
-      this.addArtist(artist, songs);
-      // this.$('#artistslist').append('<li>'+artist+'</li>');
+    var artists = _.keys(songs_by_artist).sort(function (a, b) {
+        return a.toLowerCase().localeCompare(b.toLowerCase());
+    });
+    _.each(artists, function(artist){
+      this.addArtist(artist, songs_by_artist[artist]);
     }, this);
   },
 

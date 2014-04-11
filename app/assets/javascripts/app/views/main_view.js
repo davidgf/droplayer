@@ -14,7 +14,8 @@ var MainView = Backbone.View.extend({
   
   render: function(){
     this.$el.find('#songslist').html('');
-    app.library.each(this.addSong, this);
+    var sorted_songs = app.library.sortBy(function(song){ var str = song.get('title') || song.get('path'); return str.toLowerCase(); });
+    _.each(sorted_songs, this.addSong, this);
   },
 
   addSong: function(song){
