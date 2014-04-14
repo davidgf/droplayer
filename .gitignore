@@ -49,3 +49,7 @@ config/database.yml
 # *.sublime-project
 
 dump.rdb
+
+Vagrantfile
+.vagrant
+bootstrap.sh
