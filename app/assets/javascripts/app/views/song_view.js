@@ -23,6 +23,7 @@ var SongView = Backbone.View.extend({
   },
 
   addToPlaylist: function(){
+    toastr['info']("Song added to queue");
     app.playlist.get('songs').add(this.model);
   }
 });

@@ -39,6 +39,7 @@ var AlbumView = Backbone.View.extend({
   },
 
   qeueAll: function(){
+    toastr['info']("Songs added to queue");
     app.playlist.addSong(this.collection);
   }
 });
