@@ -10,7 +10,7 @@ class SongsController < ApplicationController
         unless client
             redirect_to(:controller => 'dropbox', :action => 'auth_start') and return
         end
-        sync_songs client
+        # sync_songs client
         sons = current_user.songs
         @songs = current_user.songs.to_a
 

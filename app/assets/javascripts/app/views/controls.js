@@ -3,6 +3,7 @@ var Controls = Backbone.View.extend({
 
   playIconClass: 'play',
   pauseIconClass: 'pause',
+  loadingIconClass: 'spinner',
 
   events: {
     'click .play_btn': 'playToggle',
@@ -12,7 +13,11 @@ var Controls = Backbone.View.extend({
 
   initialize: function(){
     app.playlist.on('playsong',this.play,this);
-    this.audio = this.$el.find('audio')[0];
+    this.$audio = this.$el.find('#myaudio');
+    this.audio = this.$audio[0];
+    this.$audio.on('loadstart', {status: 'loading'}, $.proxy(this.togglePlayIcon, this));
+    this.$audio.on('playing', {status: 'playing'}, $.proxy(this.togglePlayIcon, this));
+    this.$audio.on('pause', {status: 'paused'}, $.proxy(this.togglePlayIcon, this));
   },
 
   play: function(song){
@@ -24,7 +29,6 @@ var Controls = Backbone.View.extend({
   },
 
   playToggle: function() {
-    console.log('play');
     if (this.audio.paused) {
       this.audio.play();
     } else{
@@ -32,12 +36,21 @@ var Controls = Backbone.View.extend({
     }
   },
 
-  togglePlayIcon: function(){
-    var play_btn = this.$el.find('.play_btn'); 
-    if(play_btn.hasClass(this.playIconClass))
-      play_btn.removeClass(this.playIconClass).addClass(this.pauseIconClass);
-    else
-      play_btn.removeClass(this.pauseIconClass).addClass(this.playIconClass);
+  togglePlayIcon: function(e){
+    var status = e.data.status;
+    console.log(status);
+    var play_btn = this.$el.find('.play_btn');
+    switch(status){
+      case 'loading':
+        play_btn.removeClass(this.playIconClass+' '+this.pauseIconClass).addClass(this.loadingIconClass);
+        break;
+      case 'playing':
+        play_btn.removeClass(this.loadingIconClass+' '+this.playIconClass).addClass(this.pauseIconClass);
+        break;
+      case 'paused':
+        play_btn.removeClass(this.loadingIconClass+' '+this.pauseIconClass).addClass(this.playIconClass);
+        break;
+    }
   },
 
   playNext: function(){
@@ -64,5 +77,10 @@ var Controls = Backbone.View.extend({
           self.$('audio').attr('src', data.url);
       });
     }
+  },
+
+  timeUpdate: function(){
+    console.log('changed');
+    // alert('yeah');
   }
 });

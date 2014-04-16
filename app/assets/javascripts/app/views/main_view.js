@@ -2,8 +2,7 @@ var MainView = Backbone.View.extend({
   el: '#library',
   songsTemplate: _.template('<% _.each(songs, function(song){ %><li><strong><%= song.path %></strong></li><% }); %>'),
   events: {
-    'click #mybtn': 'fetchSongs',
-    'timeupdate audio': 'timeUpdate'
+    'click #mybtn': 'fetchSongs'
   },
 
   initialize: function(){
@@ -25,9 +24,5 @@ var MainView = Backbone.View.extend({
 
   fetchSongs: function(){
     window.app.library.fetch({remove:true});
-  },
-
-  timeUpdate: function(){
-    console.log('changed');
   }
 });
