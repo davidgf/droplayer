@@ -3,6 +3,7 @@
 //= require lib/toastr.min
 //= require lib/underscore-min
 //= require lib/backbone-min
+//= require app/events
 //= require app/models/song
 //= require app/collections/songs
 //= require app/models/playlist

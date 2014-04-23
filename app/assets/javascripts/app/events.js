@@ -1,0 +1,3 @@
+var Events = {
+    playsong: 'playsong'
+}

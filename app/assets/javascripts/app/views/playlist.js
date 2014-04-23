@@ -7,6 +7,7 @@ var PlaylistView = Backbone.View.extend({
 
   initialize: function(){
       window.app.playlist.get('songs').on('add', this.addOne, this );
+      // app.playlist.on('change:currentSong', this.displaySong, this);
   },
   
   render: function(){
@@ -16,5 +17,10 @@ var PlaylistView = Backbone.View.extend({
   addOne: function(song, songs){
     var songvw = new PlsongView({model: song});
     this.$el.append(songvw.render().el);
+  },
+
+  displaySong: function(song){
+    console.log('song has been changed');
+    console.log(song);
   }
 });

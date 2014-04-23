@@ -2,10 +2,11 @@ var PlsongView = Backbone.View.extend({
   tagName: 'li',
   songTemplate: _.template(SongArtistTemplate),
   events: {
-    'click': 'changeSong'
+    'click': 'playSong'
   },
 
   initialize: function(){
+      app.playlist.on('change:currentSong', this.toggleActive, this);
   },
   
   render: function(){
@@ -13,14 +14,16 @@ var PlsongView = Backbone.View.extend({
     return this;
   },
 
-  changeSong: function(){
-    var self = this;
-    console.log('click '+this.model.get('path'))
-    this.model.getMediaLink(function(data) {
-      if (data && data.hasOwnProperty('url')){
-        //$('audio').attr('src', data.url)
-        app.playlist.trigger('playsong', [self.model, data.url]);
-      }
-    });
+  playSong: function(){
+    app.playlist.setCurrent(this.model);
+  },
+
+  toggleActive: function(playlist){
+    var currentSong = playlist.getCurrent();
+    if(this.model == currentSong) {
+      this.$el.addClass('now_playing');
+    } else {
+      this.$el.removeClass('now_playing');
+    }
   }
 });

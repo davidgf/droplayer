@@ -12,7 +12,8 @@ var Controls = Backbone.View.extend({
   },
 
   initialize: function(){
-    app.playlist.on('playsong',this.play,this);
+    app.playlist.on('change:currentSong', this.playCurrent, this);
+    // app.playlist.on(Events.playsong, this.play, this);
     this.$audio = this.$el.find('#myaudio');
     this.audio = this.$audio[0];
     this.$audio.on('loadstart', {status: 'loading'}, $.proxy(this.togglePlayIcon, this));
@@ -20,12 +21,28 @@ var Controls = Backbone.View.extend({
     this.$audio.on('pause', {status: 'paused'}, $.proxy(this.togglePlayIcon, this));
   },
 
+  playCurrent: function(playlist){
+    console.log(playlist);
+    this.play(playlist.getCurrent());
+  },
+
   play: function(song){
     if(song){
       var self = this;
-      app.playlist.set('currentSong', song[0]);
-      self.audio.src = song[1];
+      song.getMediaLink(function(data) {
+        if (data && data.hasOwnProperty('url')){
+          self.audio.src = data.url;
+        }
+      });
     }
+  },
+
+  playNext: function(){
+    app.playlist.setNext();
+  },
+
+  playPrev: function(){
+    app.playlist.setPrev();
   },
 
   playToggle: function() {
@@ -50,32 +67,6 @@ var Controls = Backbone.View.extend({
       case 'paused':
         play_btn.removeClass(this.loadingIconClass+' '+this.pauseIconClass).addClass(this.playIconClass);
         break;
-    }
-  },
-
-  playNext: function(){
-    console.log('next');
-    var next = app.playlist.getNext();
-    if(next){
-      var self = this;
-      app.playlist.set('currentSong', next);
-      next.getMediaLink(function(data){
-        if (data && data.hasOwnProperty('url'))
-          self.$('audio').attr('src', data.url);
-      });
-    }
-  },
-
-  playPrev: function(){
-    console.log('prev');
-    var prev = app.playlist.getPrev();
-    if(prev){
-      var self = this;
-      app.playlist.set('currentSong', prev);
-      prev.getMediaLink(function(data){
-        if (data && data.hasOwnProperty('url'))
-          self.$('audio').attr('src', data.url);
-      });
     }
   },
 
