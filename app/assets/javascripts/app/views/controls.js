@@ -16,9 +16,9 @@ var Controls = Backbone.View.extend({
     // app.playlist.on(Events.playsong, this.play, this);
     this.$audio = this.$el.find('#myaudio');
     this.audio = this.$audio[0];
-    this.$audio.on('loadstart', {status: 'loading'}, $.proxy(this.togglePlayIcon, this));
-    this.$audio.on('playing', {status: 'playing'}, $.proxy(this.togglePlayIcon, this));
-    this.$audio.on('pause', {status: 'paused'}, $.proxy(this.togglePlayIcon, this));
+    this.$audio.on('loadstart', {status: 'loading'}, $.proxy(this.playingStatusChanged, this));
+    this.$audio.on('playing', {status: 'playing'}, $.proxy(this.playingStatusChanged, this));
+    this.$audio.on('pause', {status: 'paused'}, $.proxy(this.playingStatusChanged, this));
   },
 
   playCurrent: function(playlist){
@@ -29,11 +29,18 @@ var Controls = Backbone.View.extend({
   play: function(song){
     if(song){
       var self = this;
-      song.getMediaLink(function(data) {
-        if (data && data.hasOwnProperty('url')){
-          self.audio.src = data.url;
+      self.audio.src = '';
+      this.togglePlayIcon('loading');
+      song.getMediaLink(
+        function(data) {
+          if (data && data.hasOwnProperty('url')){
+            self.audio.src = data.url;
+          }
+        },
+        function(){
+          self.togglePlayIcon('paused');
         }
-      });
+      );
     }
   },
 
@@ -48,14 +55,17 @@ var Controls = Backbone.View.extend({
   playToggle: function() {
     if (this.audio.paused) {
       this.audio.play();
-    } else{
+    } else {
       this.audio.pause();
     }
   },
 
-  togglePlayIcon: function(e){
+  playingStatusChanged: function(e){
     var status = e.data.status;
-    console.log(status);
+    this.togglePlayIcon(status);
+  },
+
+  togglePlayIcon: function(status){
     var play_btn = this.$el.find('.play_btn');
     switch(status){
       case 'loading':
