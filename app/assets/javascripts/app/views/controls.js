@@ -18,6 +18,7 @@ var Controls = Backbone.View.extend({
     this.$audio.on('loadstart', {status: 'loading'}, $.proxy(this.playingStatusChanged, this));
     this.$audio.on('playing', {status: 'playing'}, $.proxy(this.playingStatusChanged, this));
     this.$audio.on('pause', {status: 'paused'}, $.proxy(this.playingStatusChanged, this));
+    this.$audio.on('ended', this.playNext);
   },
 
   playCurrent: function(){
