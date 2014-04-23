@@ -30,7 +30,9 @@ var ArtistView = Backbone.View.extend({
   },
 
   playAll: function(){
-    app.playlist.playSongs();
+    toastr['info']("Songs added to queue");
+    app.playlist.reset(this.collection);
+    app.playlist.setCurrent(app.playlist.getCurrent());
   },
 
   qeueAll: function(){

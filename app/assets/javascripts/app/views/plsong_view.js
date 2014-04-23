@@ -7,6 +7,7 @@ var PlsongView = Backbone.View.extend({
 
   initialize: function(){
       app.playlist.on('change:currentSong', this.toggleActive, this);
+      this.listenTo(app.playlist.get('songs'), 'reset', this.remove);
   },
   
   render: function(){

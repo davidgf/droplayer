@@ -13,7 +13,6 @@ var Controls = Backbone.View.extend({
 
   initialize: function(){
     app.playlist.on('change:currentSong', this.playCurrent, this);
-    // app.playlist.on(Events.playsong, this.play, this);
     this.$audio = this.$el.find('#myaudio');
     this.audio = this.$audio[0];
     this.$audio.on('loadstart', {status: 'loading'}, $.proxy(this.playingStatusChanged, this));
@@ -21,9 +20,8 @@ var Controls = Backbone.View.extend({
     this.$audio.on('pause', {status: 'paused'}, $.proxy(this.playingStatusChanged, this));
   },
 
-  playCurrent: function(playlist){
-    console.log(playlist);
-    this.play(playlist.getCurrent());
+  playCurrent: function(){
+    this.play(app.playlist.getCurrent());
   },
 
   play: function(song){
@@ -53,10 +51,16 @@ var Controls = Backbone.View.extend({
   },
 
   playToggle: function() {
-    if (this.audio.paused) {
-      this.audio.play();
+    if(this.audio.src){
+      if (this.audio.paused) {
+        this.audio.play();
+      } else {
+        this.audio.pause();
+      }
     } else {
-      this.audio.pause();
+      var firstSong = app.playlist.getCurrent();
+      if(firstSong)
+        app.playlist.setCurrent(firstSong);
     }
   },
 
