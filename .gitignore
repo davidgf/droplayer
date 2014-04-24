@@ -54,3 +54,7 @@ dump.rdb
 Vagrantfile
 .vagrant
 bootstrap.sh
+
+Capfile
+config/deploy.rb
+config/deploy/*
