@@ -8,11 +8,14 @@ var Playlist = Backbone.Model.extend({
         this.get('songs').add(song);
     },
     reset: function(songs){
-        this.setCurrent(null);
         this.get('songs').reset(songs);
+        this.setCurrent(null);
     },
     getCurrent: function(){
-        return this.get('currentSong') || this.get('songs').first();
+        return this.get('currentSong');
+    },
+    getFirst: function(){
+        return this.get('songs').first();
     },
     setCurrent: function(song){
         this.set('currentSong', song);

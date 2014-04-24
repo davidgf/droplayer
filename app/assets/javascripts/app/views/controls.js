@@ -22,7 +22,9 @@ var Controls = Backbone.View.extend({
   },
 
   playCurrent: function(){
-    this.play(app.playlist.getCurrent());
+    var currentSong = app.playlist.getCurrent();
+    if(currentSong)
+      this.play(currentSong);
   },
 
   play: function(song){
@@ -59,7 +61,7 @@ var Controls = Backbone.View.extend({
         this.audio.pause();
       }
     } else {
-      var firstSong = app.playlist.getCurrent();
+      var firstSong = app.playlist.getFirst();
       if(firstSong)
         app.playlist.setCurrent(firstSong);
     }
