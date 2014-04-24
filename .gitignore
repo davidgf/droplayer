@@ -12,7 +12,7 @@
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/tmp
+/tmp/*
 
 *.rbc
 *.sassc
