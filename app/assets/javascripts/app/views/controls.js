@@ -19,6 +19,7 @@ var Controls = Backbone.View.extend({
     this.$audio.on('playing', {status: 'playing'}, $.proxy(this.playingStatusChanged, this));
     this.$audio.on('pause', {status: 'paused'}, $.proxy(this.playingStatusChanged, this));
     this.$audio.on('ended', this.playNext);
+    this.songLinkRequest = null;
   },
 
   playCurrent: function(){
@@ -30,9 +31,10 @@ var Controls = Backbone.View.extend({
   play: function(song){
     if(song){
       var self = this;
+      this.cancelRequest();
       self.audio.src = '';
       this.togglePlayIcon('loading');
-      song.getMediaLink(
+      this.songLinkRequest = song.getMediaLink(
         function(data) {
           if (data && data.hasOwnProperty('url')){
             self.audio.src = data.url;
@@ -40,9 +42,17 @@ var Controls = Backbone.View.extend({
         },
         function(){
           self.togglePlayIcon('paused');
+        },
+        function(){
+          self.songLinkRequest = null;
         }
       );
     }
+  },
+
+  cancelRequest: function(){
+    if(this.songLinkRequest)
+      this.songLinkRequest.abort();
   },
 
   playNext: function(){
