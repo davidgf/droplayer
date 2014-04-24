@@ -1,19 +1,38 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+---
+no_data:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/Arctic Monkeys/Beneath the boardwalk/16 Arctic Monkeys - On the run from the MI5 (Live).mp3"
+  path_md5: !binary |-
+    fxBM9KOPFW2Kk74Cqz1STg==
+  user_id: 5
+  created_at: '2014-04-02 17:56:13.879487'
+  updated_at: '2014-04-02 17:56:34.301782'
+  id3: f
+has_data:
+  title: 
+  artist: 
+  album: 
+  genre: 
+  path: "/the hellacopters/Rock & Roll Is Dead/09 Put out the fire.mp3"
+  path_md5: !binary |-
+    MTsO5gZHbh4/Esp2ZXyNbA==
+  user_id: 5
+  created_at: '2014-04-04 11:12:57.156864'
+  updated_at: '2014-04-04 12:00:51.181139'
+  id3: f
 
-one:
-  title: MyString
-  artist: MyString
-  album: MyString
-  genre: MyString
-  path: MyString
-  path_md5: 
-  user_id: 
-
-two:
-  title: MyString
-  artist: MyString
-  album: MyString
-  genre: MyString
-  path: MyString
-  path_md5: 
-  user_id: 
+wolf1:
+  title: White Feather
+  artist: Wolfmother
+  album: Cosmic Egg
+  genre: 
+  path: "/wolfmother/Cosmic Egg Deluxe Edition (2009)/03 - White Feather.mp3"
+  path_md5: !binary |-
+    KrXbq8WGQDC0UuvJ/6aw3w==
+  user_id: 5
+  created_at: '2014-04-04 11:12:57.616927'
+  updated_at: '2014-04-04 12:00:43.754740'
+  id3: t

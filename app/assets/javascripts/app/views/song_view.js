@@ -6,8 +6,6 @@ var SongView = Backbone.View.extend({
   },
 
   initialize: function(){
-      // window.app.library.on('add', this.render, this );
-      // window.app.library.on('reset', this.render, this );
   },
 
   render: function(){
@@ -15,14 +13,8 @@ var SongView = Backbone.View.extend({
     return this;
   },
 
-  changeSong: function(){
-    this.model.getMediaLink(function(data) {
-      if (data && data.hasOwnProperty('url'))
-        $('audio').attr('src', data.url);
-    });
-  },
-
   addToPlaylist: function(){
-    app.playlist.get('songs').add(this.model);
+    toastr['info']("Song added to queue");
+    app.playlist.addSong(this.model);
   }
 });

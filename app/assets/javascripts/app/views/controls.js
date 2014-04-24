@@ -3,6 +3,7 @@ var Controls = Backbone.View.extend({
 
   playIconClass: 'play',
   pauseIconClass: 'pause',
+  loadingIconClass: 'spinner',
 
   events: {
     'click .play_btn': 'playToggle',
@@ -11,58 +12,93 @@ var Controls = Backbone.View.extend({
   },
 
   initialize: function(){
-    app.playlist.on('playsong',this.play,this);
-    this.audio = this.$el.find('audio')[0];
+    app.playlist.on('change:currentSong', this.playCurrent, this);
+    this.$audio = this.$el.find('#myaudio');
+    this.audio = this.$audio[0];
+    this.$audio.on('loadstart', {status: 'loading'}, $.proxy(this.playingStatusChanged, this));
+    this.$audio.on('playing', {status: 'playing'}, $.proxy(this.playingStatusChanged, this));
+    this.$audio.on('pause', {status: 'paused'}, $.proxy(this.playingStatusChanged, this));
+    this.$audio.on('ended', this.playNext);
+    this.songLinkRequest = null;
+  },
+
+  playCurrent: function(){
+    var currentSong = app.playlist.getCurrent();
+    if(currentSong)
+      this.play(currentSong);
   },
 
   play: function(song){
     if(song){
       var self = this;
-      app.playlist.set('currentSong', song[0]);
-      self.audio.src = song[1];
+      this.cancelRequest();
+      self.audio.src = '';
+      this.togglePlayIcon('loading');
+      this.songLinkRequest = song.getMediaLink(
+        function(data) {
+          if (data && data.hasOwnProperty('url')){
+            self.audio.src = data.url;
+          }
+        },
+        function(){
+          self.togglePlayIcon('paused');
+        },
+        function(){
+          self.songLinkRequest = null;
+        }
+      );
     }
   },
 
-  playToggle: function() {
-    console.log('play');
-    if (this.audio.paused) {
-      this.audio.play();
-    } else{
-      this.audio.pause();
-    }
-  },
-
-  togglePlayIcon: function(){
-    var play_btn = this.$el.find('.play_btn'); 
-    if(play_btn.hasClass(this.playIconClass))
-      play_btn.removeClass(this.playIconClass).addClass(this.pauseIconClass);
-    else
-      play_btn.removeClass(this.pauseIconClass).addClass(this.playIconClass);
+  cancelRequest: function(){
+    if(this.songLinkRequest)
+      this.songLinkRequest.abort();
   },
 
   playNext: function(){
-    console.log('next');
-    var next = app.playlist.getNext();
-    if(next){
-      var self = this;
-      app.playlist.set('currentSong', next);
-      next.getMediaLink(function(data){
-        if (data && data.hasOwnProperty('url'))
-          self.$('audio').attr('src', data.url);
-      });
-    }
+    app.playlist.setNext();
   },
 
   playPrev: function(){
-    console.log('prev');
-    var prev = app.playlist.getPrev();
-    if(prev){
-      var self = this;
-      app.playlist.set('currentSong', prev);
-      prev.getMediaLink(function(data){
-        if (data && data.hasOwnProperty('url'))
-          self.$('audio').attr('src', data.url);
-      });
+    app.playlist.setPrev();
+  },
+
+  playToggle: function() {
+    if(this.audio.src){
+      if (this.audio.paused) {
+        this.audio.play();
+      } else {
+        this.audio.pause();
+      }
+    } else {
+      var firstSong = app.playlist.getFirst();
+      if(firstSong)
+        app.playlist.setCurrent(firstSong);
     }
+  },
+
+  playingStatusChanged: function(e){
+    var status = e.data.status;
+    this.togglePlayIcon(status);
+  },
+
+  togglePlayIcon: function(status){
+    var play_btn = this.$el.find('.play_btn');
+    switch(status){
+      case 'loading':
+        play_btn.removeClass(this.playIconClass+' '+this.pauseIconClass).addClass(this.loadingIconClass);
+        break;
+      case 'playing':
+        play_btn.removeClass(this.loadingIconClass+' '+this.playIconClass).addClass(this.pauseIconClass);
+        break;
+      case 'paused':
+        play_btn.removeClass(this.loadingIconClass+' '+this.pauseIconClass).addClass(this.playIconClass);
+        break;
+    }
+  },
+
+  timeUpdate: function(){
+    console.log('changed');
+    // alert('yeah');
   }
 });

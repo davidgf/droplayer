@@ -11,14 +11,16 @@ var Song = Backbone.Model.extend({
         }
     },
 
-    getMediaLink: function(callback){
-    	$.ajax({
+    getMediaLink: function(callback, error, complete){
+    	return $.ajax({
             url : '/songs/media_link',
             data : {
                 path : this.get('path')
             },
             dataType : 'json',
-            success : callback
+            success : callback,
+            error: error,
+            complete: complete
         });
     },
     validate: function(attrs, options) {

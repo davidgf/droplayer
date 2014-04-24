@@ -22,6 +22,7 @@ capybara-*.html
 /log
 /public/system
 /public/music
+/public/assets
 /coverage/
 /spec/tmp
 **.orig
@@ -47,3 +48,13 @@ config/database.yml
 # project files should be checked into the repository, unless a significant
 # proportion of contributors will probably not be using SublimeText
 # *.sublime-project
+
+dump.rdb
+
+Vagrantfile
+.vagrant
+bootstrap.sh
+
+Capfile
+config/deploy.rb
+config/deploy/*

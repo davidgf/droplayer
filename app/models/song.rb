@@ -12,7 +12,7 @@ private
 
     def ensure_md5
         if !self.path.blank? and self.path_md5.blank?
-            self.path_md5 = Digest::MD5.digest(self.path)
+            self.path_md5 = Digest::MD5.digest("#{self.user_id}#{self.path}")
         end
     end
 end

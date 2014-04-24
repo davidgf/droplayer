@@ -2,8 +2,7 @@ var MainView = Backbone.View.extend({
   el: '#library',
   songsTemplate: _.template('<% _.each(songs, function(song){ %><li><strong><%= song.path %></strong></li><% }); %>'),
   events: {
-    'click #mybtn': 'fetchSongs',
-    'timeupdate audio': 'timeUpdate'
+    'click #mybtn': 'fetchSongs'
   },
 
   initialize: function(){
@@ -14,7 +13,8 @@ var MainView = Backbone.View.extend({
   
   render: function(){
     this.$el.find('#songslist').html('');
-    app.library.each(this.addSong, this);
+    var sorted_songs = app.library.sortBy(function(song){ var str = song.get('title') || song.get('path'); return str.toLowerCase(); });
+    _.each(sorted_songs, this.addSong, this);
   },
 
   addSong: function(song){
@@ -24,9 +24,5 @@ var MainView = Backbone.View.extend({
 
   fetchSongs: function(){
     window.app.library.fetch({remove:true});
-  },
-
-  timeUpdate: function(){
-    console.log('changed');
   }
 });

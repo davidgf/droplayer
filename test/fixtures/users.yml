@@ -1,0 +1,46 @@
+---
+users_001:
+  id: 1
+  created_at: '2014-02-18 18:54:39.038574'
+  updated_at: '2014-02-19 17:15:16.951171'
+  email: info@casa.com
+  encrypted_password: "$2a$10$tkoNC2nP4RllqIl5wnoGh.AqYwXfh2VMwG9fD8NeKpm7DvpzOgBHq"
+  confirmation_token: 
+  remember_token: 2687968f3a9f519407cbd5a2d3a595ce5ed5a820
+  dropbox_token: _6Bu55VM6PwAAAAAAAAAAfMChLKGyhSewQgC3ihBgomRyIIQGeDS4Gh2TbpzOU1s
+users_002:
+  id: 2
+  created_at: '2014-03-27 19:35:18.188627'
+  updated_at: '2014-04-02 17:46:24.645211'
+  email: a@b.com
+  encrypted_password: "$2a$10$VdEt1fP704kreQhCyPYpceoa50lwxiYZJg08Y3b0sH9qBdHxZVz6y"
+  confirmation_token: 
+  remember_token: aa77e7861a0a987096b112bc7316e9a121b67a1f
+  dropbox_token: 62eO0NVfXI4AAAAAAAAAAbN5-XvlVo94xNOyCuG-bsKFnVRNJ4usaAzko79ZuedK
+users_003:
+  id: 3
+  created_at: '2014-04-02 17:46:46.953114'
+  updated_at: '2014-04-02 17:51:54.832322'
+  email: b@b.com
+  encrypted_password: "$2a$10$XJNJMhZV4O9bGpzm4UXx2uD4EfAR7QsM1SW3B599tfAsTUC.oOY/S"
+  confirmation_token: 
+  remember_token: 49386cfac7dab0ad49c80f09cf1e996351b8a3f1
+  dropbox_token: 7VMt34RM2-QAAAAAAAAAARN5uyPj9Gw6IFF_wa2HpbamtzG2nZZmp5Q-K5zYjvhc
+users_004:
+  id: 4
+  created_at: '2014-04-02 17:52:04.097937'
+  updated_at: '2014-04-02 17:55:34.759896'
+  email: c@b.com
+  encrypted_password: "$2a$10$FRbMwD623A4fu3o5oaBKj.J7Bjkww/Pg0fQBBX/fjfVhu2354cJVO"
+  confirmation_token: 
+  remember_token: 939c6ba7e8eafabd208c3520ff3534d563fdfe56
+  dropbox_token: g7Ly9LbU4MIAAAAAAAAAAYBroLP8LS-c1obFBV5aCqYgRn68-nV_RwswQ2fmaEIr
+dropbox_token:
+  id: 5
+  created_at: '2014-04-02 17:55:40.193573'
+  updated_at: '2014-04-02 17:56:09.080290'
+  email: d@b.com
+  encrypted_password: "$2a$10$OdQT.HbKakEbGbFlk7gXXOMPnGQk9d1IXT1AjkjMf1qtxwFOk8jbu"
+  confirmation_token: 
+  remember_token: 4cb67ece644639d13d8784e6cfcb47aef04551ec
+  dropbox_token: Pmk0KiLtqjIAAAAAAAAAAUQvdSEcje5HhOGmrB44Oq2jRfcHGk1EYnZCp1KMMLGs

@@ -2,16 +2,33 @@ var Playlist = Backbone.Model.extend({
     initialize: function() {
         this.set('songs', new Songs());
         this.set('currentSong', null);
-        // this.get('songs').on('add', 'triggerFirst',this);
+        this.on(Events.playsong, this.setCurrent, this);
     },
     addSong: function(song){
         this.get('songs').add(song);
     },
-    playSongs: function(){
-        console.log('this should play songs');
+    reset: function(songs){
+        this.get('songs').reset(songs);
+        this.setCurrent(null);
     },
     getCurrent: function(){
-        return this.get('currentSong') || this.get('songs').first();
+        return this.get('currentSong');
+    },
+    getFirst: function(){
+        return this.get('songs').first();
+    },
+    setCurrent: function(song){
+        this.set('currentSong', song);
+    },
+    setNext: function(){
+        var nextSong = this.getNext();
+        if(nextSong)
+            this.setCurrent(nextSong);
+    },
+    setPrev: function(){
+        var prevSong = this.getPrev();
+        if(prevSong)
+            this.setCurrent(prevSong);
     },
     getNext: function(){
         var currentIndex =  this.get('songs').indexOf(this.getCurrent());
@@ -27,12 +44,5 @@ var Playlist = Backbone.Model.extend({
             return this.get('songs').at(currentIndex - 1);
         else
             return null;
-    }
-    // triggerFirst: function(song, songs){
-    //     if(songs.length == 1)
-    //         console.log('first added');
-    //     else
-    //         console.log('added another one');
-    // }
-    
+    }    
 });
