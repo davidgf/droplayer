@@ -16,7 +16,7 @@ gem 'sinatra', require: false
 gem 'slim'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+# gem 'sass-rails', '~> 4.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -48,7 +48,13 @@ end
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-gem 'capistrano', group: :development
+group :development do
+	gem 'capistrano'
+	gem 'capistrano-rvm'
+	gem 'capistrano-bundler'
+	gem 'capistrano-rails'
+end
+
 
 # Use debugger
 group :development, :test do
