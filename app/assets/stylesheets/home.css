@@ -26,18 +26,25 @@ html, body {
 #cover {
 	position: relative;
     color: white;
+    padding: 0;
     text-shadow: black 0.3em 0.3em 0.3em;
     z-index: -1;
+    background-image: url("cover3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #cover img {
-	position: absolute;
-	left: 0;
-	top: 0;
+	visibility: hidden;
 	width: 100%;
 	z-index: -1;
 }
 
 #cover #legend {
 	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 48px;
+	margin-left: 30px;
 }
