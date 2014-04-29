@@ -10,9 +10,34 @@
 #progress {
 	height: 0.3em
 }
-/*
-#progress .ui-slider-handle{
-	height: 0.9em;
-	width: 0.5em;
-	margin-left: 0;
-}*/
+
+html, body {
+	width: 100%;
+}
+#main-content {
+	height: 100%;
+}
+
+/* HEADER */
+#main-menu {
+	margin-bottom: 0;
+}
+
+#cover {
+	position: relative;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    z-index: -1;
+}
+
+#cover img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+#cover #legend {
+	z-index: 1;
+}
