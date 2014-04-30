@@ -1,31 +1,33 @@
 <% content_for :javascript_includes do %>
     <%= javascript_include_tag "application" %>
     <%= javascript_include_tag "bootstrap" %>
+    <%= javascript_include_tag "home" %>
 <% end %>
 
 <% content_for :css_includes do %>
   <%= stylesheet_link_tag "pages", media: "all" %>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <% end %>
-<header id="main-menu" class="navbar navbar-default navbar-static-top" role="navigation">
+<header id="main-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Droplayer</a>
+      <a id="logo" class="navbar-brand" href="#">Droplayer</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Features</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contribute</a></li>
-        <li><a href="#">Contact</a></li>
+    <div class="collapse navbar-collapse" id="nav-collapse">
+      <ul id="sections-menu" class="nav navbar-nav">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contribute">Contribute</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -55,17 +57,158 @@
     </div><!-- /.navbar-collapse -->
   </div>
 </header>
-<div id="cover" class="jumbotron">
+<section id="cover" class="jumbotron">
   <%= image_tag("cover3.jpg") %>
   <div id="legend">
     <h1>Droplayer</h1>
     <p>Your music, anywhere</p>
   </div>
-</div>
-<div id="features">
-  <div class="container">
-    <h2>Listen music from your Dropbox account</h2>
-    <p>Bla bla bla...</p>
+</section>
+<section id="features">
+  <div class="container text-center">
+    <h1>Listen music from your Dropbox account</h1>
+    <h2><small>At vero eos et accusam et justo duo dolores et ea rebum. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</small></h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="row icons"><span class="fa fa-headphones"></span></div>
+        <div class="row">
+          <h3>Lorem ipsum</h3>
+          <p>
+            Stet clita kasd gubergren, no sea takimata sanctus est. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p></span></div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row icons"><span class="fa fa-tags"></span></div>
+        <div class="row">
+          <h3>Lorem ipsum</h3>
+          <p>
+            Stet clita kasd gubergren, no sea takimata sanctus est. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p></span></div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row icons">
+          <span class="fa fa-desktop"></span>
+          <span class="fa fa-tablet"></span>
+          <span class="fa fa-mobile"></span>
+        </div>
+        <div class="row">
+          <h3>Lorem ipsum</h3>
+          <p>
+            Stet clita kasd gubergren, no sea takimata sanctus est. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container text-center">
+    <h1>About</h1>
+    <h2><small>At vero eos et accusam et justo duo dolores et ea rebum. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</small></h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="row icons"><span class="fa fa-headphones"></span></div>
+        <div class="row">
+          <h3>Lorem ipsum</h3>
+          <p>
+            Stet clita kasd gubergren, no sea takimata sanctus est. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p></span></div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row icons"><span class="fa fa-tags"></span></div>
+        <div class="row">
+          <h3>Lorem ipsum</h3>
+          <p>
+            Stet clita kasd gubergren, no sea takimata sanctus est. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p></span></div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row icons">
+          <span class="fa fa-desktop"></span>
+          <span class="fa fa-tablet"></span>
+          <span class="fa fa-mobile"></span>
+        </div>
+        <div class="row">
+          <h3>Lorem ipsum</h3>
+          <p>
+            Stet clita kasd gubergren, no sea takimata sanctus est. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contribute">
+  <div class="container text-center">
+    <h1>Contribute</h1>
+    <h2><small>At vero eos et accusam et justo duo dolores et ea rebum. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</small></h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="row icons"><span class="fa fa-headphones"></span></div>
+        <div class="row">
+          <h3>Lorem ipsum</h3>
+          <p>
+            Stet clita kasd gubergren, no sea takimata sanctus est. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p></span></div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row icons"><span class="fa fa-tags"></span></div>
+        <div class="row">
+          <h3>Lorem ipsum</h3>
+          <p>
+            Stet clita kasd gubergren, no sea takimata sanctus est. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p></span></div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row icons">
+          <span class="fa fa-desktop"></span>
+          <span class="fa fa-tablet"></span>
+          <span class="fa fa-mobile"></span>
+        </div>
+        <div class="row">
+          <h3>Lorem ipsum</h3>
+          <p>
+            Stet clita kasd gubergren, no sea takimata sanctus est. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container text-center">
+    <h1>Contact</h1>
+    <h2><small>At vero eos et accusam et justo duo dolores et ea rebum. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</small></h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="row icons"><span class="fa fa-headphones"></span></div>
+        <div class="row">
+          <h3>Lorem ipsum</h3>
+          <p>
+            Stet clita kasd gubergren, no sea takimata sanctus est. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p></span></div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row icons"><span class="fa fa-tags"></span></div>
+        <div class="row">
+          <h3>Lorem ipsum</h3>
+          <p>
+            Stet clita kasd gubergren, no sea takimata sanctus est. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p></span></div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row icons">
+          <span class="fa fa-desktop"></span>
+          <span class="fa fa-tablet"></span>
+          <span class="fa fa-mobile"></span>
+        </div>
+        <div class="row">
+          <h3>Lorem ipsum</h3>
+          <p>
+            Stet clita kasd gubergren, no sea takimata sanctus est. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p></span></div>
+      </div>
+    </div>
   </div>
 </div>
 <!-- 
