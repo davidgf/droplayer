@@ -14,6 +14,7 @@ Droplayer::Application.routes.draw do
   get  "dropbox/auth_finish"
   get 'songs' => 'songs#index'
   get 'songs/media_link' => 'songs#media_link'
+  resources :passwords, only: [:create]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
