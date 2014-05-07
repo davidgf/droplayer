@@ -1,0 +1,6 @@
+smtp_password: password
+smtp_host: host
+smtp_port: port
+smtp_username: username
+
+mail_sender: info@droplayer.es
