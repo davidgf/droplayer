@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140219204556) do
+ActiveRecord::Schema.define(version: 20140507143428) do
 
   create_table "songs", id: false, force: true do |t|
     t.string   "title"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20140219204556) do
     t.string   "confirmation_token", limit: 128
     t.string   "remember_token",     limit: 128, null: false
     t.string   "dropbox_token"
+    t.binary   "songs_md5",          limit: 16
   end
 
   add_index "users", ["email"], name: "index_users_on_email"

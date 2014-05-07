@@ -41,14 +41,15 @@ private
 
     def sync_songs(dropbox_client)
         songs_list = dropbox_client.search '/', 'mp3'
-        songs_list.select! {|song| song.include?("mime_type") and song["mime_type"] == "audio/mpeg"}
-        songs_list.map! {|song| song.slice("path")}
-        songs_path_array = songs_list.map {|song| song["path"]}
-        songs_to_remove = current_user.songs.where.not(path: songs_path_array)
-        songs_to_remove.delete_all if songs_to_remove.size > 0
-        songs_to_create = songs_list.select {|song| not Song.exists?(path: song["path"], user_id: current_user.id)}
-        if songs_to_create.size > 0 then
-            current_user.songs.create(songs_to_create)
+        dropbox_songs_md5 = Digest::MD5.digest(songs_list.to_s)
+        if current_user.has_new_songs?(dropbox_songs_md5) then
+            current_user.update_attribute(:songs_md5, dropbox_songs_md5)
+            songs_list.select! {|song| song.include?("mime_type") and song["mime_type"] == "audio/mpeg"}
+            songs_list.map! {|song| song.slice("path")}
+            songs_path_array = songs_list.map {|song| song["path"]}
+            songs_to_remove = current_user.songs.where.not(path: songs_path_array)
+            songs_to_remove.delete_all if songs_to_remove.size > 0
+            current_user.songs.create(songs_list)
             Sidekiq::Client.push('queue' => current_user.id, 'class' => SongsDataWorker, 'args' => [current_user.id])
         end
     end
