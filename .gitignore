@@ -58,3 +58,4 @@ bootstrap.sh
 Capfile
 config/deploy.rb
 config/deploy/*
+config/app_config.yml

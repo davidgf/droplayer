@@ -1,32 +1,32 @@
 <% content_for :javascript_includes do %>
     <%= javascript_include_tag "application" %>
     <%= javascript_include_tag "bootstrap" %>
+    <%= javascript_include_tag "home" %>
 <% end %>
 
 <% content_for :css_includes do %>
-  <%= stylesheet_link_tag "bootstrap", media: "all", "data-turbolinks-track" => true %>
-  <%= stylesheet_link_tag "home", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "pages", media: "all" %>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <% end %>
-<header id="main-menu" class="navbar navbar-default navbar-static-top" role="navigation">
+<header id="main-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Droplayer</a>
+      <a id="logo" class="navbar-brand" href="#">Droplayer</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Features</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contribute</a></li>
-        <li><a href="#">Contact</a></li>
+    <div class="collapse navbar-collapse" id="nav-collapse">
+      <ul id="sections-menu" class="nav navbar-nav">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contribute">Contribute</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -56,34 +56,98 @@
     </div><!-- /.navbar-collapse -->
   </div>
 </header>
-<div id="cover" class="jumbotron">
+<section id="cover" class="jumbotron">
   <%= image_tag("cover3.jpg") %>
   <div id="legend">
     <h1>Droplayer</h1>
     <p>Your music, anywhere</p>
   </div>
-</div>
-<!-- 
-<div id='clearance' class='sign-up'>
-  <h2>New User</h2>
-
-  <%= form_for @user do |form| %>
-    <%= render :partial => '/users/form', :object => form %>
-
-    <div class='submit-field'>
-      <%= form.submit %>
+</section>
+<section id="features">
+  <div class="container text-center">
+    <h1>Listen music from your Dropbox account</h1>
+    <h2><small>
+    Droplayer allows you to listen to the music stored in your Dropbox account from any device.
+    </small></h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="row icons"><span class="fa fa-headphones"></span></div>
+        <div class="row">
+          <h3>Listen</h3>
+          <p>
+            Stream music right from your Dropbox account. Don't waste space in your device.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row icons"><span class="fa fa-tags"></span></div>
+        <div class="row">
+          <h3>Browse</h3>
+          <p>
+            A song is not just a file path. Droplayer gets your music's information, so that you can browse your library by artist or album.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row icons">
+          <span class="fa fa-desktop"></span>
+          <span class="fa fa-tablet"></span>
+          <span class="fa fa-mobile"></span>
+        </div>
+        <div class="row">
+          <h3>Cross platform</h3>
+          <p>
+            Droplayer only uses web standards, you can run it in any browser. Enjoy your music in a computer, tablet or smartphone.
+          </p>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class='other-links'>
-      <%= link_to 'Sign In', sign_in_path %>
+<section id="contribute">
+  <div class="container text-center">
+    <h1>Contribute</h1>
+    <h2><small>Droplayer is an open source project. If you want to contribute to improve it, or just would like to modify it to 
+    fit your needs, you can get the <a href="https://github.com/davidgf/droplayer">code repository in Github</a>.</small></h2>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container text-center">
+    <h1>Contact</h1>
+    <div class="row">
+      <div class="col-sm-4 text-left">
+        <h2><small>We at Droplayer would love to hear from you. What do you think we could do better? What new features would you
+        like us to include in the app? Fill the form and let us know your opinion, or simply email us, our address is 
+        <a href="mailto:info@droplayer.es">info@droplayer.es</a>.</small></h2>
+      </div>
+      <div class="col-sm-8 text-left">
+        <% if flash[:mail_sent] then %>
+          <div id="notice" class="alert alert-success"><%= flash[:mail_sent] %></div>
+        <% elsif flash[:mail_error] then %>
+          <div id="notice" class="alert alert-danger"><%= flash[:mail_error] %></div>
+        <% end %>
+        <%= form_for @message, url: '/contact#contact', method: :post do |f| %>
+          <div class="form-group">
+            <%= f.label :name, class: 'control-label' %>
+            <%= f.text_field :name, class: 'form-control', placeholder: 'Name' %>
+          </div>
+          <div class="form-group">
+            <%= f.label :email, class: 'control-label' %>
+            <%= f.text_field :email, class: 'form-control', placeholder: 'Email' %>
+          </div>
+          <div class="form-group">
+            <%= f.label :subject, class: 'control-label' %>
+            <%= f.text_field :subject, class: 'form-control', placeholder: 'Subject' %>
+          </div>
+          <div class="form-group">
+            <%= f.label :content, 'Message', class: 'control-label' %>
+            <%= f.text_area :content, class: 'form-control', placeholder: 'Message', rows: 6 %>
+          </div>
+          <%= f.submit 'Send', class: 'btn btn-default' %>
+        <% end %>
+      </div>
     </div>
-  <% end %>
+  </div>
 </div>
- -->
-<!-- 
-<div id='clearance' class='sign-in'>
-  <h2>New Session</h2>
-
-  <%= render :partial => '/sessions/form' %>
-
-</div> -->

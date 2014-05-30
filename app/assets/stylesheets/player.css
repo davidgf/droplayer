@@ -1,0 +1,20 @@
+/*
+ *= require_self
+ *= require toastr.min
+ *= require lungo/lungo
+ *= require lungo/lungo.icon
+ *= require lungo/lungo.theme
+ */
+
+.now_playing {
+	background-color: #e3f2ff !important;
+}
+
+#controls {
+    font-size: 1.7em;
+    text-align: center;
+}
+
+#progress {
+	height: 0.3em
+}

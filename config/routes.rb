@@ -2,6 +2,7 @@ require 'sidekiq/web'
 
 Droplayer::Application.routes.draw do
   get "pages/home"
+  post "contact", to: 'pages#mail'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -14,6 +15,7 @@ Droplayer::Application.routes.draw do
   get  "dropbox/auth_finish"
   get 'songs' => 'songs#index'
   get 'songs/media_link' => 'songs#media_link'
+  resources :passwords, only: [:create]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
