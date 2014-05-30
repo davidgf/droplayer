@@ -4,7 +4,7 @@ class PagesController < ApplicationController
         redirect_to(:controller => 'songs', :action => 'index') and return
     end
     @user = User.new
-    @message = Message.new
+    @message = @message || Message.new
   end
   
   def mail
@@ -15,12 +15,15 @@ class PagesController < ApplicationController
         begin
           mail = ContactMailer.contact_email(@message)
           mail.deliver
-          format.html { redirect_to root_path, notice: 'Mail sent' }
+          flash[:mail_sent] = "The email was sent"
+          format.html { redirect_to root_path }
         rescue
-          format.html { redirect_to root_path, notice: 'We couldn\'t deliver the message. Please, try again later.' }
+          flash[:mail_error] = "We couldn\'t deliver the message. Please, try again later"
+          format.html { redirect_to root_path }
         end
       else
-        format.html { redirect_to root_path }
+        flash[:mail_error] = "Please fill all the required fields"
+        format.html { render action: 'home'  }
       end
     end
   end
