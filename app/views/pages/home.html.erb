@@ -122,32 +122,27 @@
         like us to include in the app? Fill the form and let us know your opinion, or simply email us, our address is 
         <a href="mailto:info@droplayer.es">info@droplayer.es</a>.</small></h2>
       </div>
-      <div class="col-sm-8">
+      <div class="col-sm-8 text-left">
+        <%= form_for @message, url: '/pages/mail', method: :post do |f| %>
+          <div class="field">
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+          </div>
+          <div class="field">
+            <%= f.label :email %>
+            <%= f.text_field :email %>
+          </div>
+          <div class="field">
+            <%= f.label :subject %>
+            <%= f.text_field :subject, :size => 78 %>
+          </div>
+          <div class="field">
+            <%= f.label :content, 'Message' %>
+            <%= f.text_area :content, :size => '60x15' %>
+          </div>
+          <%= f.submit 'send'%>
+        <% end %>
       </div>
     </div>
   </div>
 </div>
-<!-- 
-<div id='clearance' class='sign-up'>
-  <h2>New User</h2>
-
-  <%= form_for @user do |form| %>
-    <%= render :partial => '/users/form', :object => form %>
-
-    <div class='submit-field'>
-      <%= form.submit %>
-    </div>
-
-    <div class='other-links'>
-      <%= link_to 'Sign In', sign_in_path %>
-    </div>
-  <% end %>
-</div>
- -->
-<!-- 
-<div id='clearance' class='sign-in'>
-  <h2>New Session</h2>
-
-  <%= render :partial => '/sessions/form' %>
-
-</div> -->
