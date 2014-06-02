@@ -47,7 +47,8 @@ class DropboxController < ApplicationController
             logger.info("Error in OAuth 2 flow: CSRF mismatch: #{e}")
             render :text => "CSRF error"
         rescue DropboxOAuth2Flow::NotApprovedError => e
-            render :text => "Not approved?  Why not, bro?"
+            sign_out
+            redirect_to root_path
         rescue DropboxOAuth2Flow::ProviderError => e
             logger.info "Error in OAuth 2 flow: Error redirect from Dropbox: #{e}"
             render :text => "Strange error."
