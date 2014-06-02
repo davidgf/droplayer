@@ -4,6 +4,7 @@ require 'mp3info'
 # and then uploads a file to the user's Dropbox.
 
 class SongsController < ApplicationController
+    before_filter :authorize
     
     def index
         client = get_dropbox_client
