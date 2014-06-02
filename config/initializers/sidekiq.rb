@@ -3,6 +3,7 @@ require 'sidekiq'
 require 'sidekiq/actor'
 require 'sidekiq/util'
 require 'sidekiq/fetch'
+require 'sidekiq/web'
 
 class DynamicFetch < Sidekiq::BasicFetch
   def queues_cmd
@@ -24,3 +25,7 @@ end
 Sidekiq.options.merge!({
   fetch: DynamicFetch
 })
+
+Sidekiq::Web.use(Rack::Auth::Basic) do |user, password|
+  [user, password] == [APP_CONFIG['sidekiq_user'], APP_CONFIG['sidekiq_pass']]
+end
