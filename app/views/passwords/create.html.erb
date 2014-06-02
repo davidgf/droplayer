@@ -1,3 +1,24 @@
-<div id="clearance" class="password-reset">
-  <p><%= t '.description' %></p>
+<% content_for :css_includes do %>
+  <%= stylesheet_link_tag "pages", media: "all" %>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<% end %>
+
+<header id="main-menu" class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to("Droplayer", root_path, id: "logo", class: "navbar-brand") %>
+    </div>
+  </div>
+</header>
+
+<div id="clearance" class="password-reset container">
+  <h1></h1>
+  <h3><%= t '.description' %></h3>
 </div>
