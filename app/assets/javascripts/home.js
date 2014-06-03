@@ -3,7 +3,6 @@
 
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
 
 $(function(){
     var $root = $('html, body');
