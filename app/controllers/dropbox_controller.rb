@@ -19,7 +19,7 @@ require 'securerandom'
 class DropboxController < ApplicationController
 
     def get_web_auth()
-        redirect_uri = url_for(:action => 'auth_finish')
+        redirect_uri = url_for(:action => 'auth_finish', :protocol => "https")
         DropboxOAuth2Flow.new(DropboxSettings[:APP_KEY], DropboxSettings[:APP_SECRET], redirect_uri, session, :dropbox_auth_csrf_token)
     end
 

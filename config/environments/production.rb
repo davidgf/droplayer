@@ -70,7 +70,7 @@ Droplayer::Application.configure do
                                         :address => APP_CONFIG['smtp_host'], 
                                         :port => APP_CONFIG['smtp_port'],
                                         :user_name => APP_CONFIG['smtp_username'],
-                                        :password => APP_CONFIG['smtp_password'],
+                                        :password => APP_CONFIG['smtp_password']
                                       }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
