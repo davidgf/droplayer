@@ -33,6 +33,7 @@ var Controls = Backbone.View.extend({
       var self = this;
       this.cancelRequest();
       self.audio.src = '';
+      self.audio.play();
       this.togglePlayIcon('loading');
       this.songLinkRequest = song.getMediaLink(
         function(data) {
