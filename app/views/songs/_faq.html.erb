@@ -4,14 +4,16 @@
             <%= render "aside_button" %>
         </nav>
     </header>    
-    <article id="faq-article" class="scroll">
-        <div class="">
-            <h1>Why can't I see all my songs?</h1>
-            <p>Due to Dropbox API's limitations, we can "only" retrieve 1000 songs. Besides, the supported format is MP3, so if you have some audio files in another format, you won't be able to play them with Droplayer. We are working to fix this, though.</p>
-
-            <h1>Why can't I see my songs' metadata?</h1>
-            <p>Getting your songs' data takes a while, and probably you won't see information such as the artists or albums the first time you use Droplayer. However, we'll eventually collect your library information and will display it as soon as possible after you refresh the page.</p>
-        </div>
+    <article id="faq-article" class="list">
+        <ul>
+            <li>
+                <strong>Why can't I see all my songs?</strong>
+                <span class="text small">Due to Dropbox API's limitations, we can "only" retrieve 1000 songs. Besides, the supported format is MP3, so if you have some audio files in another format, you won't be able to play them with Droplayer. We are working to fix this, though.</span>
+            </li>
+            <li>
+                <strong>Why can't I see my songs' metadata?</strong>
+                <span class="text small">Getting your songs' data takes a while, and probably you won't see information such as the artists or albums the first time you use Droplayer. However, we'll eventually collect your library information and will display it as soon as possible after you refresh the page.</span>
+            </li>
+        </ul>
     </article>
-    <footer>
 </section>
