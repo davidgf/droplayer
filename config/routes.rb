@@ -3,6 +3,7 @@ require 'sidekiq/web'
 Droplayer::Application.routes.draw do
   get "pages/home"
   post "contact", to: 'pages#mail'
+  post "feedback", to: 'pages#feedback'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

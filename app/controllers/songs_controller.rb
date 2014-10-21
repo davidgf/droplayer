@@ -14,6 +14,7 @@ class SongsController < ApplicationController
         sync_songs client
         sons = current_user.songs
         @songs = current_user.songs.to_a
+        @suggestion = Suggestion.new
 
         respond_to do |format|
             format.html

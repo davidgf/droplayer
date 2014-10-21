@@ -7,11 +7,13 @@
     <article id="feeback-article" class="indented">
 
         <h6>We at Droplayer would love to hear from you. Is the app not working properly? Do you miss any feature? If you have any suggestion, complain or just want to say hello, drop us a line.</h6>
-        <div class="form">
+
+        <%= form_for @suggestion, url: 'feedback', method: :post do |f| %>
             <fieldset>
-                <input type="text" placeholder="Subject"></input>
-                <textarea placeholder="Message"></textarea>
+                <%= f.text_field :subject, placeholder: "Subject" %>
+                <%= f.text_area :message, placeholder: "Message" %>
             </fieldset>
-        </div>
+            <%= f.submit 'Send', class: 'button anchor' %>
+        <% end %>
     </article>
 </section>

@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  before_filter :authorize, only: :feedback
   def home
     if signed_in?
         redirect_to(:controller => 'songs', :action => 'index') and return
@@ -27,4 +28,20 @@ class PagesController < ApplicationController
       end
     end
   end
+
+  def feedback
+    @suggestion = Suggestion.new(suggestion_params)
+    @suggestion.user = current_user
+    if @suggestion.save
+      flash[:suggestion] = "Message sent"
+      redirect_to root_path
+    end
+  end
+
+private
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def suggestion_params
+      params.require(:suggestion).permit(:message, :subject)
+    end
 end
