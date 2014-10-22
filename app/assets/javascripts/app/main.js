@@ -30,6 +30,10 @@ $(function() {
         name: 'example'
     });
 
+    if(window.flash){
+      toastr['info'](window.flash);
+    }
+
     var DEBUG_MODE = true; // Set this value to false for production
 
     if(typeof(console) === 'undefined') {

@@ -1,6 +1,9 @@
 <% content_for :javascript_includes do %>
     <%= javascript_tag do %>
         window.songs_json = <%= raw @songs.to_json %>;
+        <% if flash[:suggestion] %>
+        	window.flash = "<%= flash[:suggestion] %>";
+        <% end %>
     <% end %>
     <%= javascript_include_tag "application" %>
     <%= javascript_include_tag "player" %>
