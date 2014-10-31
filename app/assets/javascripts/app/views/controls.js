@@ -3,7 +3,7 @@ var Controls = Backbone.View.extend({
 
   playIconClass: 'play',
   pauseIconClass: 'pause',
-  loadingIconClass: 'spinner',
+  loadingIconClass: 'spinnergif',
 
   events: {
     'click .play_btn': 'playToggle',

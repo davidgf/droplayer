@@ -54,14 +54,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-    columnize (0.3.6)
     connection_pool (2.0.0)
-    debugger (1.6.6)
-      columnize (>= 0.3.1)
-      debugger-linecache (~> 1.2.0)
-      debugger-ruby_core_source (~> 1.3.2)
-    debugger-linecache (1.2.0)
-    debugger-ruby_core_source (1.3.2)
     dropbox-sdk (1.6.3)
       json
     email_validator (1.4.0)
@@ -177,7 +170,6 @@ DEPENDENCIES
   capistrano-rvm
   clearance
   coffee-rails (~> 4.0.0)
-  debugger
   dropbox-sdk
   iconv
   jbuilder (~> 1.2)
