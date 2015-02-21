@@ -1,6 +1,7 @@
 require 'sidekiq/web'
 
 Droplayer::Application.routes.draw do
+  get "demo" => "demo#show"
   get "pages/home"
   post "contact", to: 'pages#mail'
   post "feedback", to: 'pages#feedback'

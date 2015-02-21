@@ -64,13 +64,14 @@ Droplayer::Application.configure do
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.default_url_options = { :host => 'droplayer.es' }
+  config.action_mailer.default_url_options = { :host => 'streamr.es' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
                                         :address => APP_CONFIG['smtp_host'], 
                                         :port => APP_CONFIG['smtp_port'],
                                         :user_name => APP_CONFIG['smtp_username'],
-                                        :password => APP_CONFIG['smtp_password']
+                                        :password => APP_CONFIG['smtp_password'],  
+                                        :enable_starttls_auto => true
                                       }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
